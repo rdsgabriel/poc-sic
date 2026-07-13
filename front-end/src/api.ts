@@ -46,6 +46,14 @@ export type Resposta = {
   ghes_detalhe: GheDetalhe[]
 }
 
+/** Nível visual de confiança: um GHE com QUALQUER ponto de atenção nunca é
+ *  "alta" (verde), mesmo com score alto — verde significa "nada a conferir". */
+export function nivelConfianca(g: GheDetalhe): "alta" | "media" | "baixa" {
+  if (g.confianca < 60) return "baixa"
+  if (g.confianca < 90 || g.pontos_atencao.length > 0) return "media"
+  return "alta"
+}
+
 /** Rótulo do GHE para listas: quando o mesmo setor aparece em vários GHEs
  *  (layouts com 1 GHE por função), acrescenta a função para desambiguar. */
 export function rotuloGhe(ghes: GheDetalhe[], i: number): string {

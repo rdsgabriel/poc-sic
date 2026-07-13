@@ -12,6 +12,7 @@ const alvo = process.env.VITE_API_TARGET ?? "http://localhost:8890"
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
+    host: true, // expõe na rede local (equivale a --host)
     proxy: {
       "/processar": alvo,
       "/pdf": alvo,

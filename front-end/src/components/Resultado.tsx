@@ -1,5 +1,5 @@
 import { AlertTriangleIcon, DownloadIcon, FileJsonIcon, SearchCheckIcon, UploadIcon } from "lucide-react"
-import { rotuloGhe, type Resposta } from "../api"
+import { nivelConfianca, rotuloGhe, type Resposta } from "../api"
 import { Badge } from "./ui/badge"
 import { Button } from "./ui/button"
 
@@ -115,7 +115,11 @@ export function Resultado({ dados, onConferir, onNovo }: Props) {
                     <td className="py-2 px-3 text-right tabular-nums">{g.exames}</td>
                     <td className="py-2 px-3 text-right tabular-nums">{g.funcoes}</td>
                     <td className="py-2 pl-3 text-right">
-                      <Badge variant={conf >= 90 ? "ok" : conf >= 60 ? "pendente" : "erro"}>
+                      <Badge variant={
+                        dados.ghes_detalhe[i]
+                          ? { alta: "ok", media: "pendente", baixa: "erro" }[nivelConfianca(dados.ghes_detalhe[i])] as "ok" | "pendente" | "erro"
+                          : "ok"
+                      }>
                         {conf}%
                       </Badge>
                     </td>

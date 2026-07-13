@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react"
 import {
   AlertTriangleIcon, ChevronDownIcon, ChevronUpIcon, ExternalLinkIcon,
 } from "lucide-react"
-import { rotuloGhe, type Exame, type GheDetalhe } from "../api"
+import { nivelConfianca, rotuloGhe, type Exame, type GheDetalhe } from "../api"
 import { usePdfPreview } from "../hooks/use-pdf-preview"
 import { Badge } from "./ui/badge"
 import { Button } from "./ui/button"
@@ -16,8 +16,9 @@ type Props = {
   onClose: () => void
 }
 
-function varianteConfianca(c: number) {
-  return c >= 90 ? "ok" : c >= 60 ? "pendente" : "erro"
+function varianteConfianca(g: GheDetalhe) {
+  const nivel = nivelConfianca(g)
+  return nivel === "alta" ? "ok" : nivel === "media" ? "pendente" : "erro"
 }
 
 const COR_GRUPO: Record<string, string> = {
@@ -137,9 +138,9 @@ export function ConferenciaModal({ open, jobId, ghes, onClose }: Props) {
                 <span
                   className={cn(
                     "size-2 rounded-full shrink-0",
-                    ghe.confianca >= 90
+                    nivelConfianca(ghe) === "alta"
                       ? "bg-emerald-500"
-                      : ghe.confianca >= 60
+                      : nivelConfianca(ghe) === "media"
                         ? "bg-amber-500"
                         : "bg-red-500"
                   )}
@@ -169,7 +170,7 @@ export function ConferenciaModal({ open, jobId, ghes, onClose }: Props) {
               </h3>
               {g?.pagina && <Badge variant="secondary">pág. {g.pagina}</Badge>}
               {g && (
-                <Badge variant={varianteConfianca(g.confianca)}>
+                <Badge variant={varianteConfianca(g)}>
                   confiança {g.confianca}%
                 </Badge>
               )}
