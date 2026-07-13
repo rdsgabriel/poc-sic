@@ -1,0 +1,48 @@
+# ---- segredos (NUNCA commitar) ----
+.env
+.env.*
+
+# ---- python ----
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# ---- node / front-end ----
+node_modules/
+front-end/dist/
+*.tsbuildinfo
+
+# ---- saídas geradas pelo pipeline (recriáveis a partir dos PDFs) ----
+output/
+output_*/
+
+# ---- temporários de SO / editor / LibreOffice ----
+.~lock.*
+*.xlsx#
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+
+# ---- documentos de clientes (dados pessoais/LGPD — nunca versionar) ----
+# Os PDFs de teste ficam fora do git; os testes golden pulam PDFs ausentes.
+# Para rodar a suíte completa, obtenha os PDFs internamente e coloque nos
+# caminhos listados em tests/test_regressao.py.
+*.pdf
+# prompts internos
+PROMPT_PRODUCAO_PLANILHAS_PCMSO.md
+component.md
+
+# NÃO ignorar (fazem parte do projeto):
+#   - tests/golden/*.json (contrato de regressão)
+#   - front-end/package-lock.json (build reproduzível)
+#   - qeg_design.json, GUIA_MELHORIAS.md (documentação viva)
+
+# ---- dados de clientes (planilhas, notas e pastas de POC) ----
+AguasDoBrasilPoC/
+*.xls
+*.xlsx
+Validação PCMSO*.md

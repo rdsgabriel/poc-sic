@@ -1,0 +1,3377 @@
+{
+  "meta": {
+    "empresa": "RIO + SANEAMENTO BL 3 S.A",
+    "total_ghes": 33
+  },
+  "ghes": [
+    {
+      "codigo": "01",
+      "nome": "ADMINISTRATIVO",
+      "riscos": [
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Execução de Movimento Repetitivo",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Contato com Mobiliário com Quinas Vivas",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "SUPERVISOR COMERCIAL",
+        "GERENTE COMERCIAL REGIONAL",
+        "ANALISTA COMERCIAL I",
+        "ANALISTA COMERCIAL II",
+        "AUXILIAR ADMINISTRATIVO",
+        "ANALISTA SUPORTE OPERACOES II",
+        "COORDENADOR OPERACOES",
+        "ASSISTENTE TECNICO OPERACOES",
+        "ASSISTENTE ADMINISTRATIVO",
+        "COORDENADOR PERDAS",
+        "ANALISTA SUPORTE OPERACOES I",
+        "ESPECIALISTA COMERCIAL CORPORATIVO",
+        "ANALISTA COMERCIAL III",
+        "COORDENADOR COMERCIAL",
+        "JOVEM APRENDIZ - ADMINISTRATIVO",
+        "ANALISTA DESENVOLVIMENTO RH I",
+        "ANALISTA DESENVOLVIMENTO RH III",
+        "SUPERVISOR DESENVOLVIMENTO RH",
+        "ANALISTA RH I",
+        "ANALISTA RH II",
+        "AGENTE TRANSPORTES I",
+        "ANALISTA SUPRIMENTOS I",
+        "SUPERVISOR ADMINISTRATIVO",
+        "ESTAGIARIO NIVEL SUPERIOR",
+        "AGENTE TRANSPORTES II",
+        "ANALISTA TRANSPORTES I",
+        "COORDENADOR LOGISTICA",
+        "TECNICO ENFERMAGEM TRABALHO",
+        "COORDENADOR ENG.PROJETOS E OBRAS II",
+        "SUPERINTENDENTE CONCESSIONARIA",
+        "GERENTE OPERACOES",
+        "SUPERINTENDENTE OPERACOES",
+        "ANALISTA PERDAS I",
+        "ANALISTA SUPORTE OPERACOES III",
+        "PROGRAMADOR SERVICOS I",
+        "OPERADOR CCO III",
+        "APROPRIADOR SERVICOS",
+        "OPERADOR CCO I",
+        "COORDENADOR SERVICOS",
+        "SUPERVISOR SUPRIMENTOS",
+        "ANALISTA ENGENHARIA I",
+        "SUPERVISOR PERDAS",
+        "GERENTE COMERCIAL",
+        "ANALISTA RELACIONAMENTO COMUNIDADE II",
+        "ANALISTA RELACIONAMENTO COMUNIDADE III",
+        "ANALISTA COMUNICACAO II",
+        "TECNICO ENGENHARIA I",
+        "TECNICO ENGENHARIA II"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "01A",
+      "nome": "ADMINISTRATIVO SUPERVISAO",
+      "riscos": [
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Execução de Movimento Repetitivo",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Contato com Mobiliário com Quinas Vivas",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Exposição a Espaço Confinado",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de Diferença Nível Igual ou Acima de 2M",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia de Jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma Completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "SUPERVISOR ENG.PROJETOS E OBRAS",
+        "TECNICO ENGENHARIA I",
+        "TECNICO ENGENHARIA II",
+        "SUPERVISOR SERVICOS",
+        "SUPERVISOR PERDAS",
+        "SUPERVISOR OPERACOES",
+        "ASSISTENTE TECNICO ENGENHARIA",
+        "TECNICO OPERACOES II"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "02",
+      "nome": "ALMOXARIFADO",
+      "riscos": [
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Levantamento e Transporte Manual de Cargas",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Contato com Mobiliário com Quinas Vivas",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento de membros",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de Diferença Nível Igual ou Acima de 2M",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de Objetos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia de Jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "AUXILIAR ADMINISTRATIVO",
+        "ALMOXARIFE",
+        "AUXILIAR ALMOXARIFADO"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "02A",
+      "nome": "MANUTENCAO PREDIAL",
+      "riscos": [
+        {
+          "nome": "Exposição à Radiações não ionizantes",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Exposição à vibração de mãos e braços",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Exposição à PNOS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Levantamento e Transporte Manual de Cargas",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque Elétrico",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de Diferença Nível Igual ou Acima de 2M",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia de Jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "AUXILIAR MANUTENCAO PREDIAL"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "03",
+      "nome": "SEGURANÇA DO TRABALHO",
+      "riscos": [
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Contato com Mobiliário com Quinas Vivas",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Exposição a Espaço Confinado",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de Diferença Nível Igual ou Acima de 2M",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia de Jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma Completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "TECNICO SEGURANCA TRABALHO III",
+        "TECNICO SEGURANCA TRABALHO I",
+        "TECNICO SEGURANCA TRABALHO II"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "04",
+      "nome": "REDUÇÃO DE PERDAS",
+      "riscos": [
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Contato com Mobiliário com Quinas Vivas",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Exposição a Espaço Confinado",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento de membros",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de Diferença Nível Igual ou Acima de 2M",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia de Jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma Completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "AGENTE PERDAS I",
+        "AGENTE PERDAS III"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "04A",
+      "nome": "REDUÇÃO PERDAS AGUAS DE VALOR",
+      "riscos": [
+        {
+          "nome": "Exposição à Ruído",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Exposição à Umidade",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Exposição à vibração de mãos e braços",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Exposição ao Asfalto Frio",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Exposição ao Cimento Portland",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Exposição à PNOS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Levantamento e Transporte Manual de Cargas",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Contato com Mobiliário com Quinas Vivas",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Corte e Contusões",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento de membros",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Soterramento",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual - Teste de Ishihara - Daltonismo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia de Jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "AGENTE PERDAS I",
+        "AJUDANTE GERAL",
+        "AGENTE PERDAS III"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "05",
+      "nome": "GSO MANUTENCAO AGUA",
+      "riscos": [
+        {
+          "nome": "Exposição à Umidade",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Exposição à vibração de mãos e braços",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Exposição ao Asfalto Frio",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Exposição ao Cimento Portland",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Exposição à PNOS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Levantamento e Transporte Manual de Cargas",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Contato com Mobiliário com Quinas Vivas",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Corte e Contusões",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Exposição a Espaço Confinado",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento de membros",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de Diferença Nível Igual ou Acima de 2M",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Soterramento",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia de Jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma Completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "AJUDANTE GERAL",
+        "INSTALADOR"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "06",
+      "nome": "GSO REPOSICAO",
+      "riscos": [
+        {
+          "nome": "Exposição à Ruído",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Exposição à vibração de mãos e braços",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Exposição ao Cimento Portland",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Exposição à PNOS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Levantamento e Transporte Manual de Cargas",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de Escadas e Rampas",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Soterramento",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "AJUDANTE GERAL",
+        "INSTALADOR"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "06A",
+      "nome": "GSO REPOSIÇÃO MOTO",
+      "riscos": [
+        {
+          "nome": "Exposição à Umidade",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Exposição à vibração de mãos e braços",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Exposição ao Asfalto Frio",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Exposição ao Cimento Portland",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Exposição à PNOS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Levantamento e Transporte Manual de Cargas",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Corte e Contusões",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Exposição a Espaço Confinado",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento de membros",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de Diferença Nível Igual ou Acima de 2M",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda e Colisão de Motocicleta",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Soterramento",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "INSTALADOR"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "07",
+      "nome": "AUTOMACAO",
+      "riscos": [
+        {
+          "nome": "Exposição à Ruído",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque Elétrico",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Corte e Contusões",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Exposição a Espaço Confinado",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento de membros",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de Diferença Nível Igual ou Acima de 2M",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação Psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia de Jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma Completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "ASSISTENTE TECNICO AUTOMACAO",
+        "TECNICO AUTOMACAO II",
+        "TECNICO AUTOMACAO III"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "08",
+      "nome": "OPERAÇÃO DISTRIBUIÇÃO",
+      "riscos": [
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Execução de Movimento Repetitivo",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Exposição a Espaço Confinado",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento de membros",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de Diferença Nível Igual ou Acima de 2M",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia de Jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma Completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "OPERADOR SISTEMA DE REDE",
+        "OPERADOR VOLANTE",
+        "OPERADOR VOLANTE - DISTRIBUICAO",
+        "OPERADOR CCO III",
+        "ASSISTENTE TECNICO AUTOMACAO"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "08A",
+      "nome": "OPERAÇÃO DISTRIBUIÇÃO MOTO",
+      "riscos": [
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Execução de Movimento Repetitivo",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Exposição a Espaço Confinado",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento de membros",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de Diferença Nível Igual ou Acima de 2M",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda e Colisão de Motocicleta",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia de Jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma Completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "OPERADOR SISTEMA DE REDE",
+        "OPERADOR VOLANTE - DISTRIBUICAO",
+        "OPERADOR VOLANTE"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "09",
+      "nome": "OPERACAO UT",
+      "riscos": [
+        {
+          "nome": "Exposição ao Dicloroisocianurato de Sódio",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Exposição ao cloro",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Execução de Movimento Repetitivo",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Afogamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda e Colisão de Motocicleta",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "OPERADOR ETA I"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "09A",
+      "nome": "OPERAÇÃO NEL / RESERVATÓRIO",
+      "riscos": [
+        {
+          "nome": "Exposição à Ruído",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Contato com Mobiliário com Quinas Vivas",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento de membros",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "OPERADOR RESERVATORIO",
+        "OPERADOR VOLANTE"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "09B",
+      "nome": "TÉCNICO TRATAMENTO",
+      "riscos": [
+        {
+          "nome": "Exposição ao Dicloroisocianurato de Sódio",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Exposição ao cloro",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Execução de Movimento Repetitivo",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Afogamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "TECNICO OPERACOES II"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "10",
+      "nome": "TRABALHO A QUENTE SOLDA",
+      "riscos": [
+        {
+          "nome": "Exposição ao Calor",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Exposição à Radiações não ionizantes",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Exposição à Ruído",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Exposição à vibração de mãos e braços",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Exposição a fumos metálicos",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Exposição à PNOS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Levantamento e Transporte Manual de Cargas",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Contato com Mobiliário com Quinas Vivas",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Corte e Contusões",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Exposição a Espaço Confinado",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de Diferença Nível Igual ou Acima de 2M",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queimaduras",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Soterramento",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Espirometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia de Jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma Completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X Tórax (OIT) - 1 Incidência",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 60,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "SOLDADOR"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "11",
+      "nome": "LABORATORIO COLETA",
+      "riscos": [
+        {
+          "nome": "Exposição à DPD Total Chlorine",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Exposição à spadns",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Exposição à Agentes Biológicos",
+          "grupo": "Biológico"
+        },
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Corte e Contusões",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento de membros",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queimaduras",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Hepatite A - HAV - IGG",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "LABORATORISTA I"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "12",
+      "nome": "LABORATORIO CONTROLE DE QUALIDADE",
+      "riscos": [
+        {
+          "nome": "Exposição a ácido nítrico",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Exposição ao Hexano",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Exposição ao ácido clorídrico",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Exposição à DPD Total Chlorine",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Exposição à spadns",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Corte e Contusões",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento de membros",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queimaduras",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "LABORATORISTA II"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "13",
+      "nome": "GSO TÉCNICO DE OPERAÇÕES",
+      "riscos": [
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Contato com Mobiliário com Quinas Vivas",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Exposição a Espaço Confinado",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de Diferença Nível Igual ou Acima de 2M",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia de Jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma Completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "TECNICO OPERACOES III",
+        "TECNICO OPERACOES II"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "13B",
+      "nome": "GSO TÉCNICO DE OPERAÇÕES ELÉTRICA",
+      "riscos": [
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque Elétrico",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Contato com Mobiliário com Quinas Vivas",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Exposição a Espaço Confinado",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de Diferença Nível Igual ou Acima de 2M",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia de Jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma Completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "TECNICO OPERACOES II"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "14",
+      "nome": "ENGENHARIA MANUTENCAO CIVIL OPERACIONAL",
+      "riscos": [
+        {
+          "nome": "Exposição à vibração de mãos e braços",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Corte e Contusões",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento de membros",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de Diferença Nível Igual ou Acima de 2M",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia de Jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "INSTALADOR"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "14A",
+      "nome": "ENGENHARIA MANUTENCAO ELETRICA PREDIAL",
+      "riscos": [
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque Elétrico",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de Diferença Nível Igual ou Acima de 2M",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia de Jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "ELETRICISTA PREDIAL I"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "14B",
+      "nome": "ENGENHARIA MAQUINAS E EQUIPAMENTOS",
+      "riscos": [
+        {
+          "nome": "Exposição à vibração de corpo inteiro (AREN)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Execução de Movimento Repetitivo",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "MOTORISTA CAMINHAO"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "14C",
+      "nome": "ENGENHARIA MANUTENCAO CIVIL PREDIAL",
+      "riscos": [
+        {
+          "nome": "Exposição à vibração de mãos e braços",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Exposição ao Asfalto Frio",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Exposição ao Cimento Portland",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Exposição à PNOS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Corte e Contusões",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento de membros",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de Diferença Nível Igual ou Acima de 2M",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia de Jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "PEDREIRO",
+        "AJUDANTE GERAL"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "15",
+      "nome": "MOTORISTA ADMINSTRATIVO",
+      "riscos": [
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Execução de Movimento Repetitivo",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia de Jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "MOTORISTA ADMINISTRATIVO"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "16",
+      "nome": "MANUTENCAO ELETRICA INDUSTRIAL",
+      "riscos": [
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque Elétrico",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Corte e Contusões",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Exposição a Espaço Confinado",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento de membros",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de Diferença Nível Igual ou Acima de 2M",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia de Jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma Completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "ELETRICISTA INDUSTRIAL II"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "17",
+      "nome": "MANUTENCAO MECANICA",
+      "riscos": [
+        {
+          "nome": "Exposição à Ruído",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Exposição à Umidade",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Exposição à PNOS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Levantamento e Transporte Manual de Cargas",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Exposição a Espaço Confinado",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento de membros",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de Diferença Nível Igual ou Acima de 2M",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação Psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia de Jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma Completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "MECANICO II"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "18",
+      "nome": "RELACIONAMENTO COMUNITÁRIO",
+      "riscos": [
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Deslocamento Prolongado a Pé",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Eventos violentos ou traumáticos",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Fatores Psicosociais",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "AGENTE RELACIONAMENTO COMUNITARIO I",
+        "MONITOR",
+        "ANALISTA RELACIONAMENTO COMUNIDADE II",
+        "ANALISTA RELACIONAMENTO COMUNIDADE III"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "19",
+      "nome": "MANUTENÇÃO PERDAS",
+      "riscos": [
+        {
+          "nome": "Exposição à Ruído",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Exposição à Umidade",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Exposição à vibração de mãos e braços",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Exposição ao Asfalto Frio",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Exposição ao Cimento Portland",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Exposição à PNOS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Levantamento e Transporte Manual de Cargas",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Contato com Mobiliário com Quinas Vivas",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Corte e Contusões",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Exposição a Espaço Confinado",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento de membros",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de Diferença Nível Igual ou Acima de 2M",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Soterramento",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação Psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia de Jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma Completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "AJUDANTE GERAL",
+        "INSTALADOR"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "20",
+      "nome": "GSC LEITURISTA",
+      "riscos": [
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Eventos violentos ou traumáticos",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "LEITURISTA"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "20A",
+      "nome": "MONITORIA",
+      "riscos": [
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Eventos violentos ou traumáticos",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Execução de Movimento Repetitivo",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Contato com Mobiliário com Quinas Vivas",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "MONITOR",
+        "AGENTE COMERCIAL III"
+      ],
+      "avisos": []
+    },
+    {
+      "codigo": "21",
+      "nome": "OPERAÇÃO MANUTENÇÃO",
+      "riscos": [
+        {
+          "nome": "Assédio de qualquer natureza no trabalho",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Execução de Movimento Repetitivo",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Postura Inadequada",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de Trânsito",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Domésticos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Ataque de Animais Peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Contato com Mobiliário com Quinas Vivas",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas e Tropeços",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "AJUDANTE GERAL"
+      ],
+      "avisos": []
+    }
+  ]
+}

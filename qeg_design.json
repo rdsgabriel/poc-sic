@@ -1,0 +1,629 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "meta": {
+    "name": "ProntuAI — Guia Visual",
+    "description": "Design tokens e receitas de componentes extraídos do frontend do ProntuAI (Next.js + Tailwind 4 + Radix + CVA, padrão shadcn/ui new-york). Fonte da verdade: front-end/app/globals.css e front-end/components/ui.",
+    "version": "1.0.0",
+    "generatedAt": "2026-06-25",
+    "stack": [
+      "next@15.5",
+      "react@19",
+      "tailwindcss@4",
+      "radix-ui",
+      "class-variance-authority",
+      "lucide-react",
+      "remixicon",
+      "sonner",
+      "shepherd.js"
+    ],
+    "notas": [
+      "As cores vivem como variáveis CSS em HEX e são expostas ao Tailwind 4 via @theme inline.",
+      "Primary no ProntuAI é o azul petróleo #193B4F. O teal #007891 é usado como secondary, accent, ring e ação destacada em alguns contextos.",
+      "Há dois temas: light (:root) e dark (.dark). Alternados via class no <html>.",
+      "Sem fonte custom importada no app: usa a stack do sistema/Tailwind, com fallback para Geist Mono em mono.",
+      "O projeto usa shadcn/ui estilo new-york, com componentes compactos (h-9) e foco com ring de 3px."
+    ]
+  },
+  "color": {
+    "brand": {
+      "description": "Identidade visual BR MED / ProntuAI. O azul petróleo é a cor de marca principal; o teal é a cor operacional de destaque.",
+      "deep": {
+        "hex": "#193B4F",
+        "uso": "Marca, sidebar, primary, foreground no tema claro"
+      },
+      "teal": {
+        "hex": "#007891",
+        "uso": "Secondary, accent, ring, estados ativos e ações destacadas"
+      },
+      "light": {
+        "hex": "#7EBFCC",
+        "uso": "Secondary no tema escuro, chart-1 e realces claros"
+      },
+      "neutralLight": {
+        "hex": "#F3F3F3",
+        "uso": "Background, card e popover no tema claro"
+      }
+    },
+    "semantic": {
+      "light": {
+        "background": {
+          "cssVar": "--background",
+          "hex": "#F3F3F3",
+          "uso": "Fundo principal da aplicação"
+        },
+        "foreground": {
+          "cssVar": "--foreground",
+          "hex": "#193B4F",
+          "uso": "Texto principal"
+        },
+        "card": {
+          "cssVar": "--card",
+          "hex": "#F3F3F3",
+          "uso": "Fundo padrão de cards e superfícies"
+        },
+        "card-foreground": {
+          "cssVar": "--card-foreground",
+          "hex": "#193B4F",
+          "uso": "Texto sobre card"
+        },
+        "popover": {
+          "cssVar": "--popover",
+          "hex": "#F3F3F3",
+          "uso": "Fundo de popover/menu"
+        },
+        "popover-foreground": {
+          "cssVar": "--popover-foreground",
+          "hex": "#193B4F",
+          "uso": "Texto sobre popover"
+        },
+        "primary": {
+          "cssVar": "--primary",
+          "hex": "#193B4F",
+          "uso": "Ação primária, marca e elementos de maior peso"
+        },
+        "primary-foreground": {
+          "cssVar": "--primary-foreground",
+          "hex": "#FFFFFF",
+          "uso": "Texto sobre primary"
+        },
+        "secondary": {
+          "cssVar": "--secondary",
+          "hex": "#007891",
+          "uso": "Ação secundária, estados ativos, destaques e navegação"
+        },
+        "secondary-foreground": {
+          "cssVar": "--secondary-foreground",
+          "hex": "#FFFFFF",
+          "uso": "Texto sobre secondary"
+        },
+        "muted": {
+          "cssVar": "--muted",
+          "hex": "#DFE0E2",
+          "uso": "Fundo neutro/desabilitado"
+        },
+        "muted-foreground": {
+          "cssVar": "--muted-foreground",
+          "hex": "#767A7B",
+          "uso": "Texto secundário, legenda e placeholders"
+        },
+        "accent": {
+          "cssVar": "--accent",
+          "hex": "#007891",
+          "uso": "Hover, foco visual e realces de interação"
+        },
+        "accent-foreground": {
+          "cssVar": "--accent-foreground",
+          "hex": "#FFFFFF",
+          "uso": "Texto sobre accent"
+        },
+        "destructive": {
+          "cssVar": "--destructive",
+          "hex": "#CC851E",
+          "uso": "Ação destrutiva/atenção no ProntuAI, com semântica âmbar"
+        },
+        "destructive-foreground": {
+          "cssVar": "--destructive-foreground",
+          "hex": "#FFFFFF",
+          "uso": "Texto sobre destructive"
+        },
+        "border": {
+          "cssVar": "--border",
+          "hex": "#BFC3C6",
+          "uso": "Bordas gerais"
+        },
+        "input": {
+          "cssVar": "--input",
+          "hex": "#F3F3F3",
+          "uso": "Fundo/borda base de inputs"
+        },
+        "ring": {
+          "cssVar": "--ring",
+          "hex": "#007891",
+          "uso": "Anel de foco"
+        }
+      },
+      "dark": {
+        "background": {
+          "cssVar": "--background",
+          "hex": "#193B4F",
+          "uso": "Fundo principal no tema escuro"
+        },
+        "foreground": {
+          "cssVar": "--foreground",
+          "hex": "#F3F3F3",
+          "uso": "Texto principal no tema escuro"
+        },
+        "card": {
+          "cssVar": "--card",
+          "hex": "#193B4F",
+          "uso": "Cards no tema escuro"
+        },
+        "card-foreground": {
+          "cssVar": "--card-foreground",
+          "hex": "#F3F3F3",
+          "uso": "Texto sobre cards no tema escuro"
+        },
+        "popover": {
+          "cssVar": "--popover",
+          "hex": "#193B4F",
+          "uso": "Popover/menu no tema escuro"
+        },
+        "popover-foreground": {
+          "cssVar": "--popover-foreground",
+          "hex": "#F3F3F3",
+          "uso": "Texto sobre popover no tema escuro"
+        },
+        "primary": {
+          "cssVar": "--primary",
+          "hex": "#FFFFFF",
+          "uso": "Ação primária invertida no dark"
+        },
+        "primary-foreground": {
+          "cssVar": "--primary-foreground",
+          "hex": "#193B4F",
+          "uso": "Texto sobre primary no dark"
+        },
+        "secondary": {
+          "cssVar": "--secondary",
+          "hex": "#7EBFCC",
+          "uso": "Ação secundária no dark"
+        },
+        "secondary-foreground": {
+          "cssVar": "--secondary-foreground",
+          "hex": "#193B4F",
+          "uso": "Texto sobre secondary no dark"
+        },
+        "muted": {
+          "cssVar": "--muted",
+          "hex": "#767A7B",
+          "uso": "Superfície neutra no dark"
+        },
+        "muted-foreground": {
+          "cssVar": "--muted-foreground",
+          "hex": "#F3F3F3",
+          "uso": "Texto secundário no dark"
+        },
+        "accent": {
+          "cssVar": "--accent",
+          "hex": "#007891",
+          "uso": "Hover e realce no dark"
+        },
+        "accent-foreground": {
+          "cssVar": "--accent-foreground",
+          "hex": "#FFFFFF",
+          "uso": "Texto sobre accent no dark"
+        },
+        "destructive": {
+          "cssVar": "--destructive",
+          "hex": "#A05E1E",
+          "uso": "Ação destrutiva/atenção no dark"
+        },
+        "destructive-foreground": {
+          "cssVar": "--destructive-foreground",
+          "hex": "#FFFFFF",
+          "uso": "Texto sobre destructive no dark"
+        },
+        "border": {
+          "cssVar": "--border",
+          "hex": "#BFC3C6",
+          "uso": "Bordas no dark"
+        },
+        "input": {
+          "cssVar": "--input",
+          "hex": "#767A7B",
+          "uso": "Inputs no dark"
+        },
+        "ring": {
+          "cssVar": "--ring",
+          "hex": "#007891",
+          "uso": "Anel de foco no dark"
+        }
+      },
+      "sidebar": {
+        "sidebar": {
+          "hex": "#193B4F",
+          "uso": "Fundo da navegação lateral"
+        },
+        "sidebar-foreground": {
+          "hex": "#F3F3F3",
+          "uso": "Texto e ícones da sidebar"
+        },
+        "sidebar-primary": {
+          "hex": "#007891",
+          "uso": "Item ativo e destaque da sidebar"
+        },
+        "sidebar-primary-foreground": {
+          "hex": "#FFFFFF",
+          "uso": "Texto sobre item ativo"
+        },
+        "sidebar-accent": {
+          "hex": "#007891",
+          "uso": "Hover/accent da sidebar"
+        },
+        "sidebar-accent-foreground": {
+          "hex": "#FFFFFF",
+          "uso": "Texto sobre accent da sidebar"
+        },
+        "sidebar-border": {
+          "hex": "#767A7B",
+          "uso": "Bordas discretas na sidebar"
+        },
+        "sidebar-ring": {
+          "hex": "#007891",
+          "uso": "Foco na sidebar"
+        }
+      },
+      "chart": {
+        "chart-1": {
+          "hex": "#7EBFCC"
+        },
+        "chart-2": {
+          "hex": "#9BD5E1"
+        },
+        "chart-3": {
+          "hex": "#2CAD6E"
+        },
+        "chart-4": {
+          "hex": "#CC851E"
+        },
+        "chart-5": {
+          "hex": "#D9BE53"
+        }
+      }
+    }
+  },
+  "gradient": {
+    "brand": {
+      "description": "Gradiente institucional usado em headers, docs e estados ativos.",
+      "css": "linear-gradient(135deg, #193B4F 0%, #007891 100%)",
+      "stops": [
+        "#193B4F",
+        "#007891"
+      ],
+      "angle": "135deg"
+    },
+    "brandWide": {
+      "description": "Gradiente horizontal de páginas documentais.",
+      "css": "linear-gradient(90deg, var(--primary) 0%, #0f566f 50%, var(--secondary) 100%)",
+      "stops": [
+        "var(--primary)",
+        "#0f566f",
+        "var(--secondary)"
+      ],
+      "angle": "90deg"
+    },
+    "sidebarActive": {
+      "description": "Estado ativo do menu lateral.",
+      "css": "linear-gradient(180deg, var(--sidebar-primary) 0%, color-mix(in srgb, var(--sidebar-primary) 70%, transparent) 100%)"
+    },
+    "tourHeader": {
+      "description": "Cabeçalho do Shepherd tour.",
+      "css": "linear-gradient(135deg, #193B4F 0%, #007891 100%)"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "base": "Stack padrão do sistema via Tailwind font-sans.",
+      "mono": "var(--font-geist-mono), monospace"
+    },
+    "fontSize": {
+      "xs": {
+        "px": 12,
+        "rem": "0.75rem",
+        "tailwind": "text-xs",
+        "uso": "Chips, legendas, textos auxiliares"
+      },
+      "sm": {
+        "px": 14,
+        "rem": "0.875rem",
+        "tailwind": "text-sm",
+        "uso": "Botões, inputs, labels e descrições"
+      },
+      "base": {
+        "px": 16,
+        "rem": "1rem",
+        "tailwind": "text-base",
+        "uso": "Texto corrido"
+      },
+      "lg": {
+        "px": 18,
+        "rem": "1.125rem",
+        "tailwind": "text-lg",
+        "uso": "Títulos compactos de seção"
+      },
+      "xl": {
+        "px": 20,
+        "rem": "1.25rem",
+        "tailwind": "text-xl",
+        "uso": "Subtítulos e chamadas"
+      },
+      "2xl": {
+        "px": 24,
+        "rem": "1.5rem",
+        "tailwind": "text-2xl",
+        "uso": "Títulos de telas internas"
+      },
+      "3xl": {
+        "px": 30,
+        "rem": "1.875rem",
+        "tailwind": "text-3xl",
+        "uso": "Boas-vindas e estados vazios importantes"
+      },
+      "5xl": {
+        "px": 48,
+        "rem": "3rem",
+        "tailwind": "text-5xl",
+        "uso": "Marca/título na tela de login"
+      }
+    },
+    "fontWeight": {
+      "normal": {
+        "value": 400
+      },
+      "medium": {
+        "value": 500,
+        "uso": "Botões, labels, navegação"
+      },
+      "semibold": {
+        "value": 600,
+        "uso": "Títulos, menu ativo, destaques"
+      },
+      "bold": {
+        "value": 700,
+        "uso": "Métricas e ênfase forte"
+      }
+    },
+    "tracking": {
+      "tight": {
+        "tailwind": "tracking-tight",
+        "uso": "Títulos grandes, especialmente login"
+      },
+      "wide": {
+        "tailwind": "tracking-wide",
+        "uso": "Labels uppercase de métricas"
+      },
+      "custom": {
+        "tailwind": "tracking-[0.08em] até tracking-[0.2em]",
+        "uso": "Documentação e badges editoriais"
+      }
+    },
+    "leading": {
+      "none": {
+        "tailwind": "leading-none",
+        "uso": "Títulos de componentes"
+      },
+      "normal": {
+        "tailwind": "leading-normal"
+      },
+      "relaxed": {
+        "tailwind": "leading-relaxed",
+        "uso": "Textos explicativos longos"
+      }
+    }
+  },
+  "radius": {
+    "base": {
+      "var": "--radius",
+      "value": "0.625rem",
+      "px": 10
+    },
+    "sm": {
+      "value": "calc(var(--radius) - 4px)",
+      "px": 6
+    },
+    "md": {
+      "value": "calc(var(--radius) - 2px)",
+      "px": 8
+    },
+    "lg": {
+      "value": "var(--radius)",
+      "px": 10
+    },
+    "xl": {
+      "value": "calc(var(--radius) + 4px)",
+      "px": 14,
+      "uso": "Cards shadcn novos, dialogs e containers maiores"
+    },
+    "full": {
+      "value": "9999px",
+      "uso": "Avatares, indicadores, pills e badges arredondados"
+    }
+  },
+  "spacing": {
+    "layout": {
+      "pagePadding": "p-6 md:p-8 lg:p-12",
+      "headerHeight": "h-16",
+      "sidebarInsetHeight": "h-[calc(100svh-4rem)]",
+      "contentMaxLogin": "sm:w-[350px]"
+    },
+    "card": {
+      "root": "py-6",
+      "x": "px-6",
+      "gap": "gap-6",
+      "adHocPadding": "p-4, p-5 ou p-6 conforme densidade"
+    },
+    "button": {
+      "default": "h-9 px-4 py-2",
+      "sm": "h-8 px-3",
+      "lg": "h-10 px-6",
+      "icon": "size-9"
+    },
+    "form": {
+      "inputHeight": "h-9",
+      "inputPadding": "px-3 py-1",
+      "selectHeight": "h-9"
+    }
+  },
+  "shadow": {
+    "xs": {
+      "tailwind": "shadow-xs",
+      "uso": "Botões, inputs e elementos pequenos"
+    },
+    "sm": {
+      "tailwind": "shadow-sm",
+      "uso": "Cards e superfícies"
+    },
+    "lg": {
+      "tailwind": "shadow-lg",
+      "uso": "Dropdowns, modais e elementos flutuantes"
+    },
+    "sidebarActive": {
+      "css": "0 1px 2px 0 rgb(0 0 0 / .05), inset 0 1px 0 0 rgb(255 255 255 / .12)",
+      "uso": "Item ativo da sidebar"
+    },
+    "tour": {
+      "css": "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1), 0 0 0 1px rgba(0, 120, 145, 0.1)",
+      "uso": "Shepherd tour"
+    }
+  },
+  "motion": {
+    "duration": {
+      "fast": "200ms",
+      "base": "300ms",
+      "medium": "500ms",
+      "highlight": "1700ms"
+    },
+    "easing": {
+      "default": "ease",
+      "out": "ease-out",
+      "inOut": "ease-in-out"
+    },
+    "keyframes": {
+      "shepherd-glow": "Pulso de foco com box-shadow teal em múltiplas camadas.",
+      "shepherd-fade-in": "opacity 0 -> 1 e scale 0.95 -> 1.",
+      "tailwind-animate": "Usa animate-in, fade-in, slide-in, zoom-in/out via tw-animate-css."
+    },
+    "transitions": {
+      "button": "transition-all",
+      "inputs": "transition-[color,box-shadow]",
+      "sidebarInset": "transition-all ease-in-out duration-300",
+      "pageStates": "animate-in fade-in duration-500"
+    }
+  },
+  "components": {
+    "button": {
+      "fonte": "front-end/components/ui/button.tsx",
+      "base": "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]",
+      "svg": "[&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 [&_svg]:shrink-0",
+      "invalid": "aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
+      "variants": {
+        "default": "bg-primary text-primary-foreground hover:bg-primary/90",
+        "destructive": "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
+        "outline": "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
+        "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+        "ghost": "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
+        "link": "text-primary underline-offset-4 hover:underline"
+      },
+      "sizes": {
+        "default": "h-9 px-4 py-2 has-[>svg]:px-3",
+        "sm": "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
+        "lg": "h-10 rounded-md px-6 has-[>svg]:px-4",
+        "icon": "size-9",
+        "icon-sm": "size-8",
+        "icon-lg": "size-10"
+      },
+      "defaults": {
+        "variant": "default",
+        "size": "default"
+      }
+    },
+    "card": {
+      "fonte": "front-end/components/ui/card.tsx",
+      "root": "bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm",
+      "header": "@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6",
+      "title": "leading-none font-semibold",
+      "description": "text-muted-foreground text-sm",
+      "action": "col-start-2 row-span-2 row-start-1 self-start justify-self-end",
+      "content": "px-6",
+      "footer": "flex items-center px-6 [.border-t]:pt-6"
+    },
+    "input": {
+      "fonte": "front-end/components/ui/input.tsx",
+      "base": "border-input file:text-foreground placeholder:text-muted-foreground/70 flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-sm shadow-xs transition-[color,box-shadow] outline-none disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50",
+      "focus": "focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]",
+      "file": "file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium",
+      "invalid": "aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+    },
+    "textarea": {
+      "fonte": "front-end/components/ui/textarea.tsx",
+      "base": "border-input placeholder:text-muted-foreground/70 focus-visible:border-ring focus-visible:ring-ring/50 flex min-h-19.5 w-full rounded-md border bg-transparent px-3 py-2 text-sm shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px]"
+    },
+    "label": {
+      "fonte": "front-end/components/ui/label.tsx",
+      "base": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-50"
+    },
+    "badge": {
+      "fonte": "front-end/components/ui/badge.tsx",
+      "uso": "Status, contadores e marcadores compactos; preferir variants semânticas e evitar cores hardcoded quando não forem status específicos."
+    },
+    "sidebar": {
+      "fonte": "front-end/components/ui/sidebar.tsx e front-end/components/app-sidebar.tsx",
+      "shell": "Sidebar em dark permanente, fundo --sidebar (#193B4F) e conteúdo --sidebar-foreground (#F3F3F3).",
+      "activeItem": "bg-gradient-to-b from-sidebar-primary to-sidebar-primary/70 shadow-[0_1px_2px_0_rgb(0_0_0/.05),inset_0_1px_0_0_rgb(255_255_255/.12)]",
+      "item": "h-9 rounded-md gap-3 font-medium"
+    },
+    "uploadZone": {
+      "fonte": "front-end/components/document-upload-zone.tsx",
+      "base": "min-h-64 rounded-xl border-2 border-dashed p-8",
+      "interaction": "hover:bg-accent/10 data-[dragging=true]:bg-accent/50 data-[dragging=true]:border-primary"
+    },
+    "toast": {
+      "fonte": "front-end/components/ui/sonner.tsx",
+      "base": "Fundo branco, texto #193B4F, bordas por tipo.",
+      "types": {
+        "success": "#2CAD6E",
+        "error": "#CC851E",
+        "warning": "#CC851E",
+        "info": "#007891"
+      }
+    },
+    "tour": {
+      "fonte": "front-end/app/globals.css e front-end/components/tour-guiado.tsx",
+      "overlay": "rgba(0, 0, 0, 0.5)",
+      "targetGlow": "Box-shadow teal com animação shepherd-glow",
+      "modal": "bg-white, border rgba(191,195,198,0.3), rounded 12px, shadow tour",
+      "header": "linear-gradient(135deg, #193B4F 0%, #007891 100%)",
+      "button": "bg #193B4F, hover #007891, text white, rounded 6px"
+    }
+  },
+  "implementation": {
+    "tailwind4": {
+      "theme": "Tokens devem ser definidos em :root/.dark e mapeados dentro de @theme inline.",
+      "pattern": "--color-primary: var(--primary); --color-secondary: var(--secondary); --radius-lg: var(--radius);",
+      "observacao": "Não usar hsl(var(--token)) como padrão deste projeto; o ProntuAI usa HEX direto nas variáveis."
+    },
+    "recommendedUsage": [
+      "Usar bg-primary para ações principais de maior peso e identidade institucional.",
+      "Usar bg-secondary ou text-secondary para destaque teal, estados ativos e CTAs secundários.",
+      "Usar bg-card/text-card-foreground para superfícies reutilizáveis.",
+      "Evitar hardcodes como #193B4F, #007891, bg-white e blue-* fora de integrações ou status específicos.",
+      "Manter componentes compactos: Button h-9, Input h-9, Sidebar item h-9.",
+      "Usar rounded-md para controles, rounded-xl para cards shadcn e containers maiores quando seguir o padrão atual."
+    ],
+    "migrationNotes": [
+      "Este JSON substitui a referência PGR anterior e prioriza o visual atual do ProntuAI.",
+      "A diferença mais importante é que primary permanece #193B4F, não #007891.",
+      "As animações ai-chip/roadmap do guia PGR não fazem parte do ProntuAI atual; se forem desejadas em projetos futuros, devem entrar como extensão opcional, não como base."
+    ]
+  }
+}

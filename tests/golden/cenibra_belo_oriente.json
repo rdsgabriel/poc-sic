@@ -1,0 +1,1108 @@
+{
+  "meta": {
+    "empresa": "VIX LOGÍSTICA S/A CENIBRA",
+    "total_ghes": 13,
+    "layout": "vix"
+  },
+  "ghes": [
+    {
+      "codigo": "FPC_BLO_ADMO_A_01",
+      "nome": "Administrativo",
+      "riscos": [],
+      "exames": [
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "Analista Administrativo",
+        "Assistente Administrativo I",
+        "Assistente Administrativo II",
+        "Assistente de Telemetria",
+        "Controlador de Manutenção",
+        "Controlador de Manutenção Lider",
+        "Coordenador de Manutenção",
+        "Gerente de Contrato",
+        "Supervisor Operacional"
+      ],
+      "avisos": [
+        "INFO: cargo 'ANALISTA ADMINSTRATIVO' consta no Quadro Funcional mas não corresponde a nenhuma seção do PCMSO (grafia divergente ou seção ausente) — conferir.",
+        "INFO: cargo 'MOTORISTA DE ONIBUS' consta no Quadro Funcional mas não corresponde a nenhuma seção do PCMSO (grafia divergente ou seção ausente) — conferir.",
+        "INFO: cargo 'TECNICO SEG.TRABALHO PL' consta no Quadro Funcional mas não corresponde a nenhuma seção do PCMSO (grafia divergente ou seção ausente) — conferir."
+      ],
+      "ausencia_riscos": true,
+      "setor_override": "FPC_BLO_ADMO_A_01",
+      "pagina": 16
+    },
+    {
+      "codigo": "FPC_BLO_ADMO_A_02",
+      "nome": "Administrativo",
+      "riscos": [],
+      "exames": [
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "RX Coluna Lombo Sacra (AP e Perfil)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "RX Coluna Cervical (AP e Perfil)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "Porteiro"
+      ],
+      "avisos": [],
+      "ausencia_riscos": true,
+      "setor_override": "FPC_BLO_ADMO_A_02",
+      "pagina": 25
+    },
+    {
+      "codigo": "FPC_BLO_ADMO_A_03",
+      "nome": "Administrativo",
+      "riscos": [],
+      "exames": [
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Hemograma Completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "RX Coluna Lombo Sacra (AP e Perfil)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "RX Coluna Cervical (AP e Perfil)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "Almoxarife",
+        "Auxiliar de Almoxarife"
+      ],
+      "avisos": [],
+      "ausencia_riscos": true,
+      "setor_override": "FPC_BLO_ADMO_A_03",
+      "pagina": 26
+    },
+    {
+      "codigo": "FPC_BLO_OPE_A_03",
+      "nome": "Operacional",
+      "riscos": [
+        {
+          "nome": "Ruído Contínuo ou Intermitente",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Vibração de corpo inteiro (aceleração resultante de exposição normalizada - aren)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Vibração de corpo inteiro (Valor da Dose de Vibração Resultante - VDVR)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Trabalho em altura",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Hemograma Completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicose",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ECG",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "EEG",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "RX Coluna Lombo Sacra (AP e Perfil)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Oftalmológica",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "Motorista de Caminhão"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "FPC_BLO_OPE_A_03",
+      "pagina": 28
+    },
+    {
+      "codigo": "FPC_BLO_TPT_A_03",
+      "nome": "Operacional",
+      "riscos": [],
+      "exames": [
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Hemograma Completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Glicose",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ECG",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "RX Coluna Lombo Sacra (AP e Perfil)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Oftalmológica",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "Motorista Ônibus",
+        "Motorista Instrutor"
+      ],
+      "avisos": [],
+      "ausencia_riscos": true,
+      "setor_override": "FPC_BLO_TPT_A_03",
+      "pagina": 30
+    },
+    {
+      "codigo": "FPC_BLO_ADMO_A_04",
+      "nome": "Manutenção/Administrativo",
+      "riscos": [],
+      "exames": [
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "Coordenador Operacional",
+        "Técnico Seg. Trabalho PL"
+      ],
+      "avisos": [],
+      "ausencia_riscos": true,
+      "setor_override": "FPC_BLO_ADMO_A_04",
+      "pagina": 32
+    },
+    {
+      "codigo": "FPC_BLO_LAV_A_05",
+      "nome": "Operacional/Limpeza",
+      "riscos": [
+        {
+          "nome": "Hidrocarbonetos e outros compostos de carbono",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Produtos Químicos",
+          "grupo": "Químico"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Hemograma Completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Ácido Hipurico*",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Ácido Metil Hipurico*",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "RX Coluna Lombo Sacra (AP e Perfil)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "RX Coluna Cervical (AP e Perfil)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "Lavador"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "FPC_BLO_LAV_A_05",
+      "pagina": 35
+    },
+    {
+      "codigo": "FPC_BLO_MNT_A_06",
+      "nome": "Manutenção",
+      "riscos": [
+        {
+          "nome": "Ruído Contínuo ou Intermitente",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Temperaturas anormais (calor)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Radiação não ionizante",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Hidrocarbonetos e outros compostos de carbono",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Trabalho em altura",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Hemograma Completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Sódio",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "potássio",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Ureia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Creatinina",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Ácido Hipurico*",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Ácido Metil Hipurico*",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ECG",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "EEG",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Glicose",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "RX Coluna Lombo Sacra (AP e Perfil)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "RX Coluna Cervical (AP e Perfil)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "Mecânico I",
+        "Mecânico III"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "FPC_BLO_MNT_A_06",
+      "pagina": 36
+    },
+    {
+      "codigo": "FPC_BLO_MNT_A_07",
+      "nome": "Manutenção",
+      "riscos": [
+        {
+          "nome": "Ruído Contínuo ou Intermitente",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Hidrocarbonetos e outros compostos de carbono",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Temperaturas anormais (calor)",
+          "grupo": "Físico"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Hemograma Completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Ácido Hipurico**",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Ácido Metil Hipurico**",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Sódio",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Potássio",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Ureia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Creatinina",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "RX de Coluna Lombo Sacra (AP e Perfil)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "RX de Coluna Cervical (AP e Perfil)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "Borracheiro"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "FPC_BLO_MNT_A_07",
+      "pagina": 42
+    },
+    {
+      "codigo": "FPC_BLO_MNT_A_09",
+      "nome": "Manutenção",
+      "riscos": [
+        {
+          "nome": "Ruído Contínuo ou Intermitente",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Hidrocarbonetos e outros compostos de carbono",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Trabalho em Altura",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Hemograma Completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Ácido Hipurico*",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Ácido Metil Hipurico*",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ECG",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "EEG",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Glicose",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "RX Coluna Lombo Sacra (AP e Perfil)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "RX Coluna Cervical (AP e Perfil)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "Eletricista II"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "FPC_BLO_MNT_A_09",
+      "pagina": 43
+    },
+    {
+      "codigo": "FPC_BLO_MNT_A_11",
+      "nome": "Manutenção",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Vibrações localizadas (mão-braço)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Temperaturas anormais (calor)",
+          "grupo": "Físico"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Hemograma Completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Sódio",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Potássio",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Ureia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Creatinina",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "RX Coluna Lombo Sacra (AP e Perfil)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "RX Coluna Cervical (AP e Perfil)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "Lanterneiro"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "FPC_BLO_MNT_A_11",
+      "pagina": 44
+    },
+    {
+      "codigo": "FPC_BLO_LIMP_A_13",
+      "nome": "Operacional/Limpeza",
+      "riscos": [],
+      "exames": [
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "Auxiliar de Serviços Gerais"
+      ],
+      "avisos": [],
+      "ausencia_riscos": true,
+      "setor_override": "FPC_BLO_LIMP_A_13",
+      "pagina": 45
+    },
+    {
+      "codigo": "FPC_BLO_MNT_A_13",
+      "nome": "Operacional/Limpeza",
+      "riscos": [
+        {
+          "nome": "Ruído Contínuo ou Intermitente BRANCO",
+          "grupo": "Físico"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Exame Clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "Encarregado de Manutenção"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "FPC_BLO_MNT_A_13",
+      "pagina": 46
+    }
+  ]
+}

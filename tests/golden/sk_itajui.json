@@ -1,0 +1,4925 @@
+{
+  "meta": {
+    "empresa": "ITAJUI ENGENHARIA DE OBRAS LTDA",
+    "total_ghes": 34,
+    "layout": "occupare"
+  },
+  "ghes": [
+    {
+      "codigo": "GSE 1/MOTORISTA",
+      "nome": "MOTORISTA",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de trânsito (direção)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Atropelamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Colisão, abalroamento ou capotamento de veículo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Alcoolemia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 6,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação Psicológica",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Colesterol HDL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Colesterol LDL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Colesterol Total",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Creatinina",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ECG Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Gama GT",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Glicemia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X Coluna Lombo Sacra",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Toxicológico de Larga Janela de Detecção",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Transaminases (TGO - TGP)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Triglicerídeos",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Uréia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "MOTORISTA"
+      ],
+      "avisos": [
+        "INFO: exame 'ECG Eletrocardiograma' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar.",
+        "INFO: exame 'Raio X Coluna Lombo Sacra' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
+      ],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 1 - VEÍCULOS LEVES",
+      "pagina": 13
+    },
+    {
+      "codigo": "GSE 10/ELETRICISTA",
+      "nome": "ELETRICISTA",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Descarga atmosférica",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Eletricidade",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Mobiliário e/ou superfícies com quinas vivas, rebarbas ou elementos de fixação expostos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Piso escorregadio e/ou irregular",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de embarcação em meio aquático",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Ácido Hipúrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 6,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Ácido Metil-hipúrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Ácido Úrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Acuidade Visual e Senso Cromático",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Alcoolemia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 6,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação Psicológica",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Colesterol total e Fracionado",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Creatinina",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ECG Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Glicemia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X Coluna Lombo Sacra",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Triglicerídeos",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Uréia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "ELETRICISTA"
+      ],
+      "avisos": [
+        "INFO: exame 'Avaliação Psicológica' marcado como Periódico mas com periodicidade 'Uma única Vez' — mantido fora do perfil periódico; confirmar.",
+        "INFO: exame 'ECG Eletrocardiograma' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar.",
+        "INFO: exame 'Raio X Coluna Lombo Sacra' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
+      ],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 10 - EMBARCAÇÃO (MÁQUINAS) ELÉTRICA",
+      "pagina": 17
+    },
+    {
+      "codigo": "GSE 12/SOLDADOR TERMOFUSÃO",
+      "nome": "SOLDADOR TERMOFUSÃO",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Levantamento e transporte manual de peso",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga muscular dinâmica",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de pessoa contra objeto parado",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queimadura",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "SOLDADOR TERMOFUSÃO"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 12 - CANTEIRO A CÉU ABERTO (TERRESTRE)",
+      "pagina": 21
+    },
+    {
+      "codigo": "GSE 16/COORDENADOR DE OBRAS",
+      "nome": "COORDENADOR DE OBRAS",
+      "riscos": [
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de trânsito (direção)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "COORDENADOR DE OBRAS"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 16 - SALA ADMINISTRATIVA CORPORATIVA",
+      "pagina": 24
+    },
+    {
+      "codigo": "GSE 16/GERENTE DE PLANEJAMENTO",
+      "nome": "GERENTE DE PLANEJAMENTO",
+      "riscos": [
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de trânsito (direção)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "GERENTE DE PLANEJAMENTO"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 16 - SALA ADMINISTRATIVA CORPORATIVA",
+      "pagina": 26
+    },
+    {
+      "codigo": "GSE 16/GESTOR DE CONTRATOS",
+      "nome": "GESTOR DE CONTRATOS",
+      "riscos": [
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de trânsito (direção)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "GESTOR DE CONTRATOS"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 16 - SALA ADMINISTRATIVA CORPORATIVA",
+      "pagina": 28
+    },
+    {
+      "codigo": "GSE 17/PEDREIRO",
+      "nome": "PEDREIRO",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Temperaturas anormais - calor",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Cromo e seus compostos tóxicos",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Fumos metálicos (Fe - ferro)",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Fumos metálicos (Zn - zinco)",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Manganês e seus compostos",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Níquel e seus compostos tóxicos.",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Óxido de Alumínio",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sílica Cristalina Respirável",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Tolueno",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Xileno",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Levantamento e transporte manual de peso",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Outras situações causadoras de estresse físicos e/ou psíquicos",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Corte de pele ou membros",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Exposição à energia elétrica",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Iluminação inadequada",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de pessoa contra objeto em movimento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Mobiliário e/ou superfícies com quinas vivas, rebarbas ou elementos de fixação expostos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de embarcação em meio aquático",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queimadura",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Ácido Hipúrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 6,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Ácido Metil-hipúrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria Tonal",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Creatinina",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Espirometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Gama GT",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X Coluna Lombar",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X Tórax PA com laudo OIT 2000",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Transaminases (TGO - TGP)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Uréia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "PEDREIRO"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 17 - CANTEIRO COBERTO (TERRESTRE) SOLDA",
+      "pagina": 30
+    },
+    {
+      "codigo": "GSE 17/PINTOR",
+      "nome": "PINTOR",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Temperaturas anormais - calor",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Cromo e seus compostos tóxicos",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Fumos metálicos (Fe - ferro)",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Fumos metálicos (Zn - zinco)",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Manganês e seus compostos",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Níquel e seus compostos tóxicos.",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Óxido de Alumínio",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sílica Cristalina Respirável",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Tolueno",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Xileno",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Levantamento e transporte manual de peso",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Outras situações causadoras de estresse físicos e/ou psíquicos",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Corte de pele ou membros",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Exposição à energia elétrica",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Iluminação inadequada",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de pessoa contra objeto em movimento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Mobiliário e/ou superfícies com quinas vivas, rebarbas ou elementos de fixação expostos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de embarcação em meio aquático",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queimadura",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Ácido metil - hipúrico na urina",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 6,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Orto Cresol Urinario",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Tolueno Sanguínio",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Tolueno Urinário",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Ácido Hipúrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 6,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "PINTOR"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 17 - CANTEIRO COBERTO (TERRESTRE) SOLDA",
+      "pagina": 36
+    },
+    {
+      "codigo": "GSE 18/OPERADOR DE ESCAVADEIRA",
+      "nome": "OPERADOR DE ESCAVADEIRA",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Vibração de corpo inteiro (aceleração resultante de exposição normalizada - aren)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Vibração Mãos e Braços",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Óleo mineral",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de trânsito (direção)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Atropelamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Colisão, abalroamento ou capotamento de veículo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Descarga atmosférica",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Piso escorregadio e/ou irregular",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": false,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Radiografia das Articulações Escapuloumerais",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Raio X Coluna Lombo Sacra",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "OPERADOR DE ESCAVADEIRA"
+      ],
+      "avisos": [
+        "INFO: exame 'Raio X Coluna Lombo Sacra' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
+      ],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 18 - MÁQUINAS PESADAS TERRESTRES",
+      "pagina": 42
+    },
+    {
+      "codigo": "GSE 2/MOTORISTA/OPERADOR DE MUNK",
+      "nome": "MOTORISTA/OPERADOR DE MUNK",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Vibração de corpo inteiro (aceleração resultante de exposição normalizada - aren)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Óleo mineral - pasta lubrificante",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de trânsito (direção)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Atropelamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Colisão, abalroamento ou capotamento de veículo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Esmagamento (pés)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Alcoolemia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 6,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação Psicológica",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Colesterol HDL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Colesterol LDL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Colesterol Total",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Creatinina",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ECG Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Gama GT",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Glicemia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X Coluna Lombo Sacra",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Toxicológico de Larga Janela de Detecção",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Transaminases (TGO - TGP)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Triglicerídeos",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Uréia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "MOTORISTA/OPERADOR DE MUNK"
+      ],
+      "avisos": [
+        "INFO: exame 'Avaliação Psicológica' marcado como Periódico mas com periodicidade 'Uma única Vez' — mantido fora do perfil periódico; confirmar.",
+        "INFO: exame 'ECG Eletrocardiograma' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar.",
+        "INFO: exame 'Raio X Coluna Lombo Sacra' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
+      ],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 2 - VEÍCULOS PESADOS",
+      "pagina": 46
+    },
+    {
+      "codigo": "GSE 4/GERENTE DE OBRAS SUBAQUÁTICAS",
+      "nome": "GERENTE DE OBRAS SUBAQUÁTICAS",
+      "riscos": [
+        {
+          "nome": "Condições hiperbáricas",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Umidade",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Esforço físico intenso",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Afogamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Outros riscos de acidentes - Baixa visibilidade",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Outros riscos de acidentes - Sujeiras no canal auditivo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Acuidade Visual e Senso Cromático",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Alcoolemia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 6,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação com Médico Hiperbárico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicológica",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ECG Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Ecocardiograma Transtoraxico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "EEG Eletroencefalograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Espirometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Glicose",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Parasitológico de fezes",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Radiografia das Articulações Escapuloumerais",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X Articulações Coxo-femoral (cada lado)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 48,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X de Ambos os Joelhos",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X Tórax PA com laudo OIT 2000",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Sorologia apaa Lues (VDRL)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Teste Ergométrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Urina parcial + sed. corado",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "GERENTE DE OBRAS SUBAQUÁTICAS"
+      ],
+      "avisos": [
+        "INFO: exame 'Avaliação Psicológica' marcado como Periódico mas com periodicidade 'Uma única Vez' — mantido fora do perfil periódico; confirmar.",
+        "INFO: exame 'ECG Eletrocardiograma' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
+      ],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 4 - CANTEIRO A CÉU ABERTO (AQUÁTICO - MERGULHO)",
+      "pagina": 51
+    },
+    {
+      "codigo": "GSE 4/MERGULHADOR RASO B",
+      "nome": "MERGULHADOR RASO B",
+      "riscos": [
+        {
+          "nome": "Condições hiperbáricas",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Umidade",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Esforço físico intenso",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Afogamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Outros riscos de acidentes - Baixa visibilidade",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Outros riscos de acidentes - Sujeiras no canal auditivo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Acuidade Visual e Senso Cromático",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Alcoolemia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 6,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação com Médico Hiperbárico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicológica",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ECG Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Ecocardiograma Transtoraxico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "EEG Eletroencefalograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Espirometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Glicose",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Parasitológico de fezes",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Radiografia das Articulações Escapuloumerais",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X Articulações Coxo-femoral (cada lado)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 48,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X de Ambos os Joelhos",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X Tórax PA com laudo OIT 2000",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Sorologia apaa Lues (VDRL)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Teste Ergométrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Urina parcial + sed. corado",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "MERGULHADOR RASO B"
+      ],
+      "avisos": [
+        "INFO: exame 'Avaliação Psicológica' marcado como Periódico mas com periodicidade 'Uma única Vez' — mantido fora do perfil periódico; confirmar.",
+        "INFO: exame 'ECG Eletrocardiograma' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
+      ],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 4 - CANTEIRO A CÉU ABERTO (AQUÁTICO - MERGULHO)",
+      "pagina": 56
+    },
+    {
+      "codigo": "GSE 4/MERGULHADOR RASO C",
+      "nome": "MERGULHADOR RASO C",
+      "riscos": [
+        {
+          "nome": "Condições hiperbáricas",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Umidade",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Esforço físico intenso",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Afogamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Outros riscos de acidentes - Baixa visibilidade",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Outros riscos de acidentes - Sujeiras no canal auditivo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Acuidade Visual e Senso Cromático",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Alcoolemia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 6,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação com Médico Hiperbárico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicológica",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ECG Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Ecocardiograma Transtoraxico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "EEG Eletroencefalograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Espirometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Glicose",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Parasitológico de fezes",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Radiografia das Articulações Escapuloumerais",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X Articulações Coxo-femoral (cada lado)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 48,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X de Ambos os Joelhos",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X Tórax PA com laudo OIT 2000",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Sorologia apaa Lues (VDRL)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Teste Ergométrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Urina parcial + sed. corado",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "MERGULHADOR RASO C"
+      ],
+      "avisos": [
+        "INFO: exame 'Avaliação Psicológica' marcado como Periódico mas com periodicidade 'Uma única Vez' — mantido fora do perfil periódico; confirmar.",
+        "INFO: exame 'ECG Eletrocardiograma' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
+      ],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 4 - CANTEIRO A CÉU ABERTO (AQUÁTICO - MERGULHO)",
+      "pagina": 61
+    },
+    {
+      "codigo": "GSE 4/SUPERVISOR DE MERGULHO RASO B",
+      "nome": "SUPERVISOR DE MERGULHO RASO B",
+      "riscos": [
+        {
+          "nome": "Condições hiperbáricas",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Umidade",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Esforço físico intenso",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Afogamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Outros riscos de acidentes - Baixa visibilidade",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Outros riscos de acidentes - Sujeiras no canal auditivo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Acuidade Visual e Senso Cromático",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Alcoolemia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 6,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação com Médico Hiperbárico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicológica",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ECG Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Ecocardiograma Transtoraxico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "EEG Eletroencefalograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Espirometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Glicose",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Parasitológico de fezes",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Radiografia das Articulações Escapuloumerais",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X Articulações Coxo-femoral (cada lado)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 48,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X de Ambos os Joelhos",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X Tórax PA com laudo OIT 2000",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Sorologia apaa Lues (VDRL)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Teste Ergométrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Urina parcial + sed. corado",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "SUPERVISOR DE MERGULHO RASO B"
+      ],
+      "avisos": [
+        "INFO: exame 'Avaliação Psicológica' marcado como Periódico mas com periodicidade 'Uma única Vez' — mantido fora do perfil periódico; confirmar.",
+        "INFO: exame 'ECG Eletrocardiograma' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
+      ],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 4 - CANTEIRO A CÉU ABERTO (AQUÁTICO - MERGULHO)",
+      "pagina": 66
+    },
+    {
+      "codigo": "GSE 4/SUPERVISOR DE MERGULHO RASO C",
+      "nome": "SUPERVISOR DE MERGULHO RASO C",
+      "riscos": [
+        {
+          "nome": "Condições hiperbáricas",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Umidade",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Esforço físico intenso",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Afogamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Outros riscos de acidentes - Baixa visibilidade",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Outros riscos de acidentes - Sujeiras no canal auditivo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Acuidade Visual e Senso Cromático",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Alcoolemia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 6,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação com Médico Hiperbárico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Psicológica",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ECG Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Ecocardiograma Transtoraxico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "EEG Eletroencefalograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Espirometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Glicose",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Parasitológico de fezes",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Radiografia das Articulações Escapuloumerais",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X Articulações Coxo-femoral (cada lado)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 48,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X de Ambos os Joelhos",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X Tórax PA com laudo OIT 2000",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Sorologia apaa Lues (VDRL)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Teste Ergométrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Urina parcial + sed. corado",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "SUPERVISOR DE MERGULHO RASO C"
+      ],
+      "avisos": [
+        "INFO: exame 'Avaliação Psicológica' marcado como Periódico mas com periodicidade 'Uma única Vez' — mantido fora do perfil periódico; confirmar.",
+        "INFO: exame 'ECG Eletrocardiograma' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
+      ],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 4 - CANTEIRO A CÉU ABERTO (AQUÁTICO - MERGULHO)",
+      "pagina": 71
+    },
+    {
+      "codigo": "GSE 5/MARINHEIRO AUXILIAR DE MÁQUINAS",
+      "nome": "MARINHEIRO AUXILIAR DE MÁQUINAS",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de trânsito (direção)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Atropelamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Colisão, abalroamento ou capotamento de veículo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Descarga atmosférica",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Mobiliário e/ou superfícies com quinas vivas, rebarbas ou elementos de fixação expostos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Piso escorregadio e/ou irregular",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de embarcação em meio aquático",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Ácido Hipúrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 6,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Ácido Metil-hipúrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Ácido Úrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Acuidade Visual e Senso Cromático",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Alcoolemia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 6,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação Psicológica",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Colesterol total e Fracionado",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Creatinina",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ECG Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Glicemia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Raio X Coluna Lombo Sacra",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Triglicerídeos",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Uréia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "MARINHEIRO AUXILIAR DE MÁQUINAS"
+      ],
+      "avisos": [
+        "INFO: exame 'Avaliação Psicológica' marcado como Periódico mas com periodicidade 'Uma única Vez' — mantido fora do perfil periódico; confirmar.",
+        "INFO: exame 'ECG Eletrocardiograma' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar.",
+        "INFO: exame 'Raio X Coluna Lombo Sacra' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
+      ],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 5 - EMBARCAÇÃO (MÁQUINAS)",
+      "pagina": 76
+    },
+    {
+      "codigo": "GSE 6/COORDENADOR DE HIDROGRAFIA",
+      "nome": "COORDENADOR DE HIDROGRAFIA",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Afogamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda da embarcação",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Ácido Úrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Acuidade Visual e Senso Cromático",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Alcoolemia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 6,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação Psicológica",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Colesterol total e Fracionado",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Coprocultura",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Creatinina",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ECG Eletrocardiograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Glicemia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Parasitológico de fezes",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Raio X Coluna Lombo Sacra",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Sorologia apaa Lues (VDRL)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Triglicerídeos",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Uréia",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "COORDENADOR DE HIDROGRAFIA"
+      ],
+      "avisos": [
+        "INFO: exame 'Avaliação Psicológica' marcado como Periódico mas com periodicidade 'Uma única Vez' — mantido fora do perfil periódico; confirmar.",
+        "INFO: exame 'ECG Eletrocardiograma' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar.",
+        "INFO: exame 'Raio X Coluna Lombo Sacra' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
+      ],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 6 - EMBARCAÇÃO (CONVÉS)",
+      "pagina": 81
+    },
+    {
+      "codigo": "GSE 6/MARINHEIRO AUXILIAR DE CONVÉS",
+      "nome": "MARINHEIRO AUXILIAR DE CONVÉS",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Afogamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda da embarcação",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "MARINHEIRO AUXILIAR DE CONVÉS"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 6 - EMBARCAÇÃO (CONVÉS)",
+      "pagina": 85
+    },
+    {
+      "codigo": "GSE 7/ASSISTENTE ADMINISTRATIVO DE OBRAS",
+      "nome": "ASSISTENTE ADMINISTRATIVO DE OBRAS",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de trânsito (direção)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "ASSISTENTE ADMINISTRATIVO DE OBRAS"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 7 - SALA ADMINISTRATIVA OBRA",
+      "pagina": 87
+    },
+    {
+      "codigo": "GSE 7/AUXILIAR ADMINISTRATIVO DE OBRAS",
+      "nome": "AUXILIAR ADMINISTRATIVO DE OBRAS",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de trânsito (direção)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "AUXILIAR ADMINISTRATIVO DE OBRAS"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 7 - SALA ADMINISTRATIVA OBRA",
+      "pagina": 90
+    },
+    {
+      "codigo": "GSE 7/GERENTE DE OBRAS",
+      "nome": "GERENTE DE OBRAS",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de trânsito (direção)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "GERENTE DE OBRAS"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 7 - SALA ADMINISTRATIVA OBRA",
+      "pagina": 92
+    },
+    {
+      "codigo": "GSE 7/SUPERVISOR DE SSMA",
+      "nome": "SUPERVISOR DE SSMA",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de trânsito (direção)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "SUPERVISOR DE SSMA"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 7 - SALA ADMINISTRATIVA OBRA",
+      "pagina": 94
+    },
+    {
+      "codigo": "GSE 7/TÉCNICO (A) DA QUALIDADE",
+      "nome": "TÉCNICO (A) DA QUALIDADE",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de trânsito (direção)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "TÉCNICO (A) DA QUALIDADE"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 7 - SALA ADMINISTRATIVA OBRA",
+      "pagina": 96
+    },
+    {
+      "codigo": "GSE 7/TÉCNICO DE PLANEJAMENTO",
+      "nome": "TÉCNICO DE PLANEJAMENTO",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de trânsito (direção)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "TÉCNICO DE PLANEJAMENTO"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 7 - SALA ADMINISTRATIVA OBRA",
+      "pagina": 98
+    },
+    {
+      "codigo": "GSE 7/TÉCNICO EM SEGURANÇA DO TRABALHO",
+      "nome": "TÉCNICO EM SEGURANÇA DO TRABALHO",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Acidente de trânsito (direção)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "TÉCNICO EM SEGURANÇA DO TRABALHO"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 7 - SALA ADMINISTRATIVA OBRA",
+      "pagina": 100
+    },
+    {
+      "codigo": "GSE 8/ARMADOR",
+      "nome": "ARMADOR",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sobrecarga muscular dinâmica",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "ARMADOR"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 8 - CANTEIRO A CÉU ABERTO (TERRESTRE)",
+      "pagina": 102
+    },
+    {
+      "codigo": "GSE 8/AUXILIAR DE OBRAS MARÍTIMAS",
+      "nome": "AUXILIAR DE OBRAS MARÍTIMAS",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sobrecarga muscular dinâmica",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "AUXILIAR DE OBRAS MARÍTIMAS"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 8 - CANTEIRO A CÉU ABERTO (TERRESTRE)",
+      "pagina": 105
+    },
+    {
+      "codigo": "GSE 8/CARPINTEIRO",
+      "nome": "CARPINTEIRO",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sobrecarga muscular dinâmica",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "CARPINTEIRO"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 8 - CANTEIRO A CÉU ABERTO (TERRESTRE)",
+      "pagina": 108
+    },
+    {
+      "codigo": "GSE 8/ENCARREGADO DE OBRAS MARÍTIMAS",
+      "nome": "ENCARREGADO DE OBRAS MARÍTIMAS",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sobrecarga muscular dinâmica",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "ENCARREGADO DE OBRAS MARÍTIMAS"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 8 - CANTEIRO A CÉU ABERTO (TERRESTRE)",
+      "pagina": 111
+    },
+    {
+      "codigo": "GSE 8/LÍDER OPERACIONAL",
+      "nome": "LÍDER OPERACIONAL",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sobrecarga muscular dinâmica",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "LÍDER OPERACIONAL"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 8 - CANTEIRO A CÉU ABERTO (TERRESTRE)",
+      "pagina": 114
+    },
+    {
+      "codigo": "GSE 8/MESTRE DE OBRAS",
+      "nome": "MESTRE DE OBRAS",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sobrecarga muscular dinâmica",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "MESTRE DE OBRAS"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 8 - CANTEIRO A CÉU ABERTO (TERRESTRE)",
+      "pagina": 117
+    },
+    {
+      "codigo": "GSE 8/OFICIAL DE OBRAS MARÍTIMAS",
+      "nome": "OFICIAL DE OBRAS MARÍTIMAS",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sobrecarga muscular dinâmica",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "OFICIAL DE OBRAS MARÍTIMAS"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 8 - CANTEIRO A CÉU ABERTO (TERRESTRE)",
+      "pagina": 120
+    },
+    {
+      "codigo": "GSE 8/SUPERVISOR DE OBRAS",
+      "nome": "SUPERVISOR DE OBRAS",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sobrecarga muscular dinâmica",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "SUPERVISOR DE OBRAS"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 8 - CANTEIRO A CÉU ABERTO (TERRESTRE)",
+      "pagina": 123
+    },
+    {
+      "codigo": "GSE 9/AUXILIAR DE SERVIÇOS GERAIS",
+      "nome": "AUXILIAR DE SERVIÇOS GERAIS",
+      "riscos": [
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária)",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sobrecarga muscular dinâmica",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de mesmo nível",
+          "grupo": "Acidente"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade Visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação Clínica Abrangendo Anamnese Ocupacional, Exames Físicos e Mentais-",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Fator RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "AUXILIAR DE SERVIÇOS GERAIS"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 9 - SALA ADMINISTRATIVA CORPORATIVA",
+      "pagina": 126
+    }
+  ]
+}

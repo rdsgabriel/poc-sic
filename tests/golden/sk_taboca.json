@@ -1,0 +1,3152 @@
+{
+  "meta": {
+    "empresa": "Mineracao Taboca S A",
+    "total_ghes": 15,
+    "layout": "mafra"
+  },
+  "ghes": [
+    {
+      "codigo": "GSE 7/ANALISTA ADMINISTRATIVO DE OBRAS",
+      "nome": "ANALISTA ADMINISTRATIVO DE OBRAS",
+      "riscos": [
+        {
+          "nome": "Quedas do mesmo nível",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Acidente de trânsito (direção, derrapagem, aquaplanagem, batida contra, colisão))",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Desabamento de barragens",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Aspectos psicológicos",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Trabalho em turno e noturno",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Exposição a temperaturas ambientais elevadas (Calor Natural / Conforto Térmico)",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Radiação Ionizante eSocial 02.01.009",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária) eSocial 02.01.001",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sílica livre eSocial 01.18.001",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sílica Cristalina Respiravel eSocial 01.18.001",
+          "grupo": "Químico"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria tonal ocupacional",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Hemograma completo com contagem de plaquetas ou frações",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Prova função pulmonar completa (ou espirometria) (1057)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Rx Tórax (PA) Padrão OIT (o mais recente), com dois leitores habilitados (1078)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "ANALISTA ADMINISTRATIVO DE OBRAS"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 7 - Sala Administrativa Obra",
+      "pagina": 9
+    },
+    {
+      "codigo": "GSE 6/COORDENADOR DE HIDROGRAFIA",
+      "nome": "COORDENADOR DE HIDROGRAFIA",
+      "riscos": [
+        {
+          "nome": "Queda da embarcação",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas do mesmo nível",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Afogamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Afogamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Acidente de trânsito (direção, derrapagem, aquaplanagem, batida contra, colisão))",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Desabamento de barragens",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Batida Contra",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda com diferença de nível (Trabalho em altura)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Aspectos psicológicos",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Exposição a temperaturas ambientais elevadas (Calor Natural / Conforto Térmico)",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Trabalho em turno e noturno",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Radiação Ionizante eSocial 02.01.009",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Condições climáticas/intempéries",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária) eSocial 02.01.001",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sílica livre eSocial 01.18.001",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sílica Cristalina Respiravel eSocial 01.18.001",
+          "grupo": "Químico"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Ácido úrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Acuidade visual com senso cromático",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "anamnese e exame físico",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Audiometria tonal ocupacional",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Eletrocardiograma (ECG)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletroencefalograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Função renal (ureia + creatinina)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Glicemia jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo com contagem de plaquetas ou frações",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Perfil etílico",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Perfil lipídico (colesterol total, LDL, HDL, triglicerídeos)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Prova função pulmonar completa (ou espirometria) (1057)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Radiografia de Coluna Lombo-Sacra",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Raio-x escapuloumeral",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Rx Tórax (PA) Padrão OIT (o mais recente), com dois leitores habilitados (1078)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "COORDENADOR DE HIDROGRAFIA"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 6 - Embarcação (Convés)",
+      "pagina": 16
+    },
+    {
+      "codigo": "GSE 7/COORDENADOR DE OBRAS",
+      "nome": "COORDENADOR DE OBRAS",
+      "riscos": [
+        {
+          "nome": "Quedas do mesmo nível",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Acidente de trânsito (direção, derrapagem, aquaplanagem, batida contra, colisão))",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Desabamento de barragens",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Aspectos psicológicos",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Trabalho em turno e noturno",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Exposição a temperaturas ambientais elevadas (Calor Natural / Conforto Térmico)",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Radiação Ionizante eSocial 02.01.009",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária) eSocial 02.01.001",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sílica livre eSocial 01.18.001",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sílica Cristalina Respiravel eSocial 01.18.001",
+          "grupo": "Químico"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria tonal ocupacional",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Hemograma completo com contagem de plaquetas ou frações",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Prova função pulmonar completa (ou espirometria) (1057)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Rx Tórax (PA) Padrão OIT (o mais recente), com dois leitores habilitados (1078)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "COORDENADOR DE OBRAS"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 7 - Sala Administrativa Obra",
+      "pagina": 27
+    },
+    {
+      "codigo": "GSE 10/ELETRICISTA",
+      "nome": "ELETRICISTA",
+      "riscos": [
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Mobiliário e/ou superfícies com quinas vivas, rebarbas ou elementos de fixação expostos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de embarcação em meio aquático",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Descarga atmosférica",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas do mesmo nível",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Piso escorregadio e/ou irregular",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Eletricidade",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Incêndio ou explosão",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Arco Elétrico (Efeitos Térmicos e Radiação Luminosa)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque Elétrico (Contato Direto ou Indireto)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Acidente de trânsito (direção, derrapagem, aquaplanagem, batida contra, colisão))",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Desabamento de barragens",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Batida Contra",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda com diferença de nível (Trabalho em altura)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Aspectos psicológicos",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Exposição a temperaturas ambientais elevadas (Calor Natural / Conforto Térmico)",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Trabalho em turno e noturno",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Radiação Ionizante eSocial 02.01.009",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária) eSocial 02.01.001",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sílica livre eSocial 01.18.001",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sílica Cristalina Respiravel eSocial 01.18.001",
+          "grupo": "Químico"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Ácido úrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Acuidade visual com senso cromático",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "anamnese e exame físico",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Audiometria tonal ocupacional",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Avaliação psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Eletrocardiograma (ECG)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletroencefalograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Função renal (ureia + creatinina)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Glicemia jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo com contagem de plaquetas ou frações",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Perfil etílico",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Perfil lipídico (colesterol total, LDL, HDL, triglicerídeos)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Prova função pulmonar completa (ou espirometria) (1057)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Rx Tórax (PA) Padrão OIT (o mais recente), com dois leitores habilitados (1078)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "ELETRICISTA"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 10 - Embarcação (Máquinas) Elétrica",
+      "pagina": 34
+    },
+    {
+      "codigo": "GSE 8/ENCARREGADO DE OBRAS MARÍTIMAS",
+      "nome": "ENCARREGADO DE OBRAS MARÍTIMAS",
+      "riscos": [
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas do mesmo nível",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Acidente de trânsito (direção, derrapagem, aquaplanagem, batida contra, colisão))",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Desabamento de barragens",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Sobrecarga muscular dinâmica",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Aspectos psicológicos",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Exposição a temperaturas ambientais elevadas (Calor Natural / Conforto Térmico)",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Trabalho em turno e noturno",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Radiação Ionizante eSocial 02.01.009",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Condições climáticas/intempéries",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária) eSocial 02.01.001",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sílica livre eSocial 01.18.001",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sílica Cristalina Respiravel eSocial 01.18.001",
+          "grupo": "Químico"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria tonal ocupacional",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Eletrocardiograma (ECG)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletroencefalograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame clínico",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo com contagem de plaquetas ou frações",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Prova função pulmonar completa (ou espirometria) (1057)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Radiografia de Coluna Lombo-Sacra",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Raio-x escapuloumeral",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Rx Tórax (PA) Padrão OIT (o mais recente), com dois leitores habilitados (1078)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "ENCARREGADO DE OBRAS MARÍTIMAS"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 8 - Canteiro a Céu Aberto (Terrestre)",
+      "pagina": 47
+    },
+    {
+      "codigo": "GSE 7/GERENTE DE OBRAS",
+      "nome": "GERENTE DE OBRAS",
+      "riscos": [
+        {
+          "nome": "Quedas do mesmo nível",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Acidente de trânsito (direção, derrapagem, aquaplanagem, batida contra, colisão))",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Desabamento de barragens",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Aspectos psicológicos",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Trabalho em turno e noturno",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Exposição a temperaturas ambientais elevadas (Calor Natural / Conforto Térmico)",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Radiação Ionizante eSocial 02.01.009",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária) eSocial 02.01.001",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sílica livre eSocial 01.18.001",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sílica Cristalina Respiravel eSocial 01.18.001",
+          "grupo": "Químico"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria tonal ocupacional",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Hemograma completo com contagem de plaquetas ou frações",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Prova função pulmonar completa (ou espirometria) (1057)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Rx Tórax (PA) Padrão OIT (o mais recente), com dois leitores habilitados (1078)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "GERENTE DE OBRAS"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 7 - Sala Administrativa Obra",
+      "pagina": 56
+    },
+    {
+      "codigo": "GSE 8/LÍDER OPERACIONAL",
+      "nome": "LÍDER OPERACIONAL",
+      "riscos": [
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas do mesmo nível",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Acidente de trânsito (direção, derrapagem, aquaplanagem, batida contra, colisão))",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Desabamento de barragens",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Sobrecarga muscular dinâmica",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Aspectos psicológicos",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Exposição a temperaturas ambientais elevadas (Calor Natural / Conforto Térmico)",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Trabalho em turno e noturno",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Radiação Ionizante eSocial 02.01.009",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Condições climáticas/intempéries",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária) eSocial 02.01.001",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sílica livre eSocial 01.18.001",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sílica Cristalina Respiravel eSocial 01.18.001",
+          "grupo": "Químico"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria tonal ocupacional",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Eletrocardiograma (ECG)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletroencefalograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame clínico",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo com contagem de plaquetas ou frações",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Prova função pulmonar completa (ou espirometria) (1057)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Radiografia de Coluna Lombo-Sacra",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Raio-x escapuloumeral",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Rx Tórax (PA) Padrão OIT (o mais recente), com dois leitores habilitados (1078)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "LÍDER OPERACIONAL"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 8 - Canteiro a Céu Aberto (Terrestre)",
+      "pagina": 63
+    },
+    {
+      "codigo": "GSE 5/MAQUINISTA",
+      "nome": "MAQUINISTA",
+      "riscos": [
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Mobiliário e/ou superfícies com quinas vivas, rebarbas ou elementos de fixação expostos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda de embarcação em meio aquático",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Descarga atmosférica",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas do mesmo nível",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Piso escorregadio e/ou irregular",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Acidente de trânsito (direção, derrapagem, aquaplanagem, batida contra, colisão))",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Desabamento de barragens",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda com diferença de nível (Trabalho em altura)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Aspectos psicológicos",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Exposição a temperaturas ambientais elevadas (Calor Natural / Conforto Térmico)",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Trabalho em turno e noturno",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Radiação Ionizante eSocial 02.01.009",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Radiação não ionizante",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária) eSocial 02.01.001",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Óleo mineral eSocial 01.17.001",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sílica livre eSocial 01.18.001",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sílica Cristalina Respiravel eSocial 01.18.001",
+          "grupo": "Químico"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Ácido úrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Acuidade visual com senso cromático",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "anamnese e exame físico",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Audiometria tonal ocupacional",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Eletrocardiograma (ECG)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletroencefalograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Função hepática (TGO, TGP, GGT)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Função renal (ureia + creatinina)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Glicemia jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo com contagem de plaquetas ou frações",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Perfil etílico",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Perfil lipídico (colesterol total, LDL, HDL, triglicerídeos)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Prova função pulmonar completa (ou espirometria) (1057)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Radiografia de Coluna Lombo-Sacra",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Rx Tórax (PA) Padrão OIT (o mais recente), com dois leitores habilitados (1078)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "MAQUINISTA"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 5 - Embarcação (Máquinas)",
+      "pagina": 73
+    },
+    {
+      "codigo": "GSE 6/MARINHEIRO AUXILIAR DE CONVÉS",
+      "nome": "MARINHEIRO AUXILIAR DE CONVÉS",
+      "riscos": [
+        {
+          "nome": "Queda da embarcação",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas do mesmo nível",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Afogamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Afogamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Acidente de trânsito (direção, derrapagem, aquaplanagem, batida contra, colisão))",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Desabamento de barragens",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Batida Contra",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda com diferença de nível (Trabalho em altura)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Aspectos psicológicos",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Exposição a temperaturas ambientais elevadas (Calor Natural / Conforto Térmico)",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Trabalho em turno e noturno",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Radiação Ionizante eSocial 02.01.009",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Condições climáticas/intempéries",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária) eSocial 02.01.001",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sílica livre eSocial 01.18.001",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sílica Cristalina Respiravel eSocial 01.18.001",
+          "grupo": "Químico"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Ácido úrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Acuidade visual com senso cromático",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "anamnese e exame físico",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Audiometria tonal ocupacional",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Eletrocardiograma (ECG)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletroencefalograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Função renal (ureia + creatinina)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Glicemia jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo com contagem de plaquetas ou frações",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Perfil etílico",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Perfil lipídico (colesterol total, LDL, HDL, triglicerídeos)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Prova função pulmonar completa (ou espirometria) (1057)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Radiografia de Coluna Lombo-Sacra",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Raio-x escapuloumeral",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Rx Tórax (PA) Padrão OIT (o mais recente), com dois leitores habilitados (1078)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "MARINHEIRO AUXILIAR DE CONVÉS"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 6 - Embarcação (Convés)",
+      "pagina": 84
+    },
+    {
+      "codigo": "GSE 11/MECÂNICO",
+      "nome": "MECÂNICO",
+      "riscos": [
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas do mesmo nível",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Aprisionamento ou Enrosco",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Acidente de trânsito (direção, derrapagem, aquaplanagem, batida contra, colisão))",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Desabamento de barragens",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Batida Contra",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda com diferença de nível (Trabalho em altura)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Sobrecarga muscular dinâmica",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Aspectos psicológicos",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Exposição a temperaturas ambientais elevadas (Calor Natural / Conforto Térmico)",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Trabalho em turno e noturno",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Radiação Ionizante eSocial 02.01.009",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Condições climáticas/intempéries",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária) eSocial 02.01.001",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Óleo mineral eSocial 01.17.001",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sílica livre eSocial 01.18.001",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sílica Cristalina Respiravel eSocial 01.18.001",
+          "grupo": "Químico"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria tonal ocupacional",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Eletrocardiograma (ECG)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletroencefalograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame clínico",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Função hepática (TGO, TGP, GGT)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Hemograma completo com contagem de plaquetas ou frações",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Prova função pulmonar completa (ou espirometria) (1057)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Radiografia de Coluna Lombo-Sacra",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Raio-x escapuloumeral",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Rx Tórax (PA) Padrão OIT (o mais recente), com dois leitores habilitados (1078)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "MECÂNICO"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 11 - Canteiro a Céu Aberto (Terrestre)",
+      "pagina": 95
+    },
+    {
+      "codigo": "GSE 11/MECÂNICO CHEFE",
+      "nome": "MECÂNICO CHEFE",
+      "riscos": [
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas do mesmo nível",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Aprisionamento ou Enrosco",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Acidente de trânsito (direção, derrapagem, aquaplanagem, batida contra, colisão))",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Desabamento de barragens",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Batida Contra",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda com diferença de nível (Trabalho em altura)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Sobrecarga muscular dinâmica",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Aspectos psicológicos",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Exposição a temperaturas ambientais elevadas (Calor Natural / Conforto Térmico)",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Trabalho em turno e noturno",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Radiação Ionizante eSocial 02.01.009",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Condições climáticas/intempéries",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária) eSocial 02.01.001",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Óleo mineral eSocial 01.17.001",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sílica livre eSocial 01.18.001",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sílica Cristalina Respiravel eSocial 01.18.001",
+          "grupo": "Químico"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria tonal ocupacional",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Eletrocardiograma (ECG)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletroencefalograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame clínico",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Função hepática (TGO, TGP, GGT)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Hemograma completo com contagem de plaquetas ou frações",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Prova função pulmonar completa (ou espirometria) (1057)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Radiografia de Coluna Lombo-Sacra",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Raio-x escapuloumeral",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Rx Tórax (PA) Padrão OIT (o mais recente), com dois leitores habilitados (1078)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "MECÂNICO CHEFE"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 11 - Canteiro a Céu Aberto (Terrestre)",
+      "pagina": 107
+    },
+    {
+      "codigo": "MESTRE DE OBRAS",
+      "nome": "MESTRE DE OBRAS",
+      "riscos": [
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas do mesmo nível",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Acidente de trânsito (direção, derrapagem, aquaplanagem, batida contra, colisão))",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Desabamento de barragens",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Sobrecarga muscular dinâmica",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Aspectos psicológicos",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Exposição a temperaturas ambientais elevadas (Calor Natural / Conforto Térmico)",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Trabalho em turno e noturno",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Radiação Ionizante eSocial 02.01.009",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Condições climáticas/intempéries",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária) eSocial 02.01.001",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sílica livre eSocial 01.18.001",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sílica Cristalina Respiravel eSocial 01.18.001",
+          "grupo": "Químico"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria tonal ocupacional",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Eletrocardiograma (ECG)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletroencefalograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame clínico",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo com contagem de plaquetas ou frações",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Prova função pulmonar completa (ou espirometria) (1057)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Radiografia de Coluna Lombo-Sacra",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Raio-x escapuloumeral",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Rx Tórax (PA) Padrão OIT (o mais recente), com dois leitores habilitados (1078)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "MESTRE DE OBRAS"
+      ],
+      "avisos": [
+        "INFO: documento não informa o GSE (Ambiente Principal) deste cargo — coluna Setor recebe o nome do cargo; conferir."
+      ],
+      "ausencia_riscos": false,
+      "setor_override": "MESTRE DE OBRAS",
+      "pagina": 118
+    },
+    {
+      "codigo": "GSE 8/OFICIAL DE OBRAS MARÍTIMAS",
+      "nome": "OFICIAL DE OBRAS MARÍTIMAS",
+      "riscos": [
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impacto de objetos contra o corpo",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas do mesmo nível",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Choque mecânico contra a cabeça",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Acidente de trânsito (direção, derrapagem, aquaplanagem, batida contra, colisão))",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Desabamento de barragens",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Prensamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Sobrecarga muscular dinâmica",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Aspectos psicológicos",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Exposição a temperaturas ambientais elevadas (Calor Natural / Conforto Térmico)",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Trabalho em turno e noturno",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Radiação Ionizante eSocial 02.01.009",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Condições climáticas/intempéries",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária) eSocial 02.01.001",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sílica livre eSocial 01.18.001",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sílica Cristalina Respiravel eSocial 01.18.001",
+          "grupo": "Químico"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria tonal ocupacional",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Eletrocardiograma (ECG)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletroencefalograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame clínico",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Glicemia jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo com contagem de plaquetas ou frações",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Prova função pulmonar completa (ou espirometria) (1057)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Radiografia de Coluna Lombo-Sacra",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Raio-x escapuloumeral",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Rx Tórax (PA) Padrão OIT (o mais recente), com dois leitores habilitados (1078)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "OFICIAL DE OBRAS MARÍTIMAS"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 8 - Canteiro a Céu Aberto (Terrestre)",
+      "pagina": 127
+    },
+    {
+      "codigo": "GSE 3/OPERADOR DE DRAGA",
+      "nome": "OPERADOR DE DRAGA",
+      "riscos": [
+        {
+          "nome": "Queda da embarcação",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas do mesmo nível",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Afogamento",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Impactos de partículas volantes contra os olhos (objetos e fragmentos)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Acidente de trânsito (direção, derrapagem, aquaplanagem, batida contra, colisão))",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Desabamento de barragens",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Quedas do mesmo nível",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Queda com diferença de nível (Trabalho em altura)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Aspectos psicológicos",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Trabalho em turno e noturno",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Exposição a temperaturas ambientais elevadas (Calor Natural / Conforto Térmico)",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Radiação Ionizante eSocial 02.01.009",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Radiação não ionizante - luz solar",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Condições climáticas/intempéries",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária) eSocial 02.01.001",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sílica livre eSocial 01.18.001",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sílica Cristalina Respiravel eSocial 01.18.001",
+          "grupo": "Químico"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Ácido úrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Acuidade visual com senso cromático",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "anamnese e exame físico",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Audiometria tonal ocupacional",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Eletrocardiograma (ECG)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Eletroencefalograma",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Função renal (ureia + creatinina)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Glicemia jejum",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Hemograma completo com contagem de plaquetas ou frações",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Perfil etílico",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Perfil lipídico (colesterol total, LDL, HDL, triglicerídeos)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Prova função pulmonar completa (ou espirometria) (1057)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Rx Tórax (PA) Padrão OIT (o mais recente), com dois leitores habilitados (1078)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "OPERADOR DE DRAGA"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 3 - Embarcação (Convés)",
+      "pagina": 136
+    },
+    {
+      "codigo": "GSE 7/TÉCNICO DE SEGURANÇA DO TRABALHO",
+      "nome": "TÉCNICO DE SEGURANÇA DO TRABALHO",
+      "riscos": [
+        {
+          "nome": "Quedas do mesmo nível",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Acidente de trânsito (direção, derrapagem, aquaplanagem, batida contra, colisão))",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Picadas de insetos ou mordida de animais não peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Animais peçonhentos",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Desabamento de barragens",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "Sobrecarga muscular estática",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Sobrecarga mental ou cognitiva",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Aspectos psicológicos",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Trabalho em turno e noturno",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Exposição a temperaturas ambientais elevadas (Calor Natural / Conforto Térmico)",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "Radiação Ionizante eSocial 02.01.009",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Ruído contínuo ou intermitente (legislação previdenciária) eSocial 02.01.001",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "Sílica livre eSocial 01.18.001",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "Sílica Cristalina Respiravel eSocial 01.18.001",
+          "grupo": "Químico"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "Acuidade visual",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Audiometria tonal ocupacional",
+          "admissao": true,
+          "apos_adm_meses": 6,
+          "apos_adm": true,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Avaliação psicossocial",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "Exame clínico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Hemograma completo com contagem de plaquetas ou frações",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Prova função pulmonar completa (ou espirometria) (1057)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Rx Tórax (PA) Padrão OIT (o mais recente), com dois leitores habilitados (1078)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        }
+      ],
+      "cargos": [
+        "TÉCNICO DE SEGURANÇA DO TRABALHO"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GSE 7 - Sala Administrativa Obra",
+      "pagina": 146
+    }
+  ]
+}

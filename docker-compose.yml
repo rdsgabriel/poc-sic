@@ -1,0 +1,14 @@
+services:
+  poc-pcmso:
+    build: .
+    image: poc-pcmso:latest
+    ports:
+      # porta 8000 do host já estava em uso nesta máquina; ajuste se quiser
+      - "8890:8000"
+    restart: unless-stopped
+    volumes:
+      # jobs (PDF enviado + planilhas geradas) sobrevivem a recreate do container
+      - pcmso-jobs:/tmp/poc_pcmso_jobs
+
+volumes:
+  pcmso-jobs:

@@ -1,0 +1,16 @@
+*.pdf
+*.xlsx
+*.md
+component.md
+node_modules/
+front-end/dist/
+.env
+output/
+output_docling/
+AguasDoBrasilPoC/
+tests/
+.venv/
+__pycache__/
+*.pyc
+.git/
+AguasDoBrasilPoC/
