@@ -59,7 +59,9 @@ def auditar_ghe(ghe: dict, divergencias_do_ghe: list[str]) -> dict:
             pontos.append((20, f"Função com nome suspeito de fragmento: {c!r}"))
 
     for r in ghe["riscos"]:
-        if len(r["nome"]) < 5:
+        # < 4 e não < 5: "FRIO" é risco legítimo (glossário do próprio
+        # PCMSO Solstad); fragmentos de parsing são conectivos de 1-3 letras
+        if len(r["nome"]) < 4:
             pontos.append((15, f"Risco com nome muito curto: {r['nome']!r}"))
 
     confianca = max(0, 100 - sum(p for p, _ in pontos))

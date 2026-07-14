@@ -167,23 +167,12 @@ def extrair(lines: list[Line]) -> tuple[list[GHE], dict]:
                     meses = _RE_A_CADA.search(valor)
                     if meses:
                         exame_atual.periodico_meses = int(meses.group(1))
-                    elif _norm(valor) == "todas as vezes":
-                        # "Todas as Vezes" = em toda ocasião periódica; ciclo
-                        # padrão do documento é anual — interpretação a validar
+                    elif _norm(valor) in ("todas as vezes", "uma unica vez"):
+                        # Regra confirmada pelo negócio (jul/2026): tanto
+                        # "Todas as Vezes" quanto "Uma única Vez" (mesmo sendo
+                        # contradição do documento quando o checkbox Periódico
+                        # está marcado) entram no Perfil Periódico com 12 meses.
                         exame_atual.periodico_meses = 12
-                        ghe.avisos.append(
-                            f"INFO: exame {exame_atual.nome!r} com periodicidade "
-                            f"'Todas as Vezes' — interpretado como 12 meses; confirmar."
-                        )
-                    elif _norm(valor) == "uma unica vez":
-                        # marcado como Periódico mas "Uma única Vez": contradição
-                        # do documento — mantido fora do perfil periódico
-                        exame_atual.periodico_meses = None
-                        ghe.avisos.append(
-                            f"INFO: exame {exame_atual.nome!r} marcado como Periódico "
-                            f"mas com periodicidade 'Uma única Vez' — mantido fora do "
-                            f"perfil periódico; confirmar."
-                        )
                     else:
                         exame_atual.periodico_meses = None
                         ghe.avisos.append(

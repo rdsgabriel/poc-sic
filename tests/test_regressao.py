@@ -51,13 +51,20 @@ PDFS = [
         "PCMSO-SkTecnologia-MineraoTabocaS.A.R0.pdf",
         "sk_taboca.json",
     ),
+    # layout International SOS / Solstad (GHE|FUNÇÃO|RISCOS, grade de exames,
+    # tabela de atividades críticas em imagem -> OCR, funções bilíngues)
+    (
+        "PCMSO-SOLSTAD_SHIPPING_N.pdf",
+        "solstad_normand_poseidon.json",
+    ),
 ]
 
 _EXISTENTES = [(p, g) for p, g in PDFS if (RAIZ / p).is_file()]
 
 
 def _extrair(pdf: str, backend: str) -> dict:
-    ghes, meta = extrair_auto(BACKENDS[backend](str(RAIZ / pdf)))
+    caminho = str(RAIZ / pdf)
+    ghes, meta = extrair_auto(BACKENDS[backend](caminho), pdf_path=caminho)
     return {"meta": meta, "ghes": [asdict(g) for g in ghes]}
 
 
@@ -82,7 +89,8 @@ def test_extracao_igual_ao_golden(pdf: str, golden: str, backend: str) -> None:
 
 @pytest.mark.parametrize("pdf,_", _EXISTENTES)
 def test_regras_de_consistencia(pdf: str, _: str) -> None:
-    ghes, __ = extrair_auto(BACKENDS["pdfplumber"](str(RAIZ / pdf)))
+    caminho = str(RAIZ / pdf)
+    ghes, __ = extrair_auto(BACKENDS["pdfplumber"](caminho), pdf_path=caminho)
     problemas = checar_regras(ghes)
     assert not problemas, "\n".join(problemas)
 

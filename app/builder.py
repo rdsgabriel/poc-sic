@@ -46,7 +46,7 @@ PCMSO_HEADERS = [
 
 GRUPO_COL = {  # grupo de risco -> índice (0-based) da coluna na PGR
     "Químico": 3, "Físico": 4, "Biológico": 5, "Ergonômicos": 6,
-    "Acidente": 12, "Periculoso": 13, "Penoso": 14,
+    "Psicossociais": 10, "Acidente": 12, "Periculoso": 13, "Penoso": 14,
 }
 
 # risco (normalizado, por substring) -> coluna NR
@@ -57,6 +57,13 @@ NR_TRIGGERS = [
     ("trabalho em altura", 24),                     # NR_35 (nomenclatura VIX)
 ]
 NR_MARK = "X"
+
+# chave usada em GHE.nrs (extrator define NRs por cargo) -> coluna na PGR
+NR_COLS = {
+    "NR10": 18, "NR11": 19, "NR20": 20, "NR30": 21, "NR33": 22,
+    "NR34": 23, "NR35": 24, "NR37_TRANSBORDO": 25, "NR37_EMBARQUE": 26,
+    "NR37_BRIGADA": 27,
+}
 
 
 def _norm(s: str) -> str:
@@ -95,14 +102,21 @@ def montar_pgr(ghes: list[GHE]) -> Workbook:
         if not ghe.riscos:
             linha_base[16] = "Ausência de Riscos"
 
-        riscos_norm = [_norm(r.nome) for r in ghe.riscos]
-        for trigger, col in NR_TRIGGERS:
-            if any(trigger in rn for rn in riscos_norm):
-                linha_base[col] = NR_MARK
+        # NRs: se o extrator definiu por cargo (GHE.nrs), ele é a autoridade;
+        # senão, heurística por nome de risco (NR_TRIGGERS)
+        if not ghe.nrs:
+            riscos_norm = [_norm(r.nome) for r in ghe.riscos]
+            for trigger, col in NR_TRIGGERS:
+                if any(trigger in rn for rn in riscos_norm):
+                    linha_base[col] = NR_MARK
 
         for cargo in ghe.cargos:
             linha = list(linha_base)
             linha[1] = cargo
+            for chave in ghe.nrs.get(cargo, []):
+                col = NR_COLS.get(chave)
+                if col is not None:
+                    linha[col] = NR_MARK
             ws.append(linha)
     return wb
 

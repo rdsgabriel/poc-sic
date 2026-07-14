@@ -62,6 +62,10 @@ class GHE:
     setor_override: str | None = None
     # página do PDF onde a seção do GHE começa (para a tela de conferência)
     pagina: int | None = None
+    # NRs aplicáveis por cargo (layout Solstad: tabela de atividades críticas).
+    # cargo -> lista de chaves de builder.NR_COLS (ex.: "NR33", "NR35").
+    # Quando preenchido, o builder usa SOMENTE isto (ignora NR_TRIGGERS).
+    nrs: dict[str, list[str]] = field(default_factory=dict)
 
     @property
     def setor(self) -> str:

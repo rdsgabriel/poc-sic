@@ -15,6 +15,11 @@ ENV PYTHONUNBUFFERED=1 \
 
 WORKDIR /srv
 
+# tesseract: OCR de tabelas que são imagem no PDF (layout Solstad)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        tesseract-ocr tesseract-ocr-por \
+    && rm -rf /var/lib/apt/lists/*
+
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 

@@ -22,6 +22,7 @@ PDFs que já funcionavam.
 | `app/extractors/vix.py` | Parser do layout VIX Logística (seções "Ocupação FPC_...") | ALTO |
 | `app/extractors/occupare.py` | Parser do layout Occupare (SETOR: GSE → FUNÇÃO) | ALTO |
 | `app/extractors/mafra.py` | Parser do layout Mafra Ambiental (CARGO → ícone de risco) | ALTO |
+| `app/extractors/solstad.py` | Parser do layout Intl. SOS/Solstad (GHE\|FUNÇÃO\|RISCOS + grade + OCR) | ALTO |
 | `app/extractors/__init__.py` | Registro de extratores + `extrair_auto` (detecção/roteamento) | MÉDIO |
 | `app/backends.py` | Leitores de PDF (docling e pdfplumber) → modelo neutro `Line`/`Word` | ALTO |
 | `app/auditoria.py` | Score de confiança por GHE + pontos de atenção (heurístico) | BAIXO |
@@ -178,18 +179,58 @@ Armadilhas do layout Occupare (não regredir):
   FUNÇÃO vira um GHE próprio com `setor_override` compartilhado.
 - Nomes de risco quebram linha na célula; a coluna direita da tabela
   (Data/Reavaliação/Característica) começa em x>=424 — fronteira fixa 415.
-- Periodicidades não numéricas: "Todas as Vezes" → 12 meses (INFO, a
-  confirmar); "Uma única Vez" com Periódico marcado é contradição do
-  documento → fica fora do periódico (INFO).
+- Periodicidades não numéricas — REGRA CONFIRMADA PELO NEGÓCIO (jul/2026):
+  "Todas as Vezes" E "Uma única Vez" com Periódico marcado entram AMBAS no
+  Perfil Periódico com 12 meses (a contradição do documento foi decidida
+  a favor do periódico). Não gera mais aviso.
 - "(Código eSocial: NNNN)" é removido de nomes de exames E riscos.
 - Sumário tem as mesmas linhas SETOR/FUNÇÃO das seções — filtrar linhas
   com "....." (pontilhado do índice).
 
+Armadilhas do layout International SOS / Solstad (não regredir):
+- A tabela de atividades críticas (Trabalho em Altura/Espaço Confinado/
+  Eletricidade/Resgate/Resposta a Emergência) é IMAGEM no PDF — nenhum
+  leitor de texto a enxerga. É extraída por OCR (tesseract, `pytesseract`),
+  com a receita que a torna confiável: renderizar SÓ o retângulo da imagem
+  em 400dpi e APAGAR as linhas de grade (numpy: runs >50% de tinta) antes
+  do `--psm 6`. Sem isso o OCR devolve lixo. OCR é determinístico para a
+  mesma versão do tesseract — mudanças de versão podem exigir revalidação
+  do golden.
+- Na LISTA DE GHEs (GHE|FUNÇÃO|RISCOS), o código do GHE fica verticalmente
+  centrado no topo do bloco: âncora = linha do código, subindo enquanto o
+  gap for de linha (≤13pt). Gap entre blocos pode ser ~39pt e gap interno
+  ~38pt — segmentar por gap simples NÃO funciona.
+- Funções quebram linha ("SUBCHEFE DE" + "MÁQUINAS") — juntar quando a
+  linha termina em conector (DE/DA/DO/E).
+- Casamento de nomes de função (OCR↔lista, PDF↔planilha bilíngue) é por
+  CAMADAS de prioridade (exato > radical sem níveis > abreviação por
+  prefixo de token > prefixo > fuzzy 0.85) — o fuzzy sozinho confunde
+  SUBCHEFE DE MÁQUINAS com CHEFE DE MÁQUINAS (ratio 0.897!).
+- Grade de exames: linhas ancoradas pelo valor da coluna ADMISSIONAL
+  (TODOS/NÃO/GHE/GHEs); "VER ITENS 3 e 4 NAS PAGS. 5 e 6" em Retorno/
+  Mudança = REGRA DO CLIENTE (jul/2026): segue a grade do Periódico.
+  "GHE 3" expande por prefixo para 3.1/3.2/3.3.
+- Notas de rodapé da grade: "***" (RX Tórax/Espirometria) → 24 meses;
+  "*" (ECG) é regra etária: função COM atividade crítica troca ECG por
+  Teste Ergométrico; SEM atividade crítica mantém ECG (aviso INFO).
+- NRs vêm da tabela de atividades críticas POR FUNÇÃO (GHE.nrs) + NR30 em
+  todos (regra do cliente) — o builder ignora NR_TRIGGERS quando GHE.nrs
+  está preenchido. Riscos citam "CHOQUE ELÉTRICO" em GHEs cuja tabela NÃO
+  marca eletricidade — a tabela é a autoridade.
+- Funções bilíngues ("COMANDANTE / CAPTAIN") vêm de
+  `extractors/data/solstad_funcoes_bilingues.json` (gerado da planilha do
+  cliente; a .xlsx em si fica FORA do git). Nome sem correspondência fica
+  só em português + aviso INFO.
+- Grupo "PSICOSSOCIAS:" (grafia do documento) → grupo `Psicossociais` →
+  coluna "Riscos do Tipo Ergonômicos – Psicossociais" da PGR.
+
 ## Onde as melhorias futuras provavelmente serão necessárias
 
 - **PDFs escaneados (imagem):** os leitores atuais assumem texto nativo.
-  Solução: ativar o OCR do docling (`DocumentConverter` com `do_ocr=True`)
-  como terceiro backend, mantendo o modelo neutro `Line`/`Word`.
+  O layout Solstad já usa OCR pontual (tesseract) para UMA tabela-imagem;
+  para documentos INTEIROS escaneados, ativar o OCR do docling
+  (`DocumentConverter` com `do_ocr=True`) como terceiro backend, mantendo
+  o modelo neutro `Line`/`Word`.
 - **Auditor LLM: REMOVIDO do produto (jul/2026) por decisão do time**, após
   experimento com OpenAI gpt-4o-mini no PDF Cenibra: ~60 achados em 13 GHEs,
   quase todos falsos positivos, mesmo após iteração de prompt com regras

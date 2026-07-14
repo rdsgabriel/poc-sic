@@ -75,7 +75,11 @@ Antes de alterar qualquer coisa, leia `GUIA_MELHORIAS.md`.
 
 ## Limites conhecidos
 
-- Assume PDF com texto nativo (não escaneado). Para escaneados, ativar OCR
-  do docling como backend adicional (ver GUIA_MELHORIAS.md).
-- Layout testado: relatórios PCMSO gerados pelo Sicolos. Outros emissores
-  exigirão sinônimos de cabeçalho (processo descrito no guia).
+- Assume PDF com texto nativo (não escaneado). Exceção pontual: no layout
+  Solstad a tabela de atividades críticas é imagem e é lida por OCR
+  (tesseract). Para documentos inteiros escaneados, ativar OCR do docling
+  como backend adicional (ver GUIA_MELHORIAS.md).
+- Layouts suportados (detecção automática, um extractor por família em
+  `app/extractors/`): Sicolos (Águas do Brasil), VIX Logística (Cenibra),
+  Occupare (SK/Itajui), Mafra Ambiental (SK/Taboca) e International SOS /
+  Solstad (NORMAND POSEIDON). Emissor novo = módulo novo (processo no guia).

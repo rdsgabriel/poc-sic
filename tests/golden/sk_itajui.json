@@ -233,10 +233,7 @@
       "cargos": [
         "MOTORISTA"
       ],
-      "avisos": [
-        "INFO: exame 'ECG Eletrocardiograma' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar.",
-        "INFO: exame 'Raio X Coluna Lombo Sacra' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
-      ],
+      "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GSE 1 - VEÍCULOS LEVES",
       "pagina": 13
@@ -370,7 +367,7 @@
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
-          "periodico_meses": null,
+          "periodico_meses": 12,
           "ret_trab": true,
           "mud_riscos": true,
           "demissao": true
@@ -459,11 +456,7 @@
       "cargos": [
         "ELETRICISTA"
       ],
-      "avisos": [
-        "INFO: exame 'Avaliação Psicológica' marcado como Periódico mas com periodicidade 'Uma única Vez' — mantido fora do perfil periódico; confirmar.",
-        "INFO: exame 'ECG Eletrocardiograma' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar.",
-        "INFO: exame 'Raio X Coluna Lombo Sacra' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
-      ],
+      "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GSE 10 - EMBARCAÇÃO (MÁQUINAS) ELÉTRICA",
       "pagina": 17
@@ -1304,9 +1297,7 @@
       "cargos": [
         "OPERADOR DE ESCAVADEIRA"
       ],
-      "avisos": [
-        "INFO: exame 'Raio X Coluna Lombo Sacra' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
-      ],
+      "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GSE 18 - MÁQUINAS PESADAS TERRESTRES",
       "pagina": 42
@@ -1418,7 +1409,7 @@
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
-          "periodico_meses": null,
+          "periodico_meses": 12,
           "ret_trab": true,
           "mud_riscos": true,
           "demissao": true
@@ -1557,11 +1548,7 @@
       "cargos": [
         "MOTORISTA/OPERADOR DE MUNK"
       ],
-      "avisos": [
-        "INFO: exame 'Avaliação Psicológica' marcado como Periódico mas com periodicidade 'Uma única Vez' — mantido fora do perfil periódico; confirmar.",
-        "INFO: exame 'ECG Eletrocardiograma' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar.",
-        "INFO: exame 'Raio X Coluna Lombo Sacra' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
-      ],
+      "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GSE 2 - VEÍCULOS PESADOS",
       "pagina": 46
@@ -1685,7 +1672,7 @@
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
-          "periodico_meses": null,
+          "periodico_meses": 12,
           "ret_trab": true,
           "mud_riscos": true,
           "demissao": false
@@ -1844,10 +1831,7 @@
       "cargos": [
         "GERENTE DE OBRAS SUBAQUÁTICAS"
       ],
-      "avisos": [
-        "INFO: exame 'Avaliação Psicológica' marcado como Periódico mas com periodicidade 'Uma única Vez' — mantido fora do perfil periódico; confirmar.",
-        "INFO: exame 'ECG Eletrocardiograma' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
-      ],
+      "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GSE 4 - CANTEIRO A CÉU ABERTO (AQUÁTICO - MERGULHO)",
       "pagina": 51
@@ -1971,7 +1955,7 @@
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
-          "periodico_meses": null,
+          "periodico_meses": 12,
           "ret_trab": true,
           "mud_riscos": true,
           "demissao": false
@@ -2130,10 +2114,7 @@
       "cargos": [
         "MERGULHADOR RASO B"
       ],
-      "avisos": [
-        "INFO: exame 'Avaliação Psicológica' marcado como Periódico mas com periodicidade 'Uma única Vez' — mantido fora do perfil periódico; confirmar.",
-        "INFO: exame 'ECG Eletrocardiograma' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
-      ],
+      "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GSE 4 - CANTEIRO A CÉU ABERTO (AQUÁTICO - MERGULHO)",
       "pagina": 56
@@ -2257,7 +2238,7 @@
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
-          "periodico_meses": null,
+          "periodico_meses": 12,
           "ret_trab": true,
           "mud_riscos": true,
           "demissao": false
@@ -2416,10 +2397,7 @@
       "cargos": [
         "MERGULHADOR RASO C"
       ],
-      "avisos": [
-        "INFO: exame 'Avaliação Psicológica' marcado como Periódico mas com periodicidade 'Uma única Vez' — mantido fora do perfil periódico; confirmar.",
-        "INFO: exame 'ECG Eletrocardiograma' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
-      ],
+      "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GSE 4 - CANTEIRO A CÉU ABERTO (AQUÁTICO - MERGULHO)",
       "pagina": 61
@@ -2543,7 +2521,7 @@
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
-          "periodico_meses": null,
+          "periodico_meses": 12,
           "ret_trab": true,
           "mud_riscos": true,
           "demissao": false
@@ -2702,10 +2680,7 @@
       "cargos": [
         "SUPERVISOR DE MERGULHO RASO B"
       ],
-      "avisos": [
-        "INFO: exame 'Avaliação Psicológica' marcado como Periódico mas com periodicidade 'Uma única Vez' — mantido fora do perfil periódico; confirmar.",
-        "INFO: exame 'ECG Eletrocardiograma' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
-      ],
+      "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GSE 4 - CANTEIRO A CÉU ABERTO (AQUÁTICO - MERGULHO)",
       "pagina": 66
@@ -2829,7 +2804,7 @@
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
-          "periodico_meses": null,
+          "periodico_meses": 12,
           "ret_trab": true,
           "mud_riscos": true,
           "demissao": false
@@ -2988,10 +2963,7 @@
       "cargos": [
         "SUPERVISOR DE MERGULHO RASO C"
       ],
-      "avisos": [
-        "INFO: exame 'Avaliação Psicológica' marcado como Periódico mas com periodicidade 'Uma única Vez' — mantido fora do perfil periódico; confirmar.",
-        "INFO: exame 'ECG Eletrocardiograma' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
-      ],
+      "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GSE 4 - CANTEIRO A CÉU ABERTO (AQUÁTICO - MERGULHO)",
       "pagina": 71
@@ -3133,7 +3105,7 @@
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
-          "periodico_meses": null,
+          "periodico_meses": 12,
           "ret_trab": true,
           "mud_riscos": true,
           "demissao": true
@@ -3232,11 +3204,7 @@
       "cargos": [
         "MARINHEIRO AUXILIAR DE MÁQUINAS"
       ],
-      "avisos": [
-        "INFO: exame 'Avaliação Psicológica' marcado como Periódico mas com periodicidade 'Uma única Vez' — mantido fora do perfil periódico; confirmar.",
-        "INFO: exame 'ECG Eletrocardiograma' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar.",
-        "INFO: exame 'Raio X Coluna Lombo Sacra' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
-      ],
+      "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GSE 5 - EMBARCAÇÃO (MÁQUINAS)",
       "pagina": 76
@@ -3330,7 +3298,7 @@
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
-          "periodico_meses": null,
+          "periodico_meses": 12,
           "ret_trab": true,
           "mud_riscos": true,
           "demissao": true
@@ -3459,11 +3427,7 @@
       "cargos": [
         "COORDENADOR DE HIDROGRAFIA"
       ],
-      "avisos": [
-        "INFO: exame 'Avaliação Psicológica' marcado como Periódico mas com periodicidade 'Uma única Vez' — mantido fora do perfil periódico; confirmar.",
-        "INFO: exame 'ECG Eletrocardiograma' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar.",
-        "INFO: exame 'Raio X Coluna Lombo Sacra' com periodicidade 'Todas as Vezes' — interpretado como 12 meses; confirmar."
-      ],
+      "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GSE 6 - EMBARCAÇÃO (CONVÉS)",
       "pagina": 81

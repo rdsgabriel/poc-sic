@@ -30,7 +30,7 @@ def comparar_backends(pdf_path: str, ghes_docling: list[GHE] | None = None) -> l
         if nome == "docling" and ghes_docling is not None:
             resultados[nome] = {g.codigo: g for g in ghes_docling}
             continue
-        ghes, _ = extrair_auto(leitor(pdf_path))
+        ghes, _ = extrair_auto(leitor(pdf_path), pdf_path=pdf_path)
         resultados[nome] = {g.codigo: g for g in ghes}
 
     a, b = resultados["docling"], resultados["pdfplumber"]
@@ -94,7 +94,7 @@ def main() -> None:
 
 
     print("== Regras de consistência (docling) ==")
-    ghes, _ = extrair_auto(BACKENDS["docling"](pdf))
+    ghes, _ = extrair_auto(BACKENDS["docling"](pdf), pdf_path=pdf)
     regras = checar_regras(ghes)
     if regras:
         for p in regras:

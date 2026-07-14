@@ -26,6 +26,7 @@ const COR_GRUPO: Record<string, string> = {
   "Químico": "bg-yellow-100 text-yellow-700 border-yellow-300",
   "Biológico": "bg-emerald-100 text-emerald-700 border-emerald-300",
   "Ergonômicos": "bg-cyan-100 text-cyan-700 border-cyan-300",
+  "Psicossociais": "bg-violet-100 text-violet-700 border-violet-300",
   "Acidente": "bg-orange-100 text-orange-700 border-orange-300",
 }
 

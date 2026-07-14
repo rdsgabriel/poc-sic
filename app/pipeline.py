@@ -35,7 +35,7 @@ def processar_pdf(
     out_dir.mkdir(parents=True, exist_ok=True)
 
     lines = BACKENDS[backend](str(pdf_path))
-    ghes, meta = extrair_auto(lines)
+    ghes, meta = extrair_auto(lines, pdf_path=str(pdf_path))
     if coletar_ghes is not None:
         coletar_ghes.extend(ghes)
 
