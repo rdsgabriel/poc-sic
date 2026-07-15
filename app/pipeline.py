@@ -15,7 +15,7 @@ from pathlib import Path
 
 from .backends import BACKENDS
 from .builder import montar_pcmso, montar_pgr
-from .extractors import extrair_auto
+from .extractors import EXTRATORES, extrair_auto
 
 
 def processar_pdf(
@@ -44,10 +44,20 @@ def processar_pdf(
 
     empresa = re.sub(r"[^\w]+", "_", meta.get("empresa") or "EMPRESA").strip("_")
 
+    # regras de IMPORTAÇÃO por layout (ex.: De-para de nomes do cliente SK no
+    # mafra): valem só para as planilhas — a extração, a tela de conferência e
+    # os goldens mantêm a nomenclatura exata do PDF
+    modulo = dict(EXTRATORES).get(meta.get("layout"))
+    ghes_planilha = (
+        modulo.preparar_para_planilha(ghes)
+        if modulo is not None and hasattr(modulo, "preparar_para_planilha")
+        else ghes
+    )
+
     pgr_path = out_dir / f"PGR_{empresa}.xlsx"
     pcmso_path = out_dir / f"PCMSO_{empresa}.xlsx"
-    montar_pgr(ghes).save(pgr_path)
-    montar_pcmso(ghes).save(pcmso_path)
+    montar_pgr(ghes_planilha).save(pgr_path)
+    montar_pcmso(ghes_planilha).save(pcmso_path)
 
     # dump intermediário para auditoria/validação
     json_path = out_dir / f"extracao_{empresa}.json"

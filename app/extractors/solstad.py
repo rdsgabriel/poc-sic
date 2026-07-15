@@ -25,9 +25,9 @@ Estrutura do documento (ex.: PCMSO-SOLSTAD_SHIPPING_N, NORMAND POSEIDON):
    Regras de negócio:
      - função COM A/C recebe a grade de "Exames específicos" (lista textual
        abaixo da tabela): anual (12 meses), todos os perfis exceto demissional;
-     - função COM A/C: Teste Ergométrico entra e o Eletrocardiograma sai;
-       função SEM A/C: mantém o Eletrocardiograma (regra etária do documento
-       não é representável na planilha — vira aviso INFO);
+     - ECG NUNCA vai para a planilha (regra do negócio, jul/2026: é sempre
+       PQV — programa de qualidade de vida, fora do PCMSO); função COM A/C
+       recebe Teste Ergométrico no lugar;
      - NRs por atividade: espaço confinado=NR33, altura=NR35,
        eletricidade=NR10, resgate=NR37, resposta a emergência=NR37;
      - NR30 obrigatória em TODOS os GHEs.
@@ -50,11 +50,11 @@ from .base import GHE, Exame, Line, Risco, norm as _norm
 
 _DADOS = Path(__file__).parent / "data" / "solstad_funcoes_bilingues.json"
 
-# fronteiras de coluna da LISTA DE GHEs (pontos)
-_X_FUNCAO = 55.0
-_X_RISCOS = 207.0
-# gap máximo (pt) ao "subir" do código do GHE até o início do bloco
-_GAP_BLOCO = 13.0
+# fronteiras de coluna da LISTA DE GHEs quando não derivá-las do documento
+# (as posições variam por embarcação: POSEIDON código@37-50/riscos@209,
+#  PIONEER código@58-70/riscos@239 — sempre derivar do header e dos rótulos)
+_X_FUNCAO_PADRAO = 55.0
+_X_RISCOS_PADRAO = 207.0
 
 _GRUPOS = {
     "ergonomico": "Ergonômicos", "ergonomicos": "Ergonômicos",
@@ -70,6 +70,8 @@ _RE_CODIGO = re.compile(r"^\d+(?:\.\d+)?$")
 _RE_GRUPO = re.compile(r"^\s*([A-ZÀ-Üa-zà-ü]+)\s*:\s*(.*)$", re.DOTALL)
 _CONECTORES = {"de", "da", "do", "das", "dos", "e"}
 _NIVEIS_EXTRA = {"jr", "pl", "sr", "a", "b"}
+# níveis por extenso (PIONEER) <-> abreviados (planilha bilíngue/POSEIDON)
+_ALIAS_NIVEL = {"junior": "jr", "pleno": "pl", "senior": "sr"}
 _RE_NIVEL = re.compile(r"^[0-9ivx/][0-9ivx/.\-]*[ab]?$")
 
 # atividade crítica (coluna da tabela OCR) -> chave de builder.NR_COLS
@@ -104,12 +106,14 @@ def _stem(nome: str) -> str:
 
 def _tokens_sem_nivel(nome: str) -> tuple[list[str], list[str]]:
     """tokens normalizados sem conectores; devolve (radical, níveis removidos
-    do fim — na grafia normalizada)."""
+    do fim — normalizados: JUNIOR->jr, PLENO->pl...)."""
     toks = [t for t in re.split(r"[^a-z0-9/\-]+", _norm(nome)) if t]
     toks = [t for t in toks if t not in _CONECTORES]
     niveis: list[str] = []
-    while toks and (toks[-1] in _NIVEIS_EXTRA or _RE_NIVEL.match(toks[-1])):
-        niveis.insert(0, toks.pop())
+    while toks and (toks[-1] in _NIVEIS_EXTRA or toks[-1] in _ALIAS_NIVEL
+                    or _RE_NIVEL.match(toks[-1])):
+        niveis.insert(0, _ALIAS_NIVEL.get(toks[-1], toks[-1]))
+        toks.pop()
     return toks, niveis
 
 
@@ -127,11 +131,12 @@ def _tier(nome_a: str, nome_b: str) -> int:
     pares como SUBCHEFE DE MÁQUINAS x CHEFE DE MÁQUINAS."""
     if _stem(nome_a) == _stem(nome_b):
         return 5
-    ta, _ = _tokens_sem_nivel(nome_a)
-    tb, _ = _tokens_sem_nivel(nome_b)
+    ta, na = _tokens_sem_nivel(nome_a)
+    tb, nb = _tokens_sem_nivel(nome_b)
     ra, rb = "".join(ta), "".join(tb)
     if ra and ra == rb:
-        return 4
+        # mesmo radical + mesmo nível (JUNIOR ~ JR) = equivalência exata
+        return 5 if na and na == nb else 4
     if _compat_tokens(ta, tb):
         return 3
     if len(ra) >= 8 and len(rb) >= 8 and (ra.startswith(rb) or rb.startswith(ra)):
@@ -146,9 +151,12 @@ def _tier(nome_a: str, nome_b: str) -> int:
 def _parse_lista_ghes(lines: list[Line]) -> list[dict]:
     """Blocos da tabela GHE|FUNÇÃO|RISCOS -> [{codigo, funcoes, riscos, pagina}]."""
     ini = fim = None
+    x_codigo_max = _X_FUNCAO_PADRAO
     for i, ln in enumerate(lines):
         if re.match(r"^GHE\s+FUNÇÃO\s+RISCOS$", ln.text.strip()):
             ini = i + 1
+            # coluna do código = faixa horizontal do header "GHE"
+            x_codigo_max = ln.words[0].x1 + 4
         elif ini is not None and "GRADE DE EXAMES" in ln.text:
             fim = i
             break
@@ -158,43 +166,64 @@ def _parse_lista_ghes(lines: list[Line]) -> list[dict]:
     tabela = [ln for ln in lines[ini:fim]
               if ln.text.strip() and ln.text.strip() != "Confidential"]
 
+    # início da coluna RISCOS = menor x dos rótulos de grupo (o header
+    # "RISCOS" é centralizado na coluna e não serve de fronteira)
+    x_riscos = _X_RISCOS_PADRAO
+    labels = []
+    for ln in tabela:
+        for w in ln.words:
+            m = _RE_GRUPO.match(w.text)
+            if m and _GRUPOS.get(_norm(m.group(1))) and w.x0 > x_codigo_max:
+                labels.append(w.x0)
+            break  # só a 1ª palavra da linha pode ser rótulo
+    if labels:
+        x_riscos = min(labels) - 2
+
     # âncoras: linhas com o código do GHE na coluna da esquerda
     codigos: list[tuple[int, str]] = []
     for i, ln in enumerate(tabela):
         for w in ln.words:
-            if w.x1 <= _X_FUNCAO and _RE_CODIGO.match(w.text):
+            if w.x1 <= x_codigo_max and _RE_CODIGO.match(w.text):
                 codigos.append((i, w.text))
                 break
     if not codigos:
         raise ValueError("layout solstad: nenhum código de GHE encontrado")
 
-    # início do bloco: sobe a partir do código enquanto o espaçamento for
-    # de linha (o código fica verticalmente centrado no cabeçalho do bloco)
+    # fronteira entre blocos consecutivos = MAIOR gap vertical entre as
+    # linhas que separam dois códigos (o código fica verticalmente centrado
+    # no bloco — pode aparecer linhas abaixo do início; quebra de página
+    # conta como gap gigante via _y)
     inicios: list[tuple[int, str]] = []
-    for i, cod in codigos:
-        j = i
-        while j > 0 and tabela[j].page == tabela[j - 1].page \
-                and tabela[j].top - tabela[j - 1].top <= _GAP_BLOCO:
-            j -= 1
-        inicios.append((j, cod))
+    for n, (i, cod) in enumerate(codigos):
+        if n == 0:
+            inicios.append((0, cod))
+            continue
+        i_ant = codigos[n - 1][0]
+        corte, maior = i, -1.0
+        for j in range(i_ant + 1, i + 1):
+            gap = _y(tabela[j]) - _y(tabela[j - 1])
+            if gap > maior:
+                maior, corte = gap, j
+        inicios.append((corte, cod))
 
     blocos: list[dict] = []
     for n, (j, cod) in enumerate(inicios):
         j_fim = inicios[n + 1][0] if n + 1 < len(inicios) else len(tabela)
-        blocos.append(_parse_bloco(cod, tabela[j:j_fim]))
+        blocos.append(_parse_bloco(cod, tabela[j:j_fim], x_codigo_max, x_riscos))
     return blocos
 
 
-def _parse_bloco(codigo: str, linhas: list[Line]) -> dict:
+def _parse_bloco(codigo: str, linhas: list[Line],
+                 x_func_min: float, x_riscos: float) -> dict:
     funcoes: list[str] = []
     pendente = ""  # função com quebra de linha (termina em conector)
     grupos: list[tuple[str, str]] = []  # (grupo, texto acumulado)
 
     for ln in linhas:
         parte_func = " ".join(
-            w.text for w in ln.words if _X_FUNCAO <= w.x0 < _X_RISCOS
+            w.text for w in ln.words if x_func_min <= w.x0 < x_riscos
         ).strip()
-        parte_risco = " ".join(w.text for w in ln.words if w.x0 >= _X_RISCOS).strip()
+        parte_risco = " ".join(w.text for w in ln.words if w.x0 >= x_riscos).strip()
 
         if parte_func:
             if pendente:
@@ -376,16 +405,24 @@ def _ocr_atividades(pdf_path: str, pagina: int) -> list[tuple[str, set[str]]]:
 
     with pdfplumber.open(pdf_path) as pdf:
         p = pdf.pages[pagina - 1]
-        if not p.images:
+        # a tabela pode ser UMA imagem (POSEIDON, 478x403) ou vir FATIADA em
+        # várias imagens empilhadas (PIONEER, 4x 450x95) — usar a união de
+        # todas as imagens grandes; as tiras pequenas do topo são o título
+        grandes = [i for i in p.images if i["height"] >= 60 and i["width"] >= 200]
+        if not grandes:
             return []
-        im = max(p.images, key=lambda i: i["width"] * i["height"])
-        bbox = (max(im["x0"] - 2, 0), max(im["top"] - 2, 0),
-                min(im["x1"] + 2, p.width), min(im["bottom"] + 2, p.height))
+        bbox = (max(min(i["x0"] for i in grandes) - 2, 0),
+                max(min(i["top"] for i in grandes) - 2, 0),
+                min(max(i["x1"] for i in grandes) + 2, p.width),
+                min(max(i["bottom"] for i in grandes) + 2, p.height))
         img = p.crop(bbox).to_image(resolution=400).original.convert("L")
 
-    a = np.array(img)
-    tinta = a < 128
-    a = a.copy()
+    # 1) binariza mantendo só tinta escura (<140): o texto sobrevive; o fundo
+    #    cinza do cabeçalho e a grade cinza anti-aliased do PIONEER somem —
+    #    um limiar alto demais apagaria as linhas do cabeçalho inteiras
+    # 2) apaga a grade preta restante (POSEIDON): runs >50% da largura/altura
+    a = np.where(np.array(img) < 140, 0, 255).astype("uint8")
+    tinta = a == 0
     a[tinta.sum(axis=1) > tinta.shape[1] * 0.5, :] = 255   # linhas horizontais
     a[:, tinta.sum(axis=0) > tinta.shape[0] * 0.5] = 255   # linhas verticais
 
@@ -446,7 +483,7 @@ def _ocr_atividades(pdf_path: str, pagina: int) -> list[tuple[str, set[str]]]:
     return resultado
 
 
-# ----------------------------------------------------- 4. funções bilíngues
+#  4. funções bilíngues
 
 def _carregar_bilingue() -> list[tuple[str, str]]:
     if not _DADOS.is_file():
@@ -529,7 +566,9 @@ def extrair(lines: list[Line], pdf_path: str | None = None) -> tuple[list[GHE], 
             especificos = []
             continue
         if coletando:
-            m = re.match(r"^[•·\-\*]\s*(.+)$", t)
+            # bullets variam por embarcação: "•" (POSEIDON) ou glifo Wingdings
+            # em área de uso privado, ex.  (PIONEER)
+            m = re.match(r"^[•·\-\*-]\s*(.+)$", t)
             if m:
                 especificos.append(m.group(1).strip())
             elif especificos and t and t != "Confidential" \
@@ -610,6 +649,11 @@ def extrair(lines: list[Line], pdf_path: str | None = None) -> tuple[list[GHE], 
                     mud_riscos=_tem("mudanca"),
                     demissao=_tem("demissional"),
                 )
+                if "eletrocardiograma" in _stem(e.nome):
+                    # regra do negócio (jul/2026): ECG é SEMPRE PQV (qualidade
+                    # de vida, fora do PCMSO) — nunca entra na planilha;
+                    # funções com A/C recebem Teste Ergométrico no lugar
+                    continue
                 if any([e.admissao, e.periodico_meses, e.ret_trab,
                         e.mud_riscos, e.demissao]):
                     exames.append(e)
@@ -634,14 +678,11 @@ def extrair(lines: list[Line], pdf_path: str | None = None) -> tuple[list[GHE], 
                 # amarelos = ruído) — elas ficam visíveis nas NRs da PGR
                 nrs |= {_ATIVIDADE_NR[a] for a in marcas}
                 _aplicar_exames_especificos(exames, especificos)
-                exames = [e for e in exames
-                          if "eletrocardiograma" not in _stem(e.nome)]
             elif atividades_ocr:
                 g.avisos.append(
                     f"INFO: função {funcao!r} não consta na tabela de atividades "
-                    f"críticas — mantido Eletrocardiograma; regra etária do "
-                    f"documento (45+ anos: teste ergométrico) não é "
-                    f"representável na planilha."
+                    f"críticas — sem exames específicos de A/C e sem NRs de "
+                    f"atividade (só NR30)."
                 )
             g.nrs = {cargo: sorted(nrs)}
             g.exames = exames

@@ -25,13 +25,33 @@ GHE próprio com setor_override = GSE do ambiente principal.
 Coluna direita do bloco de exames: "O periódico será feito a cada N meses" →
 periodico_meses; "Em adição, este exame deverá ser realizado N meses após a
 contratação" → apos_adm_meses (perfil Após Admissão).
+
+DE-PARA DO CLIENTE SK (jul/2026, "De para - Riscos e exames_SK.xls"):
+aplicado SOMENTE na geração das planilhas (`preparar_para_planilha`,
+chamado pelo pipeline) — a extração, a tela de conferência e os goldens
+mantêm a nomenclatura exata do PDF, senão o validador não consegue bater
+a tela com o documento:
+- riscos: remover o sufixo "eSocial NN.NN.NNN" dos nomes;
+- exames: renomear para o catálogo do sistema BR MED
+  (data/mafra_depara_exames_sk.json), incluindo desdobramentos 1->N
+  ("FUNÇÃO RENAL (UREIA + CREATININA)" vira UREIA e CREATININA) e fusões
+  N->1 ("EXAME CLÍNICO" e "anamnese e exame físico" viram CLÍNICO
+  OCUPACIONAL, com os perfis mesclados). Exame fora do De-para mantém a
+  nomenclatura do PDF.
 """
 
 from __future__ import annotations
 
+import copy
+import json
 import re
+from difflib import SequenceMatcher
+from pathlib import Path
 
 from .base import GHE, Exame, Line, Risco, norm as _norm
+
+_DEPARA_EXAMES = Path(__file__).parent / "data" / "mafra_depara_exames_sk.json"
+_RE_ESOCIAL_RISCO = re.compile(r"\s*eSocial\s*[\d.]+\s*$", re.IGNORECASE)
 
 _ICONE = "\uf0c8"  # quadradinho (Wingdings) que ancora cada risco
 _RE_CARGO = re.compile(r"^CARGO\s+(.+?)\s*-\s*CBO:\s*\d+", re.IGNORECASE)
@@ -280,3 +300,75 @@ def extrair(lines: list[Line]) -> tuple[list[GHE], dict]:
         "layout": "mafra",
     }
     return ghes, meta
+
+
+# ------------------- De-para do cliente SK (riscos e exames) -------------------
+# Regra de IMPORTAÇÃO, não de extração: o pipeline chama
+# preparar_para_planilha() só na hora de montar os xlsx. A conferência e os
+# goldens seguem com a nomenclatura do PDF.
+
+def _chave(s: str) -> str:
+    """chave de comparação: só letras/dígitos, sem acento/caixa — absorve
+    hífens, espaços e pontuação divergentes entre planilha e PDF."""
+    return re.sub(r"[^a-z0-9]", "", _norm(s))
+
+
+def _carregar_depara() -> list[tuple[str, str, list[str]]]:
+    if not _DEPARA_EXAMES.is_file():
+        return []
+    dados = json.loads(_DEPARA_EXAMES.read_text(encoding="utf-8"))
+    return [(_chave(de), de, paras) for de, paras in dados["exames"]]
+
+
+def preparar_para_planilha(ghes: list[GHE]) -> list[GHE]:
+    """Cópia dos GHEs com o De-para do cliente SK aplicado (nomes de risco
+    sem sufixo eSocial; exames no catálogo BR MED)."""
+    ghes = copy.deepcopy(ghes)
+    depara = _carregar_depara()
+
+    for g in ghes:
+        for r in g.riscos:
+            r.nome = _RE_ESOCIAL_RISCO.sub("", r.nome).strip()
+        if not depara:
+            continue
+
+        novos: list[Exame] = []
+        for e in g.exames:
+            ce = _chave(e.nome)
+            paras = next((p for c, _, p in depara if c == ce), None)
+            if paras is None:
+                # tolerância a variações mínimas entre planilha e PDF
+                # ("ANAMNSE"/"anamnese", "Raio-X"/"Rx", "e"/"ou frações")
+                melhor = max(depara, key=lambda d: SequenceMatcher(None, ce, d[0]).ratio())
+                if SequenceMatcher(None, ce, melhor[0]).ratio() >= 0.9:
+                    paras = melhor[2]
+            if paras is None:
+                novos.append(e)  # fora do De-para: nomenclatura do PDF
+                continue
+            for nome_para in paras:  # 1->N desdobra mantendo os perfis
+                novos.append(Exame(
+                    nome=nome_para, admissao=e.admissao,
+                    apos_adm_meses=e.apos_adm_meses, apos_adm=e.apos_adm,
+                    periodico_meses=e.periodico_meses, ret_trab=e.ret_trab,
+                    mud_riscos=e.mud_riscos, demissao=e.demissao,
+                ))
+
+        # N->1 (ex.: EXAME CLÍNICO + anamnese -> CLÍNICO OCUPACIONAL):
+        # mescla perfis dos duplicados, preservando a ordem da 1ª ocorrência
+        por_nome: dict[str, Exame] = {}
+        g.exames = []
+        for e in novos:
+            alvo = por_nome.get(e.nome)
+            if alvo is None:
+                por_nome[e.nome] = e
+                g.exames.append(e)
+                continue
+            alvo.admissao = alvo.admissao or e.admissao
+            alvo.apos_adm = alvo.apos_adm or e.apos_adm
+            alvo.ret_trab = alvo.ret_trab or e.ret_trab
+            alvo.mud_riscos = alvo.mud_riscos or e.mud_riscos
+            alvo.demissao = alvo.demissao or e.demissao
+            alvo.periodico_meses = alvo.periodico_meses or e.periodico_meses
+            alvo.apos_adm_meses = alvo.apos_adm_meses or e.apos_adm_meses
+
+    return ghes

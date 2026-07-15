@@ -57,6 +57,13 @@ PDFS = [
         "PCMSO-SOLSTAD_SHIPPING_N.pdf",
         "solstad_normand_poseidon.json",
     ),
+    # mesma família Solstad, outra embarcação: colunas deslocadas, tabela de
+    # atividades críticas fatiada em 4 imagens com grade cinza, bullets
+    # Wingdings, funções com nível por extenso (JUNIOR/PLENO)
+    (
+        "PCMSO-SOLSTAD_SHIPPING_N (8)_EMBARCAÇÃO NORMAND PIONEER.pdf",
+        "solstad_normand_pioneer.json",
+    ),
 ]
 
 _EXISTENTES = [(p, g) for p, g in PDFS if (RAIZ / p).is_file()]

@@ -173,6 +173,17 @@ Armadilhas do layout Mafra Ambiental (não regredir):
   (perfil Semestral Após Admissão).
 - Alguns cargos não têm "Ambientes: (Ambiente Principal)" (lacuna do doc) —
   Setor recebe o nome do cargo + aviso INFO.
+- DE-PARA DO CLIENTE SK (jul/2026): exceção CONSCIENTE à regra da
+  nomenclatura exata — o cliente forneceu a tabela "De para - Riscos e
+  exames_SK.xls" mapeando os nomes do PDF para o catálogo do sistema BR MED
+  (`data/mafra_depara_exames_sk.json`). Riscos perdem o sufixo
+  "eSocial N.N.N"; exames são renomeados, com desdobramentos 1->N (FUNÇÃO
+  RENAL -> UREIA + CREATININA) e fusões N->1 (EXAME CLÍNICO + anamnese ->
+  CLÍNICO OCUPACIONAL, perfis mesclados). Casamento por chave alfanumérica
+  + fuzzy 0.9 (absorve "ANAMNSE"/"anamnese", "Raio-X"/"Rx"). Exame fora do
+  De-para mantém a nomenclatura do PDF. ATENÇÃO: as chaves "De" são os
+  nomes do PDF Taboca — o De-para NÃO se aplica ao Itajui/Occupare
+  (verificado: 0/16 chaves casam lá).
 
 Armadilhas do layout Occupare (não regredir):
 - Riscos e exames são POR FUNÇÃO (funções do mesmo GSE divergem) — cada
@@ -210,9 +221,20 @@ Armadilhas do layout International SOS / Solstad (não regredir):
   (TODOS/NÃO/GHE/GHEs); "VER ITENS 3 e 4 NAS PAGS. 5 e 6" em Retorno/
   Mudança = REGRA DO CLIENTE (jul/2026): segue a grade do Periódico.
   "GHE 3" expande por prefixo para 3.1/3.2/3.3.
-- Notas de rodapé da grade: "***" (RX Tórax/Espirometria) → 24 meses;
-  "*" (ECG) é regra etária: função COM atividade crítica troca ECG por
-  Teste Ergométrico; SEM atividade crítica mantém ECG (aviso INFO).
+- Notas de rodapé da grade: "***" (RX Tórax/Espirometria) → 24 meses.
+- ECG: REGRA DO NEGÓCIO (jul/2026) — NUNCA entra na planilha (é sempre
+  PQV, fora do PCMSO); função COM atividade crítica recebe Teste
+  Ergométrico no lugar; SEM atividade crítica fica sem ambos (aviso INFO).
+- As embarcações variam o MESMO layout (POSEIDON vs PIONEER): colunas em
+  x diferentes (derivar do header "GHE" e dos rótulos de grupo, nunca
+  fixar); código do GHE pode aparecer 6+ linhas abaixo do início do bloco
+  (fronteira entre blocos = MAIOR gap vertical entre códigos consecutivos);
+  tabela de atividades críticas pode ser 1 imagem (478x403) ou 4 fatias
+  empilhadas com grade CINZA anti-aliased (por isso o pré-processamento
+  binariza <140 antes de remover runs — limiar alto apaga o cabeçalho de
+  fundo cinza junto); bullets dos exames específicos podem ser "•" ou
+  glifo Wingdings U+F0B7; níveis por extenso (JUNIOR/PLENO) equivalem a
+  JR/PL da planilha bilíngue (_ALIAS_NIVEL).
 - NRs vêm da tabela de atividades críticas POR FUNÇÃO (GHE.nrs) + NR30 em
   todos (regra do cliente) — o builder ignora NR_TRIGGERS quando GHE.nrs
   está preenchido. Riscos citam "CHOQUE ELÉTRICO" em GHEs cuja tabela NÃO

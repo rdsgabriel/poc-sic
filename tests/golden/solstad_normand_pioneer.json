@@ -1,33 +1,20 @@
 {
   "meta": {
-    "empresa": "Solstad Shipping Ltda (NORMAND POSEIDON)",
-    "total_ghes": 30,
+    "empresa": "Solstad Shipping Ltda (NORMAND PIONEER)",
+    "total_ghes": 41,
     "layout": "solstad",
     "avisos_documento": [
       "INFO: tabela de atividades críticas (pág. 23) é imagem no PDF — extraída por OCR (32 funções); conferir na tela de conferência.",
-      "INFO: periodicidade padrão do Perfil Periódico interpretada como 12 meses (notas da grade podem sobrepor, ex.: RX Tórax/Espirometria); confirmar — ver pendencias.md.",
-      "INFO: funções da tabela de atividades críticas sem função correspondente na lista de GHEs: SUPERVISOR DE ANCORAGEM; SUBC HEFE DE MAO.; MOÇO DE CONVÉS."
+      "INFO: periodicidade padrão do Perfil Periódico interpretada como 12 meses (notas da grade podem sobrepor, ex.: RX Tórax/Espirometria); confirmar — ver pendencias.md."
     ]
   },
   "ghes": [
     {
-      "codigo": "2/COMANDANTE",
-      "nome": "COMANDANTE",
+      "codigo": "2/COMANDANTE III",
+      "nome": "COMANDANTE III",
       "riscos": [
         {
-          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS)",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "DESCONFORTO TÉRMICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "UMIDADE RELATIVA DO AR INADEQUADA",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "ILUMINÂNCIA INADEQUADA E DESCONFORTO ACÚSTICO",
+          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
           "grupo": "Ergonômicos"
         },
         {
@@ -35,7 +22,7 @@
           "grupo": "Físico"
         },
         {
-          "nome": "QUEDA DE DIFERENÇA DE NÍVEL OU NÍVEL DIFERENTE",
+          "nome": "QUEDA DE OBJETO E QUEDA DE DIFERENÇA DE NÍVEL",
           "grupo": "Acidente"
         },
         {
@@ -77,7 +64,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -148,14 +135,14 @@
         }
       ],
       "cargos": [
-        "COMANDANTE / CAPTAIN"
+        "COMANDANTE III / CAPTAIN III"
       ],
       "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GHE 2",
       "pagina": 18,
       "nrs": {
-        "COMANDANTE / CAPTAIN": [
+        "COMANDANTE III / CAPTAIN III": [
           "NR30",
           "NR33",
           "NR35",
@@ -164,23 +151,11 @@
       }
     },
     {
-      "codigo": "2/IMEDIATO",
-      "nome": "IMEDIATO",
+      "codigo": "2/COMANDANTE IV",
+      "nome": "COMANDANTE IV",
       "riscos": [
         {
-          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS)",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "DESCONFORTO TÉRMICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "UMIDADE RELATIVA DO AR INADEQUADA",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "ILUMINÂNCIA INADEQUADA E DESCONFORTO ACÚSTICO",
+          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
           "grupo": "Ergonômicos"
         },
         {
@@ -188,7 +163,7 @@
           "grupo": "Físico"
         },
         {
-          "nome": "QUEDA DE DIFERENÇA DE NÍVEL OU NÍVEL DIFERENTE",
+          "nome": "QUEDA DE OBJETO E QUEDA DE DIFERENÇA DE NÍVEL",
           "grupo": "Acidente"
         },
         {
@@ -230,7 +205,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -301,14 +276,14 @@
         }
       ],
       "cargos": [
-        "IMEDIATO / CHIEF OFFICER"
+        "COMANDANTE IV / CAPTAIN IV"
       ],
       "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GHE 2",
       "pagina": 18,
       "nrs": {
-        "IMEDIATO / CHIEF OFFICER": [
+        "COMANDANTE IV / CAPTAIN IV": [
           "NR30",
           "NR33",
           "NR35",
@@ -317,23 +292,11 @@
       }
     },
     {
-      "codigo": "2/OFIC. QTO CONVES",
-      "nome": "OFIC. QTO CONVES",
+      "codigo": "2/IMEDIATO III",
+      "nome": "IMEDIATO III",
       "riscos": [
         {
-          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS)",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "DESCONFORTO TÉRMICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "UMIDADE RELATIVA DO AR INADEQUADA",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "ILUMINÂNCIA INADEQUADA E DESCONFORTO ACÚSTICO",
+          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
           "grupo": "Ergonômicos"
         },
         {
@@ -341,7 +304,7 @@
           "grupo": "Físico"
         },
         {
-          "nome": "QUEDA DE DIFERENÇA DE NÍVEL OU NÍVEL DIFERENTE",
+          "nome": "QUEDA DE OBJETO E QUEDA DE DIFERENÇA DE NÍVEL",
           "grupo": "Acidente"
         },
         {
@@ -383,7 +346,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -454,14 +417,437 @@
         }
       ],
       "cargos": [
-        "OFIC. QTO CONVES / DECK OFFICER"
+        "IMEDIATO III / CHIEF OFFICER III"
       ],
       "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GHE 2",
       "pagina": 18,
       "nrs": {
-        "OFIC. QTO CONVES / DECK OFFICER": [
+        "IMEDIATO III / CHIEF OFFICER III": [
+          "NR30",
+          "NR33",
+          "NR35",
+          "NR37_BRIGADA"
+        ]
+      }
+    },
+    {
+      "codigo": "2/IMEDIATO IV",
+      "nome": "IMEDIATO IV",
+      "riscos": [
+        {
+          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "RUÍDO CONTÍNUO OU INTERMITENTE",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "QUEDA DE OBJETO E QUEDA DE DIFERENÇA DE NÍVEL",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "ISOLAMENTO SOCIAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "AFASTAMENTO FAMILIAR",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
+          "grupo": "Psicossociais"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "EXAME CLÍNICO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "HEMOGRAMA COM CONTAGEM DE PLAQUETAS",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GLICEMIA",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GRUPO SANGUINEO + FATOR RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "ODONTOLÓGICO SIMPLIFICADO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ACUIDADE VISUAL/TESTE DE VISÃO DE CORES",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AVAL. PSICOSSOCIAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AUDIOMETRIA TONAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Teste Ergométrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "IMEDIATO IV / CHIEF OFFICER IV"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GHE 2",
+      "pagina": 18,
+      "nrs": {
+        "IMEDIATO IV / CHIEF OFFICER IV": [
+          "NR30",
+          "NR33",
+          "NR35",
+          "NR37_BRIGADA"
+        ]
+      }
+    },
+    {
+      "codigo": "2/OFIC. QTO CONVES III",
+      "nome": "OFIC. QTO CONVES III",
+      "riscos": [
+        {
+          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "RUÍDO CONTÍNUO OU INTERMITENTE",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "QUEDA DE OBJETO E QUEDA DE DIFERENÇA DE NÍVEL",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "ISOLAMENTO SOCIAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "AFASTAMENTO FAMILIAR",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
+          "grupo": "Psicossociais"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "EXAME CLÍNICO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "HEMOGRAMA COM CONTAGEM DE PLAQUETAS",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GLICEMIA",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GRUPO SANGUINEO + FATOR RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "ODONTOLÓGICO SIMPLIFICADO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ACUIDADE VISUAL/TESTE DE VISÃO DE CORES",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AVAL. PSICOSSOCIAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AUDIOMETRIA TONAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Teste Ergométrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "OFIC. QTO CONVES III / DECK OFFICER III"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GHE 2",
+      "pagina": 18,
+      "nrs": {
+        "OFIC. QTO CONVES III / DECK OFFICER III": [
+          "NR30",
+          "NR33",
+          "NR35",
+          "NR37_BRIGADA"
+        ]
+      }
+    },
+    {
+      "codigo": "2/OFIC. QTO CONVÉS IV",
+      "nome": "OFIC. QTO CONVÉS IV",
+      "riscos": [
+        {
+          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "RUÍDO CONTÍNUO OU INTERMITENTE",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "QUEDA DE OBJETO E QUEDA DE DIFERENÇA DE NÍVEL",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "ISOLAMENTO SOCIAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "AFASTAMENTO FAMILIAR",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
+          "grupo": "Psicossociais"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "EXAME CLÍNICO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "HEMOGRAMA COM CONTAGEM DE PLAQUETAS",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GLICEMIA",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GRUPO SANGUINEO + FATOR RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "ODONTOLÓGICO SIMPLIFICADO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ACUIDADE VISUAL/TESTE DE VISÃO DE CORES",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AVAL. PSICOSSOCIAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AUDIOMETRIA TONAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Teste Ergométrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "OFIC. QTO CONVÉS IV / DECK OFFICER IV"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GHE 2",
+      "pagina": 18,
+      "nrs": {
+        "OFIC. QTO CONVÉS IV / DECK OFFICER IV": [
           "NR30",
           "NR33",
           "NR35",
@@ -474,19 +860,7 @@
       "nome": "TEC. DE SEG. DO TRAB. OFFSHORE",
       "riscos": [
         {
-          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS)",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "DESCONFORTO TÉRMICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "UMIDADE RELATIVA DO AR INADEQUADA",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "ILUMINÂNCIA INADEQUADA E DESCONFORTO ACÚSTICO",
+          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
           "grupo": "Ergonômicos"
         },
         {
@@ -494,7 +868,7 @@
           "grupo": "Físico"
         },
         {
-          "nome": "QUEDA DE DIFERENÇA DE NÍVEL OU NÍVEL DIFERENTE",
+          "nome": "QUEDA DE OBJETO E QUEDA DE DIFERENÇA DE NÍVEL",
           "grupo": "Acidente"
         },
         {
@@ -536,7 +910,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -624,23 +998,11 @@
       }
     },
     {
-      "codigo": "2/PRATICANTE OFIC.NÁUTICA",
-      "nome": "PRATICANTE OFIC.NÁUTICA",
+      "codigo": "2/SUPERVISOR DE ANCORAGEM",
+      "nome": "SUPERVISOR DE ANCORAGEM",
       "riscos": [
         {
-          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS)",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "DESCONFORTO TÉRMICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "UMIDADE RELATIVA DO AR INADEQUADA",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "ILUMINÂNCIA INADEQUADA E DESCONFORTO ACÚSTICO",
+          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
           "grupo": "Ergonômicos"
         },
         {
@@ -648,7 +1010,7 @@
           "grupo": "Físico"
         },
         {
-          "nome": "QUEDA DE DIFERENÇA DE NÍVEL OU NÍVEL DIFERENTE",
+          "nome": "QUEDA DE OBJETO E QUEDA DE DIFERENÇA DE NÍVEL",
           "grupo": "Acidente"
         },
         {
@@ -690,7 +1052,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -761,45 +1123,31 @@
         }
       ],
       "cargos": [
-        "PRATICANTE OFIC.NÁUTICA / DECK CADET"
+        "SUPERVISOR DE ANCORAGEM / ANCHORAGE SUPERVISOR"
       ],
       "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GHE 2",
       "pagina": 18,
       "nrs": {
-        "PRATICANTE OFIC.NÁUTICA / DECK CADET": [
+        "SUPERVISOR DE ANCORAGEM / ANCHORAGE SUPERVISOR": [
           "NR30",
+          "NR33",
+          "NR35",
           "NR37_BRIGADA"
         ]
       }
     },
     {
-      "codigo": "3.1/CHEFE DE MÁQUINAS",
-      "nome": "CHEFE DE MÁQUINAS",
+      "codigo": "3.1/CHEFE DE MAQUINAS III",
+      "nome": "CHEFE DE MAQUINAS III",
       "riscos": [
         {
-          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS)",
-          "grupo": "Ergonômicos"
+          "nome": "AGENTES BIOLÓGICOS DIVERSOS (COLETA DE ETE)",
+          "grupo": "Biológico"
         },
         {
-          "nome": "DESCONFORTO TÉRMICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "UMIDADE RELATIVA DO AR INADEQUADA",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "ILUMINÂNCIA INADEQUADA E DESCONFORTO ACÚSTICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "MANUSEIO DE FERRAMENTAS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "POSTURA EM PÉ POR LONGOS PERÍODOS",
+          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
           "grupo": "Ergonômicos"
         },
         {
@@ -827,7 +1175,7 @@
           "grupo": "Químico"
         },
         {
-          "nome": "HIDROCARBONETOS E OUTROS COMPOSTOS DE CARBONO",
+          "nome": "OUTRAS SUBSTÂNCIAS QUÍMICAS",
           "grupo": "Químico"
         },
         {
@@ -843,47 +1191,7 @@
           "grupo": "Acidente"
         },
         {
-          "nome": "BAIXA CONCENTRAÇAO DE OXIGÊNIO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "TROPEÇOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "BATER CONTRA/SER ATINGIDO POR PARTES DA ESTRUTURA DE ESPAÇO CONFINADO AMBIENTE COM DIFICULDADES DE ESCAPE E VENTILAÇAO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "CHOQUE ELÉTRICO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "MANUSEIO DE MÁQUINAS E EQUIPAMENTOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "QUEDA DEDIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "EXPLOSÁO MECÂNICA RELACIOADA. A PRESSÃO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PROJEÇAO DE CONDENSADO DE VAPOR",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "CONTATO COM SUPERFÍCIE AQUECIDA",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "BATIDA DE CABEÇA TRONCO COM OUTROS EQUIPAMENTOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PISO ESCORREGADIO ( ÓLEO HIDRÁULICO )",
+          "nome": "OBJETOS CORTANTES E/OU PERFURO CORTANTES E ATIVIDADES CRÍTICAS (TRABALHO EM ALTURA)",
           "grupo": "Acidente"
         },
         {
@@ -925,7 +1233,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -1016,14 +1324,14 @@
         }
       ],
       "cargos": [
-        "CHEFE DE MÁQUINAS / CHIEF ENGINEER"
+        "CHEFE DE MAQUINAS III / CHIEF ENGINEER III"
       ],
       "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GHE 3.1",
       "pagina": 18,
       "nrs": {
-        "CHEFE DE MÁQUINAS / CHIEF ENGINEER": [
+        "CHEFE DE MAQUINAS III / CHIEF ENGINEER III": [
           "NR10",
           "NR30",
           "NR33",
@@ -1033,31 +1341,15 @@
       }
     },
     {
-      "codigo": "3.1/SUBCHEFE DE MÁQUINAS",
-      "nome": "SUBCHEFE DE MÁQUINAS",
+      "codigo": "3.1/CHEFE DE MAQUINAS IV",
+      "nome": "CHEFE DE MAQUINAS IV",
       "riscos": [
         {
-          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS)",
-          "grupo": "Ergonômicos"
+          "nome": "AGENTES BIOLÓGICOS DIVERSOS (COLETA DE ETE)",
+          "grupo": "Biológico"
         },
         {
-          "nome": "DESCONFORTO TÉRMICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "UMIDADE RELATIVA DO AR INADEQUADA",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "ILUMINÂNCIA INADEQUADA E DESCONFORTO ACÚSTICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "MANUSEIO DE FERRAMENTAS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "POSTURA EM PÉ POR LONGOS PERÍODOS",
+          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
           "grupo": "Ergonômicos"
         },
         {
@@ -1085,7 +1377,7 @@
           "grupo": "Químico"
         },
         {
-          "nome": "HIDROCARBONETOS E OUTROS COMPOSTOS DE CARBONO",
+          "nome": "OUTRAS SUBSTÂNCIAS QUÍMICAS",
           "grupo": "Químico"
         },
         {
@@ -1101,47 +1393,7 @@
           "grupo": "Acidente"
         },
         {
-          "nome": "BAIXA CONCENTRAÇAO DE OXIGÊNIO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "TROPEÇOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "BATER CONTRA/SER ATINGIDO POR PARTES DA ESTRUTURA DE ESPAÇO CONFINADO AMBIENTE COM DIFICULDADES DE ESCAPE E VENTILAÇAO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "CHOQUE ELÉTRICO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "MANUSEIO DE MÁQUINAS E EQUIPAMENTOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "QUEDA DEDIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "EXPLOSÁO MECÂNICA RELACIOADA. A PRESSÃO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PROJEÇAO DE CONDENSADO DE VAPOR",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "CONTATO COM SUPERFÍCIE AQUECIDA",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "BATIDA DE CABEÇA TRONCO COM OUTROS EQUIPAMENTOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PISO ESCORREGADIO ( ÓLEO HIDRÁULICO )",
+          "nome": "OBJETOS CORTANTES E/OU PERFURO CORTANTES E ATIVIDADES CRÍTICAS (TRABALHO EM ALTURA)",
           "grupo": "Acidente"
         },
         {
@@ -1183,7 +1435,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -1274,14 +1526,14 @@
         }
       ],
       "cargos": [
-        "SUBCHEFE DE MÁQUINAS / 2ND ENGINEER"
+        "CHEFE DE MAQUINAS IV / CHIEF ENGINEER IV"
       ],
       "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GHE 3.1",
       "pagina": 18,
       "nrs": {
-        "SUBCHEFE DE MÁQUINAS / 2ND ENGINEER": [
+        "CHEFE DE MAQUINAS IV / CHIEF ENGINEER IV": [
           "NR10",
           "NR30",
           "NR33",
@@ -1291,31 +1543,15 @@
       }
     },
     {
-      "codigo": "3.1/OFIC. QTO. MAQ",
-      "nome": "OFIC. QTO. MAQ",
+      "codigo": "3.1/SUBCHEFE DE MAQ. III",
+      "nome": "SUBCHEFE DE MAQ. III",
       "riscos": [
         {
-          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS)",
-          "grupo": "Ergonômicos"
+          "nome": "AGENTES BIOLÓGICOS DIVERSOS (COLETA DE ETE)",
+          "grupo": "Biológico"
         },
         {
-          "nome": "DESCONFORTO TÉRMICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "UMIDADE RELATIVA DO AR INADEQUADA",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "ILUMINÂNCIA INADEQUADA E DESCONFORTO ACÚSTICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "MANUSEIO DE FERRAMENTAS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "POSTURA EM PÉ POR LONGOS PERÍODOS",
+          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
           "grupo": "Ergonômicos"
         },
         {
@@ -1343,7 +1579,7 @@
           "grupo": "Químico"
         },
         {
-          "nome": "HIDROCARBONETOS E OUTROS COMPOSTOS DE CARBONO",
+          "nome": "OUTRAS SUBSTÂNCIAS QUÍMICAS",
           "grupo": "Químico"
         },
         {
@@ -1359,47 +1595,7 @@
           "grupo": "Acidente"
         },
         {
-          "nome": "BAIXA CONCENTRAÇAO DE OXIGÊNIO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "TROPEÇOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "BATER CONTRA/SER ATINGIDO POR PARTES DA ESTRUTURA DE ESPAÇO CONFINADO AMBIENTE COM DIFICULDADES DE ESCAPE E VENTILAÇAO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "CHOQUE ELÉTRICO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "MANUSEIO DE MÁQUINAS E EQUIPAMENTOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "QUEDA DEDIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "EXPLOSÁO MECÂNICA RELACIOADA. A PRESSÃO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PROJEÇAO DE CONDENSADO DE VAPOR",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "CONTATO COM SUPERFÍCIE AQUECIDA",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "BATIDA DE CABEÇA TRONCO COM OUTROS EQUIPAMENTOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PISO ESCORREGADIO ( ÓLEO HIDRÁULICO )",
+          "nome": "OBJETOS CORTANTES E/OU PERFURO CORTANTES E ATIVIDADES CRÍTICAS (TRABALHO EM ALTURA)",
           "grupo": "Acidente"
         },
         {
@@ -1441,7 +1637,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -1532,14 +1728,15 @@
         }
       ],
       "cargos": [
-        "OFIC. QTO. MAQ / ENGINE OFFICER"
+        "SUBCHEFE DE MAQ. III / 2ND ENGINEER III"
       ],
       "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GHE 3.1",
       "pagina": 18,
       "nrs": {
-        "OFIC. QTO. MAQ / ENGINE OFFICER": [
+        "SUBCHEFE DE MAQ. III / 2ND ENGINEER III": [
+          "NR10",
           "NR30",
           "NR33",
           "NR35",
@@ -1548,31 +1745,15 @@
       }
     },
     {
-      "codigo": "3.1/PRATICANTE DE OFICIAL DE MÁQUINAS",
-      "nome": "PRATICANTE DE OFICIAL DE MÁQUINAS",
+      "codigo": "3.1/SUBCHEFE DE MAQ. IV",
+      "nome": "SUBCHEFE DE MAQ. IV",
       "riscos": [
         {
-          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS)",
-          "grupo": "Ergonômicos"
+          "nome": "AGENTES BIOLÓGICOS DIVERSOS (COLETA DE ETE)",
+          "grupo": "Biológico"
         },
         {
-          "nome": "DESCONFORTO TÉRMICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "UMIDADE RELATIVA DO AR INADEQUADA",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "ILUMINÂNCIA INADEQUADA E DESCONFORTO ACÚSTICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "MANUSEIO DE FERRAMENTAS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "POSTURA EM PÉ POR LONGOS PERÍODOS",
+          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
           "grupo": "Ergonômicos"
         },
         {
@@ -1600,7 +1781,7 @@
           "grupo": "Químico"
         },
         {
-          "nome": "HIDROCARBONETOS E OUTROS COMPOSTOS DE CARBONO",
+          "nome": "OUTRAS SUBSTÂNCIAS QUÍMICAS",
           "grupo": "Químico"
         },
         {
@@ -1616,47 +1797,7 @@
           "grupo": "Acidente"
         },
         {
-          "nome": "BAIXA CONCENTRAÇAO DE OXIGÊNIO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "TROPEÇOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "BATER CONTRA/SER ATINGIDO POR PARTES DA ESTRUTURA DE ESPAÇO CONFINADO AMBIENTE COM DIFICULDADES DE ESCAPE E VENTILAÇAO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "CHOQUE ELÉTRICO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "MANUSEIO DE MÁQUINAS E EQUIPAMENTOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "QUEDA DEDIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "EXPLOSÁO MECÂNICA RELACIOADA. A PRESSÃO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PROJEÇAO DE CONDENSADO DE VAPOR",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "CONTATO COM SUPERFÍCIE AQUECIDA",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "BATIDA DE CABEÇA TRONCO COM OUTROS EQUIPAMENTOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PISO ESCORREGADIO ( ÓLEO HIDRÁULICO )",
+          "nome": "OBJETOS CORTANTES E/OU PERFURO CORTANTES E ATIVIDADES CRÍTICAS (TRABALHO EM ALTURA)",
           "grupo": "Acidente"
         },
         {
@@ -1698,7 +1839,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -1789,15 +1930,420 @@
         }
       ],
       "cargos": [
-        "PRATICANTE DE OFICIAL DE MÁQUINAS / ENGINE CADET"
+        "SUBCHEFE DE MAQ. IV / 2ND ENGINEER IV"
       ],
       "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GHE 3.1",
       "pagina": 18,
       "nrs": {
-        "PRATICANTE DE OFICIAL DE MÁQUINAS / ENGINE CADET": [
+        "SUBCHEFE DE MAQ. IV / 2ND ENGINEER IV": [
+          "NR10",
           "NR30",
+          "NR33",
+          "NR35",
+          "NR37_BRIGADA"
+        ]
+      }
+    },
+    {
+      "codigo": "3.1/OFIC. QTO. MAQ III",
+      "nome": "OFIC. QTO. MAQ III",
+      "riscos": [
+        {
+          "nome": "AGENTES BIOLÓGICOS DIVERSOS (COLETA DE ETE)",
+          "grupo": "Biológico"
+        },
+        {
+          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "CALOR",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "RUÍDO CONTÍNUO OU INTERMITENTE",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "VIBRAÇÃO MÃOS EBRAÇOS",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "METAIS (SOB FORMA DE FUMOS OU PARTICULADOS)",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "ÓLEO MINERAL",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "VAPORES ORGÂNICOS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "OUTRAS SUBSTÂNCIAS QUÍMICAS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "MOVIMENTAÇÃO DE MATERIAIS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDA DE OBJETOS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDA DEDIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "OBJETOS CORTANTES E/OU PERFURO CORTANTES E ATIVIDADES CRÍTICAS (TRABALHO EM ALTURA)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "ISOLAMENTO SOCIAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "AFASTAMENTO FAMILIAR",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
+          "grupo": "Psicossociais"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "EXAME CLÍNICO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "HEMOGRAMA COM CONTAGEM DE PLAQUETAS",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GLICEMIA",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GRUPO SANGUINEO + FATOR RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "ODONTOLÓGICO SIMPLIFICADO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ACUIDADE VISUAL/TESTE DE VISÃO DE CORES",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AVAL. PSICOSSOCIAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AUDIOMETRIA TONAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "RX TORAX (AP/P)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "ESPIROMETRIA",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Teste Ergométrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "OFIC. QTO. MAQ III / ENGINE OFFICER III"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GHE 3.1",
+      "pagina": 18,
+      "nrs": {
+        "OFIC. QTO. MAQ III / ENGINE OFFICER III": [
+          "NR30",
+          "NR33",
+          "NR35",
+          "NR37_BRIGADA"
+        ]
+      }
+    },
+    {
+      "codigo": "3.1/OFIC. QTO. MAQ IV",
+      "nome": "OFIC. QTO. MAQ IV",
+      "riscos": [
+        {
+          "nome": "AGENTES BIOLÓGICOS DIVERSOS (COLETA DE ETE)",
+          "grupo": "Biológico"
+        },
+        {
+          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "CALOR",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "RUÍDO CONTÍNUO OU INTERMITENTE",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "VIBRAÇÃO MÃOS EBRAÇOS",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "METAIS (SOB FORMA DE FUMOS OU PARTICULADOS)",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "ÓLEO MINERAL",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "VAPORES ORGÂNICOS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "OUTRAS SUBSTÂNCIAS QUÍMICAS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "MOVIMENTAÇÃO DE MATERIAIS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDA DE OBJETOS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDA DEDIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "OBJETOS CORTANTES E/OU PERFURO CORTANTES E ATIVIDADES CRÍTICAS (TRABALHO EM ALTURA)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "ISOLAMENTO SOCIAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "AFASTAMENTO FAMILIAR",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
+          "grupo": "Psicossociais"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "EXAME CLÍNICO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "HEMOGRAMA COM CONTAGEM DE PLAQUETAS",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GLICEMIA",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GRUPO SANGUINEO + FATOR RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "ODONTOLÓGICO SIMPLIFICADO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ACUIDADE VISUAL/TESTE DE VISÃO DE CORES",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AVAL. PSICOSSOCIAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AUDIOMETRIA TONAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "RX TORAX (AP/P)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "ESPIROMETRIA",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Teste Ergométrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "OFIC. QTO. MAQ IV / ENGINE OFFICER IV"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GHE 3.1",
+      "pagina": 18,
+      "nrs": {
+        "OFIC. QTO. MAQ IV / ENGINE OFFICER IV": [
+          "NR30",
+          "NR33",
+          "NR35",
           "NR37_BRIGADA"
         ]
       }
@@ -1807,27 +2353,11 @@
       "nome": "MARINHEIRO DE MÁQUINAS",
       "riscos": [
         {
-          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS)",
-          "grupo": "Ergonômicos"
+          "nome": "AGENTES BIOLÓGICOS DIVERSOS (COLETA DE ETE)",
+          "grupo": "Biológico"
         },
         {
-          "nome": "DESCONFORTO TÉRMICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "UMIDADE RELATIVA DO AR INADEQUADA",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "ILUMINÂNCIA INADEQUADA E DESCONFORTO ACÚSTICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "MANUSEIO DE FERRAMENTAS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "POSTURA EM PÉ POR LONGOS PERÍODOS",
+          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
           "grupo": "Ergonômicos"
         },
         {
@@ -1839,7 +2369,7 @@
           "grupo": "Físico"
         },
         {
-          "nome": "RADIAÇÃO NÃO IONIZANTE E VIBRAÇÃO DAS MÃOS E BRAÇOS",
+          "nome": "RADIAÇÃO NÃOIONIZANTE E VIBRAÇÃO DAS MÃOS E BRAÇOS",
           "grupo": "Físico"
         },
         {
@@ -1847,7 +2377,7 @@
           "grupo": "Químico"
         },
         {
-          "nome": "POEIRAS METÁLICAS",
+          "nome": "METAIS (SOB A FORMA DE FUMOS OU PARTICULADOS)",
           "grupo": "Químico"
         },
         {
@@ -1855,71 +2385,23 @@
           "grupo": "Químico"
         },
         {
-          "nome": "HIDROCARBONETOS E OUTROS COMPOSTOS DE CARBONO",
+          "nome": "OUTRAS SUBSTÂNCIAS QUÍMICAS",
           "grupo": "Químico"
         },
         {
-          "nome": "FUMOS METÁLICOS",
-          "grupo": "Químico"
-        },
-        {
-          "nome": "MANUTENÇAO EM EFLUENTES SANITÁRIOS",
-          "grupo": "Biológico"
-        },
-        {
-          "nome": "CHOQUE ELÉTRICO",
+          "nome": "MOVIMENTAÇÃO DE MATERIAIS",
           "grupo": "Acidente"
         },
         {
-          "nome": "MANUSEIO DE MÁQUINAS E EQUIPAMENTOS",
+          "nome": "QUEDA DE OBJETOS",
           "grupo": "Acidente"
         },
         {
-          "nome": "QUEDA DEDIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
+          "nome": "QUEDA DE DIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
           "grupo": "Acidente"
         },
         {
-          "nome": "CONTATO COM PARTES MÓVEIS DE MÁQUINAS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "EQUIPAMENTOS OU FERRAMENTAS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PROJEÇAO DE CONDENSADO DE VAPOR",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "CONTATO COM ENERGIA ELÉTRICA",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "BATER COM CABEÇA",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "TRONCO E MEMBROS SUPERIORES E INFERIORES CONTRA OUROS EQUIPAMENTOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PISO ESCORREGADIO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PROJEÇAO DE MATERIAL",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "INCÊNDIO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "EXPLOSÁO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "BAIXA CONCENTRAÇÁO DE OXIGÊNIO",
+          "nome": "OBJETOS CORTANTES E/OU PERFURO CORTANTES E ATIVIDADES CRÍTICAS (TRABALHO EM ALTURA, ESPAÇO CONFINADO)",
           "grupo": "Acidente"
         },
         {
@@ -1961,7 +2443,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -2068,31 +2550,15 @@
       }
     },
     {
-      "codigo": "3.2/MECANICO DE MANUTENCAO JR",
-      "nome": "MECANICO DE MANUTENCAO JR",
+      "codigo": "3.2/MECANICO DE MANUTENCAO JUNIOR",
+      "nome": "MECANICO DE MANUTENCAO JUNIOR",
       "riscos": [
         {
-          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS)",
-          "grupo": "Ergonômicos"
+          "nome": "AGENTES BIOLÓGICOS DIVERSOS (COLETA DE ETE)",
+          "grupo": "Biológico"
         },
         {
-          "nome": "DESCONFORTO TÉRMICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "UMIDADE RELATIVA DO AR INADEQUADA",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "ILUMINÂNCIA INADEQUADA E DESCONFORTO ACÚSTICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "MANUSEIO DE FERRAMENTAS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "POSTURA EM PÉ POR LONGOS PERÍODOS",
+          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
           "grupo": "Ergonômicos"
         },
         {
@@ -2104,767 +2570,11 @@
           "grupo": "Físico"
         },
         {
-          "nome": "RADIAÇÃO NÃO IONIZANTE E VIBRAÇÃO DAS MÃOS E BRAÇOS",
+          "nome": "RADIAÇÃO NÃOIONIZANTE E VIBRAÇÃO DAS MÃOS E BRAÇOS",
           "grupo": "Físico"
         },
         {
           "nome": "ÓLEO MINERAL",
-          "grupo": "Químico"
-        },
-        {
-          "nome": "POEIRAS METÁLICAS",
-          "grupo": "Químico"
-        },
-        {
-          "nome": "VAPORES ORGÂNICOS",
-          "grupo": "Químico"
-        },
-        {
-          "nome": "HIDROCARBONETOS E OUTROS COMPOSTOS DE CARBONO",
-          "grupo": "Químico"
-        },
-        {
-          "nome": "FUMOS METÁLICOS",
-          "grupo": "Químico"
-        },
-        {
-          "nome": "MANUTENÇAO EM EFLUENTES SANITÁRIOS",
-          "grupo": "Biológico"
-        },
-        {
-          "nome": "CHOQUE ELÉTRICO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "MANUSEIO DE MÁQUINAS E EQUIPAMENTOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "QUEDA DEDIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "CONTATO COM PARTES MÓVEIS DE MÁQUINAS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "EQUIPAMENTOS OU FERRAMENTAS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PROJEÇAO DE CONDENSADO DE VAPOR",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "CONTATO COM ENERGIA ELÉTRICA",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "BATER COM CABEÇA",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "TRONCO E MEMBROS SUPERIORES E INFERIORES CONTRA OUROS EQUIPAMENTOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PISO ESCORREGADIO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PROJEÇAO DE MATERIAL",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "INCÊNDIO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "EXPLOSÁO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "BAIXA CONCENTRAÇÁO DE OXIGÊNIO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
-          "grupo": "Psicossociais"
-        },
-        {
-          "nome": "ISOLAMENTO SOCIAL",
-          "grupo": "Psicossociais"
-        },
-        {
-          "nome": "AFASTAMENTO FAMILIAR",
-          "grupo": "Psicossociais"
-        },
-        {
-          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
-          "grupo": "Psicossociais"
-        }
-      ],
-      "exames": [
-        {
-          "nome": "EXAME CLÍNICO",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": true
-        },
-        {
-          "nome": "HEMOGRAMA COM CONTAGEM DE PLAQUETAS",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": false
-        },
-        {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": false
-        },
-        {
-          "nome": "GRUPO SANGUINEO + FATOR RH",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": null,
-          "ret_trab": false,
-          "mud_riscos": false,
-          "demissao": false
-        },
-        {
-          "nome": "ODONTOLÓGICO SIMPLIFICADO",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": false
-        },
-        {
-          "nome": "ACUIDADE VISUAL/TESTE DE VISÃO DE CORES",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": false
-        },
-        {
-          "nome": "AVAL. PSICOSSOCIAL",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": false
-        },
-        {
-          "nome": "AUDIOMETRIA TONAL",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": true
-        },
-        {
-          "nome": "RX TORAX (AP/P)",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 24,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": true
-        },
-        {
-          "nome": "ESPIROMETRIA",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 24,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": true
-        },
-        {
-          "nome": "Teste Ergométrico",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": false
-        }
-      ],
-      "cargos": [
-        "MECANICO DE MANUTENCAO JR / MECHANIC JR"
-      ],
-      "avisos": [],
-      "ausencia_riscos": false,
-      "setor_override": "GHE 3.2",
-      "pagina": 18,
-      "nrs": {
-        "MECANICO DE MANUTENCAO JR / MECHANIC JR": [
-          "NR30",
-          "NR33",
-          "NR35",
-          "NR37_BRIGADA"
-        ]
-      }
-    },
-    {
-      "codigo": "3.2/MECANICO DE MANUTENCAO PL",
-      "nome": "MECANICO DE MANUTENCAO PL",
-      "riscos": [
-        {
-          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS)",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "DESCONFORTO TÉRMICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "UMIDADE RELATIVA DO AR INADEQUADA",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "ILUMINÂNCIA INADEQUADA E DESCONFORTO ACÚSTICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "MANUSEIO DE FERRAMENTAS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "POSTURA EM PÉ POR LONGOS PERÍODOS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "CALOR",
-          "grupo": "Físico"
-        },
-        {
-          "nome": "RUÍDO CONTÍNUO OU INTERMITENTE",
-          "grupo": "Físico"
-        },
-        {
-          "nome": "RADIAÇÃO NÃO IONIZANTE E VIBRAÇÃO DAS MÃOS E BRAÇOS",
-          "grupo": "Físico"
-        },
-        {
-          "nome": "ÓLEO MINERAL",
-          "grupo": "Químico"
-        },
-        {
-          "nome": "POEIRAS METÁLICAS",
-          "grupo": "Químico"
-        },
-        {
-          "nome": "VAPORES ORGÂNICOS",
-          "grupo": "Químico"
-        },
-        {
-          "nome": "HIDROCARBONETOS E OUTROS COMPOSTOS DE CARBONO",
-          "grupo": "Químico"
-        },
-        {
-          "nome": "FUMOS METÁLICOS",
-          "grupo": "Químico"
-        },
-        {
-          "nome": "MANUTENÇAO EM EFLUENTES SANITÁRIOS",
-          "grupo": "Biológico"
-        },
-        {
-          "nome": "CHOQUE ELÉTRICO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "MANUSEIO DE MÁQUINAS E EQUIPAMENTOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "QUEDA DEDIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "CONTATO COM PARTES MÓVEIS DE MÁQUINAS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "EQUIPAMENTOS OU FERRAMENTAS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PROJEÇAO DE CONDENSADO DE VAPOR",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "CONTATO COM ENERGIA ELÉTRICA",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "BATER COM CABEÇA",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "TRONCO E MEMBROS SUPERIORES E INFERIORES CONTRA OUROS EQUIPAMENTOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PISO ESCORREGADIO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PROJEÇAO DE MATERIAL",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "INCÊNDIO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "EXPLOSÁO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "BAIXA CONCENTRAÇÁO DE OXIGÊNIO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
-          "grupo": "Psicossociais"
-        },
-        {
-          "nome": "ISOLAMENTO SOCIAL",
-          "grupo": "Psicossociais"
-        },
-        {
-          "nome": "AFASTAMENTO FAMILIAR",
-          "grupo": "Psicossociais"
-        },
-        {
-          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
-          "grupo": "Psicossociais"
-        }
-      ],
-      "exames": [
-        {
-          "nome": "EXAME CLÍNICO",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": true
-        },
-        {
-          "nome": "HEMOGRAMA COM CONTAGEM DE PLAQUETAS",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": false
-        },
-        {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": false
-        },
-        {
-          "nome": "GRUPO SANGUINEO + FATOR RH",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": null,
-          "ret_trab": false,
-          "mud_riscos": false,
-          "demissao": false
-        },
-        {
-          "nome": "ODONTOLÓGICO SIMPLIFICADO",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": false
-        },
-        {
-          "nome": "ACUIDADE VISUAL/TESTE DE VISÃO DE CORES",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": false
-        },
-        {
-          "nome": "AVAL. PSICOSSOCIAL",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": false
-        },
-        {
-          "nome": "AUDIOMETRIA TONAL",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": true
-        },
-        {
-          "nome": "RX TORAX (AP/P)",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 24,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": true
-        },
-        {
-          "nome": "ESPIROMETRIA",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 24,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": true
-        },
-        {
-          "nome": "Teste Ergométrico",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": false
-        }
-      ],
-      "cargos": [
-        "MECANICO DE MANUTENCAO PL / MECHANIC SR"
-      ],
-      "avisos": [],
-      "ausencia_riscos": false,
-      "setor_override": "GHE 3.2",
-      "pagina": 18,
-      "nrs": {
-        "MECANICO DE MANUTENCAO PL / MECHANIC SR": [
-          "NR30",
-          "NR33",
-          "NR35",
-          "NR37_BRIGADA"
-        ]
-      }
-    },
-    {
-      "codigo": "3.3/ELETRICISTA",
-      "nome": "ELETRICISTA",
-      "riscos": [
-        {
-          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS)",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "DESCONFORTO TÉRMICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "UMIDADE RELATIVA DO AR INADEQUADA",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "ILUMINÂNCIA INADEQUADA E DESCONFORTO ACÚSTICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "MANUSEIO DE FERRAMENTAS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "POSTURA EM PÉ POR LONGOS PERÍODOS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "CALOR",
-          "grupo": "Físico"
-        },
-        {
-          "nome": "RUÍDO CONTÍNUO OU INTERMITENTE",
-          "grupo": "Físico"
-        },
-        {
-          "nome": "HIDROCARBONETOS E OUTROS COMPOSTOS DE CARBONO",
-          "grupo": "Químico"
-        },
-        {
-          "nome": "TROPEÇOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "BATER CONTRA/SER ATINGIDO POR PARTES DA ESTRUTURA DE ESPAÇO CONFINADO AMBIENTE COM DIFICULDADES DE ESCAPE E VENTILAÇAO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "CHOQUE ELÉTRICO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "MANUSEIO DE MÁQUINAS E EQUIPAMENTOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "QUEDA DEDIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "EXPLOSÁO MECÂNICA RELACIOADA. A PRESSÃO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PROJEÇAO DE CONDENSADO DE VAPOR",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "CONTATO COM SUPERFÍCIE AQUECIDA",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "BATIDA DE CABEÇA TRONCO COM OUTROS EQUIPAMENTOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PISO ESCORREGADIO ( ÓLEO HIDRÁULICO )",
-          "grupo": "Acidente"
-        }
-      ],
-      "exames": [
-        {
-          "nome": "EXAME CLÍNICO",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": true
-        },
-        {
-          "nome": "HEMOGRAMA COM CONTAGEM DE PLAQUETAS",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": false
-        },
-        {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": false
-        },
-        {
-          "nome": "GRUPO SANGUINEO + FATOR RH",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": null,
-          "ret_trab": false,
-          "mud_riscos": false,
-          "demissao": false
-        },
-        {
-          "nome": "ODONTOLÓGICO SIMPLIFICADO",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": false
-        },
-        {
-          "nome": "ACUIDADE VISUAL/TESTE DE VISÃO DE CORES",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": false
-        },
-        {
-          "nome": "AVAL. PSICOSSOCIAL",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": false
-        },
-        {
-          "nome": "AUDIOMETRIA TONAL",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": true
-        },
-        {
-          "nome": "RX TORAX (AP/P)",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 24,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": true
-        },
-        {
-          "nome": "ESPIROMETRIA",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 24,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": true
-        },
-        {
-          "nome": "Teste Ergométrico",
-          "admissao": true,
-          "apos_adm_meses": null,
-          "apos_adm": false,
-          "periodico_meses": 12,
-          "ret_trab": true,
-          "mud_riscos": true,
-          "demissao": false
-        }
-      ],
-      "cargos": [
-        "ELETRICISTA / ELECTRICIAN"
-      ],
-      "avisos": [],
-      "ausencia_riscos": false,
-      "setor_override": "GHE 3.3",
-      "pagina": 19,
-      "nrs": {
-        "ELETRICISTA / ELECTRICIAN": [
-          "NR10",
-          "NR30",
-          "NR33",
-          "NR35",
-          "NR37_BRIGADA"
-        ]
-      }
-    },
-    {
-      "codigo": "4/MARINHEIRO DE CONVÉS",
-      "nome": "MARINHEIRO DE CONVÉS",
-      "riscos": [
-        {
-          "nome": "POSTURAS INADEQUADAS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "ILUMINÂNCIAINADEQUADA",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "UMIDADE",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "DESCONFORTO ACÚSTICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "DESCONFORTO TÉRMICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "RITMO DE TRABALH INTENSO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "MANUSEIO DE OBJETOS PESADOS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "LEVANTAMENTO E RANSPORTE DE CARGA",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "PUXAR E EMPURRAR",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "POSTURA EM PÉ POR LONGOS PERÍODOS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "CALOR",
-          "grupo": "Físico"
-        },
-        {
-          "nome": "RUÍDO CONTÍNUO OU INTERMITENTE",
-          "grupo": "Físico"
-        },
-        {
-          "nome": "RADIAÇÃO NÃO IONIZANTE E VIBRAÇÃO DAS MÃOS E BRAÇOS",
-          "grupo": "Físico"
-        },
-        {
-          "nome": "HIDROCARBONETOS E OUTROS COMPOSTOS DE CARBONO",
           "grupo": "Químico"
         },
         {
@@ -2873,6 +2583,10 @@
         },
         {
           "nome": "VAPORES ORGÂNICOS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "OUTRAS SUBSTÂNCIAS QUÍMICAS",
           "grupo": "Químico"
         },
         {
@@ -2888,79 +2602,11 @@
           "grupo": "Acidente"
         },
         {
-          "nome": "OBJETOS CORTANTES E/OU PERFURO CORTANTES E ATIVIDADES CRÍTICAS (TRABALHO EM ALTURA)",
+          "nome": "OBJETOS CORTANTES E/OU PERFURO CORTANTES E ATIVIDADES CRÍTICAS (TRABALHO EM ALTURA, ESPAÇO CONFINADO)",
           "grupo": "Acidente"
         },
         {
-          "nome": "CONTATO DO RLETE DAS ESCADAS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "QUEDA DE HOMEM AO MAR",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "QUEDA DE MANGOTE",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "ROMPIMENTO DE CABO DE AMARRAÇÃO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PRENSAMENTO E ESMAGAMENTOLIBERAÇAO INADVERTIDA E ARRASTE DE CONJUNTO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PRENWSAMENTO DE DEDOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "QUEDA DE OBJETOS SUSPENSOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "BAIXA CONCENTRAÇAO DE OXIGÊNIO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "AMBIENTE COM DIFICULDADE DE ESCAPE DE VENTILAÇÃO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "TRAVAMENTO DE AMARRA",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "TOMBAMENTO DE CARGA",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "DESPRENDIMENTO DO ESTROPO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "RUPTURA DE TUBULAÇOES",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "ABALROAMENTO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "INCÊNDIO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "EXPLOSÃO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "IMPACTO DO REGIME",
-          "grupo": "Psicossociais"
-        },
-        {
-          "nome": "QUEDA DE MANGOTE SOBRE TRIPULANTE DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
           "grupo": "Psicossociais"
         },
         {
@@ -2998,7 +2644,773 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GRUPO SANGUINEO + FATOR RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "ODONTOLÓGICO SIMPLIFICADO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ACUIDADE VISUAL/TESTE DE VISÃO DE CORES",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AVAL. PSICOSSOCIAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AUDIOMETRIA TONAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "RX TORAX (AP/P)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "ESPIROMETRIA",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Teste Ergométrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "MECANICO DE MANUTENCAO JUNIOR / MECHANIC JR"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GHE 3.2",
+      "pagina": 18,
+      "nrs": {
+        "MECANICO DE MANUTENCAO JUNIOR / MECHANIC JR": [
+          "NR30",
+          "NR33",
+          "NR35",
+          "NR37_BRIGADA"
+        ]
+      }
+    },
+    {
+      "codigo": "3.2/MECANICO DE MANUTENCAO PLENO",
+      "nome": "MECANICO DE MANUTENCAO PLENO",
+      "riscos": [
+        {
+          "nome": "AGENTES BIOLÓGICOS DIVERSOS (COLETA DE ETE)",
+          "grupo": "Biológico"
+        },
+        {
+          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "CALOR",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "RUÍDO CONTÍNUO OU INTERMITENTE",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "RADIAÇÃO NÃOIONIZANTE E VIBRAÇÃO DAS MÃOS E BRAÇOS",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "ÓLEO MINERAL",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "METAIS (SOB A FORMA DE FUMOS OU PARTICULADOS)",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "VAPORES ORGÂNICOS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "OUTRAS SUBSTÂNCIAS QUÍMICAS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "MOVIMENTAÇÃO DE MATERIAIS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDA DE OBJETOS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDA DE DIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "OBJETOS CORTANTES E/OU PERFURO CORTANTES E ATIVIDADES CRÍTICAS (TRABALHO EM ALTURA, ESPAÇO CONFINADO)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "ISOLAMENTO SOCIAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "AFASTAMENTO FAMILIAR",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
+          "grupo": "Psicossociais"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "EXAME CLÍNICO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "HEMOGRAMA COM CONTAGEM DE PLAQUETAS",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GLICEMIA",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GRUPO SANGUINEO + FATOR RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "ODONTOLÓGICO SIMPLIFICADO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ACUIDADE VISUAL/TESTE DE VISÃO DE CORES",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AVAL. PSICOSSOCIAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AUDIOMETRIA TONAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "RX TORAX (AP/P)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "ESPIROMETRIA",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Teste Ergométrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "MECANICO DE MANUTENCAO PLENO / MECHANIC SR"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GHE 3.2",
+      "pagina": 18,
+      "nrs": {
+        "MECANICO DE MANUTENCAO PLENO / MECHANIC SR": [
+          "NR30",
+          "NR33",
+          "NR35",
+          "NR37_BRIGADA"
+        ]
+      }
+    },
+    {
+      "codigo": "3.3/ELETRICISTA III",
+      "nome": "ELETRICISTA III",
+      "riscos": [
+        {
+          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) EORGANIZAÇÃO DO TRABALHO",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "CALOR",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "RUÍDO CONTÍNUO OU INTERMITENTE",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "RADIAÇÃO NÃOIONIZANTE E VIBRAÇÃO DAS MÃOS E BRAÇOSE BRAÇOS",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "SUBSTÂNCIAS QUÍMICAS DIVERSAS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "MOVIMENTAÇÃO DE MATERIAIS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDA DE OBJETOS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDA DE DIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "OBJETOS CORTANTES E/OU PERFUROCORTANTES E ATIVIDADES CRÍTICAS (TRABALHO EM ALTURA, ELETRICIDADE)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "ISOLAMENTO SOCIAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "AFASTAMENTO FAMILIAR",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
+          "grupo": "Psicossociais"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "EXAME CLÍNICO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "HEMOGRAMA COM CONTAGEM DE PLAQUETAS",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GLICEMIA",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GRUPO SANGUINEO + FATOR RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "ODONTOLÓGICO SIMPLIFICADO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ACUIDADE VISUAL/TESTE DE VISÃO DE CORES",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AVAL. PSICOSSOCIAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AUDIOMETRIA TONAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "RX TORAX (AP/P)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "ESPIROMETRIA",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Teste Ergométrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "ELETRICISTA III / ELECTRICIAN III"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GHE 3.3",
+      "pagina": 18,
+      "nrs": {
+        "ELETRICISTA III / ELECTRICIAN III": [
+          "NR10",
+          "NR30",
+          "NR33",
+          "NR35",
+          "NR37_BRIGADA"
+        ]
+      }
+    },
+    {
+      "codigo": "3.3/ELETRICISTA IV-B",
+      "nome": "ELETRICISTA IV-B",
+      "riscos": [
+        {
+          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) EORGANIZAÇÃO DO TRABALHO",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "CALOR",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "RUÍDO CONTÍNUO OU INTERMITENTE",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "RADIAÇÃO NÃOIONIZANTE E VIBRAÇÃO DAS MÃOS E BRAÇOSE BRAÇOS",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "SUBSTÂNCIAS QUÍMICAS DIVERSAS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "MOVIMENTAÇÃO DE MATERIAIS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDA DE OBJETOS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDA DE DIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "OBJETOS CORTANTES E/OU PERFUROCORTANTES E ATIVIDADES CRÍTICAS (TRABALHO EM ALTURA, ELETRICIDADE)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "ISOLAMENTO SOCIAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "AFASTAMENTO FAMILIAR",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
+          "grupo": "Psicossociais"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "EXAME CLÍNICO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "HEMOGRAMA COM CONTAGEM DE PLAQUETAS",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GLICEMIA",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GRUPO SANGUINEO + FATOR RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "ODONTOLÓGICO SIMPLIFICADO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ACUIDADE VISUAL/TESTE DE VISÃO DE CORES",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AVAL. PSICOSSOCIAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AUDIOMETRIA TONAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "RX TORAX (AP/P)",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "ESPIROMETRIA",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 24,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Teste Ergométrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "ELETRICISTA IV-B / ELECTRICIAN IV-B"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GHE 3.3",
+      "pagina": 18,
+      "nrs": {
+        "ELETRICISTA IV-B / ELECTRICIAN IV-B": [
+          "NR10",
+          "NR30",
+          "NR33",
+          "NR35",
+          "NR37_BRIGADA"
+        ]
+      }
+    },
+    {
+      "codigo": "4/MARINHEIRO DE CONVÉS",
+      "nome": "MARINHEIRO DE CONVÉS",
+      "riscos": [
+        {
+          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) EORGANIZAÇÃO DO TRABALHO",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "CALOR",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "RUÍDO CONTÍNUO OU INTERMITENTE",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "RADIAÇÃO NÃO IONIZANTE E VIBRAÇÃO DAS MÃOS E BRAÇOS",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "METAIS (SOB A FORMA DE FUMOS OU PARTICULADOS)",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "VAPORES ORGÂNICOS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "OUTRAS SUBSTÂNCIAS QUÍMICAS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "MOVIMENTAÇÃO DE MATERIAIS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDA DE OBJETOS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDE DIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "OBJETOS CORTANTES E/OU PERFURO CORTANTES E ATIVIDADES CRÍTICAS (TRABALHO EM ALTURA)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "ISOLAMENTO SOCIAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "AFASTAMENTO FAMILIAR",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
+          "grupo": "Psicossociais"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "EXAME CLÍNICO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "HEMOGRAMA COM CONTAGEM DE PLAQUETAS",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -3085,47 +3497,11 @@
       }
     },
     {
-      "codigo": "4/OPERADOR DE GUINDASTE",
-      "nome": "OPERADOR DE GUINDASTE",
+      "codigo": "4/MARINHEIRO DE CONVÉS II",
+      "nome": "MARINHEIRO DE CONVÉS II",
       "riscos": [
         {
-          "nome": "POSTURAS INADEQUADAS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "ILUMINÂNCIAINADEQUADA",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "UMIDADE",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "DESCONFORTO ACÚSTICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "DESCONFORTO TÉRMICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "RITMO DE TRABALH INTENSO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "MANUSEIO DE OBJETOS PESADOS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "LEVANTAMENTO E RANSPORTE DE CARGA",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "PUXAR E EMPURRAR",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "POSTURA EM PÉ POR LONGOS PERÍODOS",
+          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) EORGANIZAÇÃO DO TRABALHO",
           "grupo": "Ergonômicos"
         },
         {
@@ -3141,15 +3517,15 @@
           "grupo": "Físico"
         },
         {
-          "nome": "HIDROCARBONETOS E OUTROS COMPOSTOS DE CARBONO",
-          "grupo": "Químico"
-        },
-        {
           "nome": "METAIS (SOB A FORMA DE FUMOS OU PARTICULADOS)",
           "grupo": "Químico"
         },
         {
           "nome": "VAPORES ORGÂNICOS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "OUTRAS SUBSTÂNCIAS QUÍMICAS",
           "grupo": "Químico"
         },
         {
@@ -3161,7 +3537,7 @@
           "grupo": "Acidente"
         },
         {
-          "nome": "QUEDA DE DIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
+          "nome": "QUEDE DIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
           "grupo": "Acidente"
         },
         {
@@ -3169,75 +3545,7 @@
           "grupo": "Acidente"
         },
         {
-          "nome": "CONTATO DO RLETE DAS ESCADAS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "QUEDA DE HOMEM AO MAR",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "QUEDA DE MANGOTE",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "ROMPIMENTO DE CABO DE AMARRAÇÃO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PRENSAMENTO E ESMAGAMENTOLIBERAÇAO INADVERTIDA E ARRASTE DE CONJUNTO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PRENWSAMENTO DE DEDOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "QUEDA DE OBJETOS SUSPENSOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "BAIXA CONCENTRAÇAO DE OXIGÊNIO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "AMBIENTE COM DIFICULDADE DE ESCAPE DE VENTILAÇÃO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "TRAVAMENTO DE AMARRA",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "TOMBAMENTO DE CARGA",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "DESPRENDIMENTO DO ESTROPO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "RUPTURA DE TUBULAÇOES",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "ABALROAMENTO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "INCÊNDIO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "EXPLOSÃO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "IMPACTO DO REGIME",
-          "grupo": "Psicossociais"
-        },
-        {
-          "nome": "QUEDA DE MANGOTE SOBRE TRIPULANTE DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
           "grupo": "Psicossociais"
         },
         {
@@ -3275,7 +3583,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -3346,14 +3654,533 @@
         }
       ],
       "cargos": [
-        "OPERADOR DE GUINDASTE / CRANE OPERATOR"
+        "MARINHEIRO DE CONVÉS II / ABLE SEAMAN II"
       ],
       "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GHE 4",
       "pagina": 20,
       "nrs": {
-        "OPERADOR DE GUINDASTE / CRANE OPERATOR": [
+        "MARINHEIRO DE CONVÉS II / ABLE SEAMAN II": [
+          "NR30",
+          "NR33",
+          "NR35",
+          "NR37_BRIGADA"
+        ]
+      }
+    },
+    {
+      "codigo": "4/MARINHEIRO DE CONVÉS III",
+      "nome": "MARINHEIRO DE CONVÉS III",
+      "riscos": [
+        {
+          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) EORGANIZAÇÃO DO TRABALHO",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "CALOR",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "RUÍDO CONTÍNUO OU INTERMITENTE",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "RADIAÇÃO NÃO IONIZANTE E VIBRAÇÃO DAS MÃOS E BRAÇOS",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "METAIS (SOB A FORMA DE FUMOS OU PARTICULADOS)",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "VAPORES ORGÂNICOS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "OUTRAS SUBSTÂNCIAS QUÍMICAS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "MOVIMENTAÇÃO DE MATERIAIS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDA DE OBJETOS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDE DIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "OBJETOS CORTANTES E/OU PERFURO CORTANTES E ATIVIDADES CRÍTICAS (TRABALHO EM ALTURA)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "ISOLAMENTO SOCIAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "AFASTAMENTO FAMILIAR",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
+          "grupo": "Psicossociais"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "EXAME CLÍNICO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "HEMOGRAMA COM CONTAGEM DE PLAQUETAS",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GLICEMIA",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GRUPO SANGUINEO + FATOR RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "ODONTOLÓGICO SIMPLIFICADO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ACUIDADE VISUAL/TESTE DE VISÃO DE CORES",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AVAL. PSICOSSOCIAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AUDIOMETRIA TONAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Teste Ergométrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "MARINHEIRO DE CONVÉS III / ABLE SEAMAN III"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GHE 4",
+      "pagina": 20,
+      "nrs": {
+        "MARINHEIRO DE CONVÉS III / ABLE SEAMAN III": [
+          "NR30",
+          "NR33",
+          "NR35",
+          "NR37_BRIGADA"
+        ]
+      }
+    },
+    {
+      "codigo": "4/MOÇO DE CONVÉS",
+      "nome": "MOÇO DE CONVÉS",
+      "riscos": [
+        {
+          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) EORGANIZAÇÃO DO TRABALHO",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "CALOR",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "RUÍDO CONTÍNUO OU INTERMITENTE",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "RADIAÇÃO NÃO IONIZANTE E VIBRAÇÃO DAS MÃOS E BRAÇOS",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "METAIS (SOB A FORMA DE FUMOS OU PARTICULADOS)",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "VAPORES ORGÂNICOS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "OUTRAS SUBSTÂNCIAS QUÍMICAS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "MOVIMENTAÇÃO DE MATERIAIS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDA DE OBJETOS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDE DIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "OBJETOS CORTANTES E/OU PERFURO CORTANTES E ATIVIDADES CRÍTICAS (TRABALHO EM ALTURA)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "ISOLAMENTO SOCIAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "AFASTAMENTO FAMILIAR",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
+          "grupo": "Psicossociais"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "EXAME CLÍNICO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "HEMOGRAMA COM CONTAGEM DE PLAQUETAS",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GLICEMIA",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GRUPO SANGUINEO + FATOR RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "ODONTOLÓGICO SIMPLIFICADO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ACUIDADE VISUAL/TESTE DE VISÃO DE CORES",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AVAL. PSICOSSOCIAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AUDIOMETRIA TONAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Teste Ergométrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "MOÇO DE CONVÉS / ORDINARY SEAMAN"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GHE 4",
+      "pagina": 20,
+      "nrs": {
+        "MOÇO DE CONVÉS / ORDINARY SEAMAN": [
+          "NR30",
+          "NR33",
+          "NR35",
+          "NR37_BRIGADA"
+        ]
+      }
+    },
+    {
+      "codigo": "4/OPERADOR DE GUINDASTE FIXO I",
+      "nome": "OPERADOR DE GUINDASTE FIXO I",
+      "riscos": [
+        {
+          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) EORGANIZAÇÃO DO TRABALHO",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "CALOR",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "RUÍDO CONTÍNUO OU INTERMITENTE",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "RADIAÇÃO NÃO IONIZANTE E VIBRAÇÃO DAS MÃOS E BRAÇOS",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "METAIS (SOB A FORMA DE FUMOS OU PARTICULADOS)",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "VAPORES ORGÂNICOS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "OUTRAS SUBSTÂNCIAS QUÍMICAS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "MOVIMENTAÇÃO DE MATERIAIS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDA DE OBJETOS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDE DIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "OBJETOS CORTANTES E/OU PERFURO CORTANTES E ATIVIDADES CRÍTICAS (TRABALHO EM ALTURA)",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "ISOLAMENTO SOCIAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "AFASTAMENTO FAMILIAR",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
+          "grupo": "Psicossociais"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "EXAME CLÍNICO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "HEMOGRAMA COM CONTAGEM DE PLAQUETAS",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GLICEMIA",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GRUPO SANGUINEO + FATOR RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "ODONTOLÓGICO SIMPLIFICADO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ACUIDADE VISUAL/TESTE DE VISÃO DE CORES",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AVAL. PSICOSSOCIAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AUDIOMETRIA TONAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Teste Ergométrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "OPERADOR DE GUINDASTE FIXO I / CRANE OPERATOR I"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GHE 4",
+      "pagina": 20,
+      "nrs": {
+        "OPERADOR DE GUINDASTE FIXO I / CRANE OPERATOR I": [
           "NR30",
           "NR33",
           "NR35",
@@ -3412,7 +4239,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -3547,7 +4374,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -3682,7 +4509,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -3767,27 +4594,15 @@
       }
     },
     {
-      "codigo": "7/ENFERMEIRO",
-      "nome": "ENFERMEIRO",
+      "codigo": "7/ENFERMEIRO OFFSHORE",
+      "nome": "ENFERMEIRO OFFSHORE",
       "riscos": [
         {
-          "nome": "CONTATO COM MICROORGANISMOS PATOGÊNICOS",
+          "nome": "CONTATO COM PACIENTES PARA REALIZAÇÃO DE TRIAGEM E EXAMES",
           "grupo": "Biológico"
         },
         {
-          "nome": "RUÍDO CONTÍNUO OU INTERMITENTE",
-          "grupo": "Físico"
-        },
-        {
-          "nome": "BIOMECÃNICOS (POSTURAS INADEQUADAS)",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "QUEDA DE OBJETOS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "QUEDA EM NÍVEL DIFERNTE E MESMO NÍVEL",
+          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
           "grupo": "Ergonômicos"
         },
         {
@@ -3829,7 +4644,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -3910,53 +4725,25 @@
         }
       ],
       "cargos": [
-        "ENFERMEIRO / NURSE"
+        "ENFERMEIRO OFFSHORE / NURSE"
       ],
       "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GHE 7",
       "pagina": 20,
       "nrs": {
-        "ENFERMEIRO / NURSE": [
+        "ENFERMEIRO OFFSHORE / NURSE": [
           "NR30",
           "NR37_BRIGADA"
         ]
       }
     },
     {
-      "codigo": "8.1/COZINHEIRO",
-      "nome": "COZINHEIRO",
+      "codigo": "8.1/COZINHEIRO JR",
+      "nome": "COZINHEIRO JR",
       "riscos": [
         {
-          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGA S OU VOLUMES E POSTURAS INADEQUADAS)",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "ILUMINÂNCIA INADEQUADA",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "CONSTANTE DESLOCAMENTO A PÉ",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "MOVIMENTOS REPETITIVOS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "DESCONFORTO TÉRMICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "UMIDADE",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "DESCONFORTO ACÚSTICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "MOVIMENTOS REPETITIVOS",
+          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) EORGANIZAÇÃO DO TRABALHO",
           "grupo": "Ergonômicos"
         },
         {
@@ -3968,8 +4755,28 @@
           "grupo": "Físico"
         },
         {
-          "nome": "UMIDADE E FRIO",
+          "nome": "FRIO",
           "grupo": "Físico"
+        },
+        {
+          "nome": "SUBSTÂNCIAS QUÍMICAS DIVERSAS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "QUEIMADURAS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDA DE OBJETOS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDA DE DIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "OBJETOS CORTANTESE/OU PERFURO CORTANTES",
+          "grupo": "Acidente"
         },
         {
           "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
@@ -4010,7 +4817,180 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GRUPO SANGUINEO + FATOR RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "PARASITOLÓGICO DE FEZES",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ODONTOLÓGICO SIMPLIFICADO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ACUIDADE VISUAL/TESTE DE VISÃO DE CORES",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AVAL. PSICOSSOCIAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AUDIOMETRIA TONAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Teste Ergométrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "COZINHEIRO JR / COOK JR"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GHE 8.1",
+      "pagina": 20,
+      "nrs": {
+        "COZINHEIRO JR / COOK JR": [
+          "NR30",
+          "NR37_BRIGADA"
+        ]
+      }
+    },
+    {
+      "codigo": "8.1/COZINHEIRO",
+      "nome": "COZINHEIRO",
+      "riscos": [
+        {
+          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) EORGANIZAÇÃO DO TRABALHO",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "RUÍDO CONTÍNUO OU INTERMITENTE",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "CALOR",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "FRIO",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "SUBSTÂNCIAS QUÍMICAS DIVERSAS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "QUEIMADURAS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDA DE OBJETOS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDA DE DIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "OBJETOS CORTANTESE/OU PERFURO CORTANTES",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "ISOLAMENTO SOCIAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "AFASTAMENTO FAMILIAR",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
+          "grupo": "Psicossociais"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "EXAME CLÍNICO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "HEMOGRAMA COM CONTAGEM DE PLAQUETAS",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -4105,39 +5085,11 @@
       }
     },
     {
-      "codigo": "8.1/COMISSÁRIO",
-      "nome": "COMISSÁRIO",
+      "codigo": "8.1/COZINHEIRO II",
+      "nome": "COZINHEIRO II",
       "riscos": [
         {
-          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGA S OU VOLUMES E POSTURAS INADEQUADAS)",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "ILUMINÂNCIA INADEQUADA",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "CONSTANTE DESLOCAMENTO A PÉ",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "MOVIMENTOS REPETITIVOS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "DESCONFORTO TÉRMICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "UMIDADE",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "DESCONFORTO ACÚSTICO",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "MOVIMENTOS REPETITIVOS",
+          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) EORGANIZAÇÃO DO TRABALHO",
           "grupo": "Ergonômicos"
         },
         {
@@ -4149,8 +5101,28 @@
           "grupo": "Físico"
         },
         {
-          "nome": "UMIDADE E FRIO",
+          "nome": "FRIO",
           "grupo": "Físico"
+        },
+        {
+          "nome": "SUBSTÂNCIAS QUÍMICAS DIVERSAS",
+          "grupo": "Químico"
+        },
+        {
+          "nome": "QUEIMADURAS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDA DE OBJETOS",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "QUEDA DE DIFERENÇA DE NÍVEL E DO MESMO NÍVEL",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "OBJETOS CORTANTESE/OU PERFURO CORTANTES",
+          "grupo": "Acidente"
         },
         {
           "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
@@ -4191,7 +5163,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -4259,21 +5231,29 @@
           "ret_trab": true,
           "mud_riscos": true,
           "demissao": true
+        },
+        {
+          "nome": "Teste Ergométrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
         }
       ],
       "cargos": [
-        "COMISSÁRIO"
+        "COZINHEIRO II / COOK II"
       ],
-      "avisos": [
-        "INFO: função 'COMISSÁRIO' sem correspondência na planilha de funções bilíngues — mantida só em português.",
-        "INFO: função 'COMISSÁRIO' não consta na tabela de atividades críticas — sem exames específicos de A/C e sem NRs de atividade (só NR30)."
-      ],
+      "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GHE 8.1",
       "pagina": 20,
       "nrs": {
-        "COMISSÁRIO": [
-          "NR30"
+        "COZINHEIRO II / COOK II": [
+          "NR30",
+          "NR37_BRIGADA"
         ]
       }
     },
@@ -4282,23 +5262,11 @@
       "nome": "SALONEIRO",
       "riscos": [
         {
-          "nome": "DIVERSOS - LIMPEZA E COLETA DE RESÍDUOS (REFEITÓRIO, CAMAROTES E ÁREAS COMUNS)",
+          "nome": "DIVERSOS AGENTES BIOLÓGICOS- LIMPEZA E COLETA DE RESÍDUOS (REFEITÓRIO, CAMAROTES E ÁREAS COMUNS)",
           "grupo": "Biológico"
         },
         {
-          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) E MANUSEIO E TRANSPORTE DE CARGAS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "ILUMINÂNCIA INADEQUADA",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "POSTURA DE PÉ POR LONGOS PERÍODOS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "MOVIMENTOS REPETTIVOS",
+          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
           "grupo": "Ergonômicos"
         },
         {
@@ -4314,48 +5282,8 @@
           "grupo": "Físico"
         },
         {
-          "nome": "UMIDADE",
-          "grupo": "Físico"
-        },
-        {
           "nome": "SUBSTÂNCIAS QUÍMICAS DIVERSAS",
           "grupo": "Químico"
-        },
-        {
-          "nome": "QUEDA DE OBJETOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "QUEDA DE MESMO NÍVEL",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "APRISIONAMENTO DO TRIULANTE",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "IMPACTO PESSOA OBJETO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PRENSAMENTOS DE MÃOS E DEDOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "CONTATO COM MÁQUINAS E EQUIPAMENTOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "INCÊNDIO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "QUEIMADURAS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "CONTATO COM OBJETOS CORTANTES",
-          "grupo": "Acidente"
         },
         {
           "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
@@ -4396,7 +5324,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -4482,7 +5410,7 @@
       "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GHE 8.2",
-      "pagina": 21,
+      "pagina": 20,
       "nrs": {
         "SALONEIRO / MESSMAN": [
           "NR30",
@@ -4495,23 +5423,11 @@
       "nome": "TAIFEIRO",
       "riscos": [
         {
-          "nome": "DIVERSOS - LIMPEZA E COLETA DE RESÍDUOS (REFEITÓRIO, CAMAROTES E ÁREAS COMUNS)",
+          "nome": "DIVERSOS AGENTES BIOLÓGICOS- LIMPEZA E COLETA DE RESÍDUOS (REFEITÓRIO, CAMAROTES E ÁREAS COMUNS)",
           "grupo": "Biológico"
         },
         {
-          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) E MANUSEIO E TRANSPORTE DE CARGAS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "ILUMINÂNCIA INADEQUADA",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "POSTURA DE PÉ POR LONGOS PERÍODOS",
-          "grupo": "Ergonômicos"
-        },
-        {
-          "nome": "MOVIMENTOS REPETTIVOS",
+          "nome": "BIOMECÂNICOS (ESFORÇO FÍSICO INTENSO E/OU LEVANTAMENTO DE CARGAS OU VOLUMES E POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
           "grupo": "Ergonômicos"
         },
         {
@@ -4527,48 +5443,8 @@
           "grupo": "Físico"
         },
         {
-          "nome": "UMIDADE",
-          "grupo": "Físico"
-        },
-        {
           "nome": "SUBSTÂNCIAS QUÍMICAS DIVERSAS",
           "grupo": "Químico"
-        },
-        {
-          "nome": "QUEDA DE OBJETOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "QUEDA DE MESMO NÍVEL",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "APRISIONAMENTO DO TRIULANTE",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "IMPACTO PESSOA OBJETO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "PRENSAMENTOS DE MÃOS E DEDOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "CONTATO COM MÁQUINAS E EQUIPAMENTOS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "INCÊNDIO",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "QUEIMADURAS",
-          "grupo": "Acidente"
-        },
-        {
-          "nome": "CONTATO COM OBJETOS CORTANTES",
-          "grupo": "Acidente"
         },
         {
           "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
@@ -4609,7 +5485,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -4695,7 +5571,7 @@
       "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GHE 8.2",
-      "pagina": 21,
+      "pagina": 20,
       "nrs": {
         "TAIFEIRO / STEWARD": [
           "NR30",
@@ -4708,7 +5584,7 @@
       "nome": "CAMAREIRO OFFSHORE",
       "riscos": [
         {
-          "nome": "DIVERSOS - LIMPEZA ECOLETA DE RESÍDUOS (REFEITÓRIO, CAMAROTES E ÁREAS COMUNS)",
+          "nome": "DIVERSOS AGENTES BIOLÓGICOS- LIMPEZA E COLETA DE RESÍDUOS (REFEITÓRIO, CAMAROTES E ÁREAS COMUNS)",
           "grupo": "Biológico"
         },
         {
@@ -4720,8 +5596,32 @@
           "grupo": "Físico"
         },
         {
+          "nome": "CALOR",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "FRIO",
+          "grupo": "Físico"
+        },
+        {
           "nome": "SUBSTÂNCIAS QUÍMICAS DIVERSAS",
           "grupo": "Químico"
+        },
+        {
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "ISOLAMENTO SOCIAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "AFASTAMENTO FAMILIAR",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
+          "grupo": "Psicossociais"
         }
       ],
       "exames": [
@@ -4746,7 +5646,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -4841,11 +5741,11 @@
       }
     },
     {
-      "codigo": "8.3/CAMAREIRO OFFSHORE I",
-      "nome": "CAMAREIRO OFFSHORE I",
+      "codigo": "8.3/CAMAREIRO OFFSHORE II",
+      "nome": "CAMAREIRO OFFSHORE II",
       "riscos": [
         {
-          "nome": "DIVERSOS - LIMPEZA ECOLETA DE RESÍDUOS (REFEITÓRIO, CAMAROTES E ÁREAS COMUNS)",
+          "nome": "DIVERSOS AGENTES BIOLÓGICOS- LIMPEZA E COLETA DE RESÍDUOS (REFEITÓRIO, CAMAROTES E ÁREAS COMUNS)",
           "grupo": "Biológico"
         },
         {
@@ -4857,8 +5757,32 @@
           "grupo": "Físico"
         },
         {
+          "nome": "CALOR",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "FRIO",
+          "grupo": "Físico"
+        },
+        {
           "nome": "SUBSTÂNCIAS QUÍMICAS DIVERSAS",
           "grupo": "Químico"
+        },
+        {
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "ISOLAMENTO SOCIAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "AFASTAMENTO FAMILIAR",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
+          "grupo": "Psicossociais"
         }
       ],
       "exames": [
@@ -4883,7 +5807,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -4964,14 +5888,14 @@
         }
       ],
       "cargos": [
-        "CAMAREIRO OFFSHORE I / HOUSEKEEPER OFFSHORE I"
+        "CAMAREIRO OFFSHORE II / HOUSEKEEPER OFFSHORE II"
       ],
       "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GHE 8.3",
       "pagina": 21,
       "nrs": {
-        "CAMAREIRO OFFSHORE I / HOUSEKEEPER OFFSHORE I": [
+        "CAMAREIRO OFFSHORE II / HOUSEKEEPER OFFSHORE II": [
           "NR30",
           "NR37_BRIGADA"
         ]
@@ -4982,7 +5906,7 @@
       "nome": "NUTRICIONISTA OFFSHORE",
       "riscos": [
         {
-          "nome": "BIOMECÃNICOS (POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO (ATIVIDADE INERENTE AO PASSADIÇO)",
+          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
           "grupo": "Ergonômicos"
         },
         {
@@ -4992,6 +5916,22 @@
         {
           "nome": "FRIO",
           "grupo": "Físico"
+        },
+        {
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "ISOLAMENTO SOCIAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "AFASTAMENTO FAMILIAR",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
+          "grupo": "Psicossociais"
         }
       ],
       "exames": [
@@ -5016,7 +5956,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -5102,7 +6042,7 @@
       "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GHE 8.4",
-      "pagina": 22,
+      "pagina": 21,
       "nrs": {
         "NUTRICIONISTA OFFSHORE / NUTRITIONIST OFFSHORE": [
           "NR30",
@@ -5111,12 +6051,36 @@
       }
     },
     {
-      "codigo": "9/PRATICANTE DE MOÇO DE CONVÉS",
-      "nome": "PRATICANTE DE MOÇO DE CONVÉS",
+      "codigo": "8.4/NUTRICIONISTA OFFSHORE III",
+      "nome": "NUTRICIONISTA OFFSHORE III",
       "riscos": [
         {
-          "nome": "QUEDA DE OBJETO E QUEDA DE DIFERENÇA DE NÍVEL",
-          "grupo": "Acidente"
+          "nome": "BIOMECÂNICOS (POSTURAS INADEQUADAS) E ORGANIZAÇÃO DO TRABALHO",
+          "grupo": "Ergonômicos"
+        },
+        {
+          "nome": "RUÍDO CONTÍNUO OU INTERMITENTE",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "FRIO",
+          "grupo": "Físico"
+        },
+        {
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "ISOLAMENTO SOCIAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "AFASTAMENTO FAMILIAR",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
+          "grupo": "Psicossociais"
         }
       ],
       "exames": [
@@ -5141,7 +6105,148 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GRUPO SANGUINEO + FATOR RH",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": null,
+          "ret_trab": false,
+          "mud_riscos": false,
+          "demissao": false
+        },
+        {
+          "nome": "PARASITOLÓGICO DE FEZES",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ODONTOLÓGICO SIMPLIFICADO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "ACUIDADE VISUAL/TESTE DE VISÃO DE CORES",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AVAL. PSICOSSOCIAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "AUDIOMETRIA TONAL",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "Teste Ergométrico",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        }
+      ],
+      "cargos": [
+        "NUTRICIONISTA OFFSHORE III / NUTRITIONIST OFFSHORE III"
+      ],
+      "avisos": [],
+      "ausencia_riscos": false,
+      "setor_override": "GHE 8.4",
+      "pagina": 21,
+      "nrs": {
+        "NUTRICIONISTA OFFSHORE III / NUTRITIONIST OFFSHORE III": [
+          "NR30",
+          "NR37_BRIGADA"
+        ]
+      }
+    },
+    {
+      "codigo": "9/PRATICANTE DE MOÇO DE CONVÉS",
+      "nome": "PRATICANTE DE MOÇO DE CONVÉS",
+      "riscos": [
+        {
+          "nome": "QUEDA DE OBJETO E QUEDA DE DIFERENÇA DE NÍVEL",
+          "grupo": "Acidente"
+        },
+        {
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "ISOLAMENTO SOCIAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "AFASTAMENTO FAMILIAR",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
+          "grupo": "Psicossociais"
+        }
+      ],
+      "exames": [
+        {
+          "nome": "EXAME CLÍNICO",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": true
+        },
+        {
+          "nome": "HEMOGRAMA COM CONTAGEM DE PLAQUETAS",
+          "admissao": true,
+          "apos_adm_meses": null,
+          "apos_adm": false,
+          "periodico_meses": 12,
+          "ret_trab": true,
+          "mud_riscos": true,
+          "demissao": false
+        },
+        {
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -5217,7 +6322,7 @@
       "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GHE 9",
-      "pagina": 22,
+      "pagina": 21,
       "nrs": {
         "PRATICANTE DE MOÇO DE CONVÉS / ORDINARY SEAMAN CADET": [
           "NR30",
@@ -5226,12 +6331,28 @@
       }
     },
     {
-      "codigo": "9/PRATICANTE ELETRICISTA",
-      "nome": "PRATICANTE ELETRICISTA",
+      "codigo": "9/PRATICANTE DE ELETRICISTA",
+      "nome": "PRATICANTE DE ELETRICISTA",
       "riscos": [
         {
           "nome": "QUEDA DE OBJETO E QUEDA DE DIFERENÇA DE NÍVEL",
           "grupo": "Acidente"
+        },
+        {
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "ISOLAMENTO SOCIAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "AFASTAMENTO FAMILIAR",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
+          "grupo": "Psicossociais"
         }
       ],
       "exames": [
@@ -5256,7 +6377,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -5327,14 +6448,14 @@
         }
       ],
       "cargos": [
-        "PRATICANTE ELETRICISTA / ELECTRICIAN CADET"
+        "PRATICANTE DE ELETRICISTA / ELECTRICIAN CADET"
       ],
       "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GHE 9",
-      "pagina": 22,
+      "pagina": 21,
       "nrs": {
-        "PRATICANTE ELETRICISTA / ELECTRICIAN CADET": [
+        "PRATICANTE DE ELETRICISTA / ELECTRICIAN CADET": [
           "NR30",
           "NR37_BRIGADA"
         ]
@@ -5347,6 +6468,22 @@
         {
           "nome": "QUEDA DE OBJETO E QUEDA DE DIFERENÇA DE NÍVEL",
           "grupo": "Acidente"
+        },
+        {
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "ISOLAMENTO SOCIAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "AFASTAMENTO FAMILIAR",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
+          "grupo": "Psicossociais"
         }
       ],
       "exames": [
@@ -5371,7 +6508,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -5447,7 +6584,7 @@
       "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GHE 9",
-      "pagina": 22,
+      "pagina": 21,
       "nrs": {
         "PRATICANTE OFIC. MAQ / ENGINE CADET": [
           "NR30",
@@ -5462,6 +6599,22 @@
         {
           "nome": "QUEDA DE OBJETO E QUEDA DE DIFERENÇA DE NÍVEL",
           "grupo": "Acidente"
+        },
+        {
+          "nome": "IMPACTO DO REGIME DE TRABALHO OFFSHORE SOBRE A SAÚDE MENTAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "ISOLAMENTO SOCIAL",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "AFASTAMENTO FAMILIAR",
+          "grupo": "Psicossociais"
+        },
+        {
+          "nome": "EXPOSIÇAO A SITUAÇOES DE EMERGENCIA E PRESSÁO OPERACIONAL CRÍTICA",
+          "grupo": "Psicossociais"
         }
       ],
       "exames": [
@@ -5486,7 +6639,7 @@
           "demissao": false
         },
         {
-          "nome": "GLICEMIA ou HEMOGLOBINA GLICADA",
+          "nome": "GLICEMIA",
           "admissao": true,
           "apos_adm_meses": null,
           "apos_adm": false,
@@ -5562,7 +6715,7 @@
       "avisos": [],
       "ausencia_riscos": false,
       "setor_override": "GHE 9",
-      "pagina": 22,
+      "pagina": 21,
       "nrs": {
         "PRATICANTE OFIC. NAUTICA / DECK CADET": [
           "NR30",

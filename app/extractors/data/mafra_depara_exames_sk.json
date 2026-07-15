@@ -1,0 +1,104 @@
+{
+ "_origem": "De para - Riscos e exames_SK.xls (cliente SK, jul/2026)",
+ "exames": [
+  [
+   "Hemograma Completo com contagem de plaquetas e frações",
+   [
+    "HEMOGRAMA COMPLETO COM PLAQUETAS"
+   ]
+  ],
+  [
+   "Glicemia Jejum",
+   [
+    "GLICEMIA DE JEJUM"
+   ]
+  ],
+  [
+   "Eletrocardiograma (ECG)",
+   [
+    "ELETROCARDIOGRAMA"
+   ]
+  ],
+  [
+   "Eletroencefalograma",
+   [
+    "ELETROENCEFALOGRAMA"
+   ]
+  ],
+  [
+   "Radiografia de Coluna-Lombo- Sacra",
+   [
+    "RADIOGRAFIA DE COLUNA LOMBO SACRA AP/PERFIL"
+   ]
+  ],
+  [
+   "Audiometria tonal ocupacional",
+   [
+    "AUDIOMETRIA TONAL"
+   ]
+  ],
+  [
+   "Raio-X Tórax (PA) Padrão OIT (o mais recente), com dois leitores habilitados (1078)",
+   [
+    "RADIOGRAFIA DE TÓRAX - PADRÃO OIT"
+   ]
+  ],
+  [
+   "AVALIAÇÃO PSICOSSOCIAL",
+   [
+    "AVALIAÇÃO PSICOSSOCIAL"
+   ]
+  ],
+  [
+   "Prova função pulmonar completa (ou espirometria) (1057)",
+   [
+    "Espirometria"
+   ]
+  ],
+  [
+   "Raio-X escapuloumeral",
+   [
+    "RADIOGRAFIA DE ARTICULAÇÕES ESCAPULOUMERAIS"
+   ]
+  ],
+  [
+   "ANAMNSE E EXAME FÍSICO",
+   [
+    "CLÍNICO OCUPACIONAL"
+   ]
+  ],
+  [
+   "EXAME CLÍNICO",
+   [
+    "CLÍNICO OCUPACIONAL"
+   ]
+  ],
+  [
+   "FUNÇÃO RENAL (UREIA + CREATININA)",
+   [
+    "UREIA",
+    "CREATININA"
+   ]
+  ],
+  [
+   "PERFIL LIPÍDICO (COLESTEROL TOTAL, LDL, HDL, TRIGLICERÍDEOS)",
+   [
+    "LIPIDOGRAMA (PERFIL LIPÍDICO)"
+   ]
+  ],
+  [
+   "PERFIL ETÍLICO",
+   [
+    "DOSAGEM DE ÁLCOOL ETÍLICO (SANGUE)"
+   ]
+  ],
+  [
+   "FUNÇÃO HEPÁTICA (TGP, TGO, GGT)",
+   [
+    "TGP (ALT)",
+    "GGT (GAMA-GT)",
+    "TGO (AST)"
+   ]
+  ]
+ ]
+}
