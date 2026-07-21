@@ -1,7 +1,14 @@
-import { AlertTriangleIcon, DownloadIcon, FileJsonIcon, SearchCheckIcon, UploadIcon } from "lucide-react"
-import { nivelConfianca, rotuloGhe, type Resposta } from "../api"
-import { Badge } from "./ui/badge"
+import {
+  AlertTriangleIcon,
+  CheckCircle2Icon,
+  DownloadIcon,
+  FileJsonIcon,
+  SearchIcon,
+  UploadIcon,
+} from "lucide-react"
+import { rotuloGhe, type Resposta } from "../api"
 import { Button } from "./ui/button"
+import { ConfidenceScore } from "./ConfidenceScore"
 
 type Props = {
   dados: Resposta
@@ -11,117 +18,97 @@ type Props = {
 
 export function Resultado({ dados, onConferir, onNovo }: Props) {
   const r = dados.resumo
-  const comAtencao = dados.ghes_detalhe.filter((g) => g.confianca < 100).length
+  const comAtencao = dados.ghes_detalhe.filter((g) => g.pontos_atencao.length > 0).length
   const avisosDoc = r.avisos_documento ?? []
+  const totalAtencao = comAtencao + avisosDoc.length
 
   return (
-    <div className="max-w-4xl mx-auto flex flex-col gap-4 animate-in fade-in duration-500">
-      {/* cards de sumário (padrão checagem ProntuAI) */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <CardSumario
-          rotulo="GHEs extraídos" valor={r.total_ghes}
-          classes="from-sky-50 to-sky-100 border-sky-200" texto="text-sky-700" numero="text-sky-600" bola="bg-sky-200"
-        />
-        <CardSumario
-          rotulo="Funções" valor={r.total_funcoes}
-          classes="from-emerald-50 to-emerald-100 border-emerald-200" texto="text-emerald-700" numero="text-emerald-600" bola="bg-emerald-200"
-        />
-        <CardSumario
-          rotulo="Pontos de atenção" valor={comAtencao + avisosDoc.length}
-          classes={comAtencao + avisosDoc.length ? "from-yellow-50 to-yellow-100 border-yellow-200" : "from-slate-50 to-slate-100 border-slate-200"}
-          texto={comAtencao + avisosDoc.length ? "text-yellow-700" : "text-slate-500"}
-          numero={comAtencao + avisosDoc.length ? "text-yellow-600" : "text-slate-400"}
-          bola={comAtencao + avisosDoc.length ? "bg-yellow-200" : "bg-slate-200"}
-        />
-      </div>
-
-      <div className="rounded-xl bg-card border shadow-sm p-6">
-        <div className="flex items-start justify-between gap-4 flex-wrap">
+    <div className="mx-auto flex max-w-5xl flex-col gap-5 animate-in fade-in duration-300">
+      <section className="overflow-hidden rounded-lg border bg-white">
+        <div className="flex items-start justify-between gap-5 px-6 py-5">
           <div>
-            <h2 className="font-semibold">{r.empresa}</h2>
-            <p className="text-sm text-muted-foreground">
-              Extração concluída e conferida por dois leitores independentes.
+            <p className="mb-1 text-xs font-semibold uppercase tracking-[.12em] text-slate-500">
+              Processamento concluído
+            </p>
+            <h2 className="text-xl font-semibold tracking-tight text-slate-900">{r.empresa}</h2>
+            <p className="mt-1 text-sm text-slate-500">
+              Revise os registros sinalizados antes de usar as planilhas.
             </p>
           </div>
-          {dados.validacao_ok ? (
-            <Badge variant="ok">✓ Validação cruzada OK</Badge>
-          ) : (
-            <Badge variant="atencao">Divergências entre leitores</Badge>
-          )}
+          <div className="flex items-center gap-2 pt-1 text-sm text-slate-600">
+            {dados.validacao_ok ? (
+              <><CheckCircle2Icon className="size-4 text-emerald-700" /> Leitores concordam</>
+            ) : (
+              <><AlertTriangleIcon className="size-4 text-amber-700" /> Divergências encontradas</>
+            )}
+          </div>
         </div>
 
-        <div className="flex flex-wrap gap-2 mt-5">
+        <dl className="grid grid-cols-3 border-y bg-slate-50/60">
+          <Numero rotulo="GHEs" valor={r.total_ghes} />
+          <Numero rotulo="Funções" valor={r.total_funcoes} />
+          <Numero rotulo="Para revisar" valor={totalAtencao} destaque={totalAtencao > 0} />
+        </dl>
+
+        <div className="flex flex-wrap items-center gap-2 px-6 py-4">
+          <Button onClick={onConferir}>
+            <SearchIcon /> Conferir extração
+          </Button>
           {Object.entries(dados.downloads).map(([rotulo, url]) => (
-            <Button key={url} variant={url.endsWith(".json") ? "outline" : "secondary"}
+            <Button key={url} variant="outline"
               onClick={() => window.open(url, "_blank")}>
               {url.endsWith(".json") ? <FileJsonIcon /> : <DownloadIcon />}
               {rotulo}
             </Button>
           ))}
-          <Button onClick={onConferir}>
-            <SearchCheckIcon />
-            Conferir extração
-          </Button>
-          <Button variant="ghost" onClick={onNovo}>
-            <UploadIcon />
-            Novo documento
+          <Button variant="ghost" onClick={onNovo} className="ml-auto">
+            <UploadIcon /> Novo documento
           </Button>
         </div>
+      </section>
 
-        {avisosDoc.length > 0 && (
-          <div className="mt-4">
-            <h3 className="text-sm font-semibold mb-2">Avisos do documento ({avisosDoc.length})</h3>
-            <div className="space-y-1.5">
-              {avisosDoc.map((a, i) => (
-                <div key={i} className="flex items-start gap-2 rounded border bg-card px-3 py-2">
-                  <AlertTriangleIcon className="size-4 shrink-0 text-amber-500 mt-0.5" />
-                  <span className="text-sm text-muted-foreground">{a}</span>
-                </div>
-              ))}
-            </div>
+      {(avisosDoc.length > 0 || dados.divergencias.length > 0) && (
+        <section className="rounded-lg border bg-white px-6 py-5">
+          <h3 className="text-sm font-semibold text-slate-900">Ocorrências do processamento</h3>
+          <div className="mt-3 divide-y border-y">
+            {dados.divergencias.map((texto, i) => (
+              <Ocorrencia key={`d-${i}`} texto={texto} importante />
+            ))}
+            {avisosDoc.map((texto, i) => <Ocorrencia key={`a-${i}`} texto={texto} />)}
           </div>
-        )}
+        </section>
+      )}
 
-        {dados.divergencias.length > 0 && (
-          <div className="mt-4 rounded-lg border border-orange-300 bg-orange-50 p-3 text-sm text-orange-700">
-            <p className="font-medium mb-1">Divergências entre leitores:</p>
-            <ul className="list-disc pl-5">
-              {dados.divergencias.map((d, i) => <li key={i}>{d}</li>)}
-            </ul>
+      <section className="rounded-lg border bg-white px-6 py-5">
+        <div className="mb-4 flex items-baseline justify-between">
+          <div>
+            <h3 className="text-sm font-semibold text-slate-900">Registros extraídos</h3>
+            <p className="mt-0.5 text-xs text-slate-500">Selecione Conferir extração para comparar com o PDF.</p>
           </div>
-        )}
-      </div>
-
-      <div className="rounded-xl bg-card border shadow-sm p-6">
-        <h3 className="font-semibold mb-3">Detalhe por GHE</h3>
+          <span className="text-xs tabular-nums text-slate-500">{r.ghes.length} registros</span>
+        </div>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b text-left text-muted-foreground">
-                <th className="py-2 pr-3 font-medium">Setor</th>
-                <th className="py-2 px-3 font-medium text-right">Riscos</th>
-                <th className="py-2 px-3 font-medium text-right">Exames</th>
-                <th className="py-2 px-3 font-medium text-right">Funções</th>
-                <th className="py-2 pl-3 font-medium text-right">Confiança</th>
+              <tr className="border-y bg-slate-50/70 text-left text-[11px] uppercase tracking-[.08em] text-slate-500">
+                <th className="px-3 py-2.5 font-semibold">Setor / função</th>
+                <th className="px-3 py-2.5 text-right font-semibold">Riscos</th>
+                <th className="px-3 py-2.5 text-right font-semibold">Exames</th>
+                <th className="px-3 py-2.5 text-right font-semibold">Funções</th>
+                <th className="px-3 py-2.5 text-right font-semibold">Confiança</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="divide-y">
               {r.ghes.map((g, i) => {
-                const conf = dados.ghes_detalhe[i]?.confianca ?? 100
+                const detalhe = dados.ghes_detalhe[i]
                 return (
-                  <tr key={i} className="border-b last:border-0">
-                    <td className="py-2 pr-3">{rotuloGhe(dados.ghes_detalhe, i)}</td>
-                    <td className="py-2 px-3 text-right tabular-nums">{g.riscos}</td>
-                    <td className="py-2 px-3 text-right tabular-nums">{g.exames}</td>
-                    <td className="py-2 px-3 text-right tabular-nums">{g.funcoes}</td>
-                    <td className="py-2 pl-3 text-right">
-                      <Badge variant={
-                        dados.ghes_detalhe[i]
-                          ? { alta: "ok", media: "pendente", baixa: "erro" }[nivelConfianca(dados.ghes_detalhe[i])] as "ok" | "pendente" | "erro"
-                          : "ok"
-                      }>
-                        {conf}%
-                      </Badge>
+                  <tr key={dados.ghes_detalhe[i]?.codigo ?? i} className="text-slate-700 hover:bg-slate-50/70">
+                    <td className="px-3 py-2.5 text-slate-800">{rotuloGhe(dados.ghes_detalhe, i)}</td>
+                    <td className="px-3 py-2.5 text-right tabular-nums">{g.riscos}</td>
+                    <td className="px-3 py-2.5 text-right tabular-nums">{g.exames}</td>
+                    <td className="px-3 py-2.5 text-right tabular-nums">{g.funcoes}</td>
+                    <td className="px-3 py-2.5 text-right text-xs">
+                      {detalhe && <ConfidenceScore ghe={detalhe} />}
                     </td>
                   </tr>
                 )
@@ -129,27 +116,37 @@ export function Resultado({ dados, onConferir, onNovo }: Props) {
             </tbody>
           </table>
         </div>
-      </div>
+      </section>
     </div>
   )
 }
 
-function CardSumario({
-  rotulo, valor, classes, texto, numero, bola,
+function Numero({
+  rotulo,
+  valor,
+  destaque = false,
 }: {
-  rotulo: string; valor: number; classes: string; texto: string; numero: string; bola: string
+  rotulo: string
+  valor: number
+  destaque?: boolean
 }) {
   return (
-    <div className={`bg-gradient-to-br border rounded-lg p-4 shadow-sm ${classes}`}>
-      <div className="flex items-center justify-between">
-        <div>
-          <div className={`text-xs font-medium uppercase tracking-wide ${texto}`}>{rotulo}</div>
-          <div className={`text-3xl font-bold mt-1 ${numero}`}>{valor}</div>
-        </div>
-        <div className={`size-12 rounded-full flex items-center justify-center text-lg font-bold ${bola} ${texto}`}>
-          {valor}
-        </div>
-      </div>
+    <div className={`border-r px-6 py-4 last:border-r-0 ${destaque ? "bg-amber-50/70" : ""}`}>
+      <dt className={`text-[11px] font-semibold uppercase tracking-[.1em] ${destaque ? "text-amber-800" : "text-slate-500"}`}>
+        {rotulo}
+      </dt>
+      <dd className={`mt-1 text-2xl font-semibold tabular-nums tracking-tight ${destaque ? "text-amber-700" : "text-slate-900"}`}>
+        {valor}
+      </dd>
+    </div>
+  )
+}
+
+function Ocorrencia({ texto, importante = false }: { texto: string; importante?: boolean }) {
+  return (
+    <div className="flex gap-3 py-2.5 text-sm leading-5 text-slate-600">
+      <AlertTriangleIcon className={`mt-0.5 size-4 shrink-0 ${importante ? "text-amber-700" : "text-slate-400"}`} />
+      <span>{texto.replace(/^INFO:\s*/, "")}</span>
     </div>
   )
 }

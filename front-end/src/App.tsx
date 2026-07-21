@@ -52,7 +52,7 @@ export default function App() {
 
   return (
     <>
-      <AppShell titulo="Extração de PCMSO">
+      <AppShell titulo="">
         {estado === "upload" && (
           <UploadZone arquivo={arquivo} onSelecionar={setArquivo} onProcessar={processar} />
         )}

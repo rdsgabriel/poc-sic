@@ -1,5 +1,18 @@
 export type Risco = { nome: string; grupo: string }
 
+export type FocoDocumento = {
+  pagina: number
+  top: number
+  bottom: number
+  funcao?: {
+    pagina: number
+    top: number
+    bottom: number
+    left: number
+    right: number
+  }
+}
+
 export type Exame = {
   nome: string
   admissao: boolean
@@ -12,14 +25,17 @@ export type Exame = {
 }
 
 export type GheDetalhe = {
+  codigo: string
   setor: string
   pagina: number | null
+  foco: FocoDocumento | null
   cargos: string[]
   riscos: Risco[]
   exames: Exame[]
   ausencia_riscos: boolean
   avisos: string[]
   confianca: number
+  fatores_confianca?: Array<{ desconto: number; descricao: string }>
   pontos_atencao: string[]
 }
 

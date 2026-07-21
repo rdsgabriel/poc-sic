@@ -64,10 +64,17 @@ def auditar_ghe(ghe: dict, divergencias_do_ghe: list[str]) -> dict:
         if len(r["nome"]) < 4:
             pontos.append((15, f"Risco com nome muito curto: {r['nome']!r}"))
 
-    confianca = max(0, 100 - sum(p for p, _ in pontos))
+    pontos_ordenados = sorted(pontos, key=lambda item: (-item[0], item[1]))
+    confianca = max(0, 100 - sum(p for p, _ in pontos_ordenados))
     return {
         "confianca": confianca,
-        "pontos_atencao": [d for _, d in sorted(pontos, reverse=True)],
+        "pontos_atencao": [descricao for _, descricao in pontos_ordenados],
+        # Memória do cálculo para a interface explicar o score, sem
+        # duplicar pesos/regras no front-end.
+        "fatores_confianca": [
+            {"desconto": penalidade, "descricao": descricao}
+            for penalidade, descricao in pontos_ordenados
+        ],
     }
 
 

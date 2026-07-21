@@ -9,6 +9,14 @@ services:
     volumes:
       # jobs (PDF enviado + planilhas geradas) sobrevivem a recreate do container
       - pcmso-jobs:/tmp/poc_pcmso_jobs
+      # código e testes montados do host: permite rodar a suíte e o treino
+      # (python -m tests.treinar) no container SEM docker cp nem rebuild, e os
+      # goldens gravados aparecem direto no host para commitar. O front
+      # buildado (/srv/front-end/dist) vem da imagem e NÃO é montado.
+      # Em dev a API não faz reload sozinha: reinicie o container após editar
+      # app/ para o /processar pegar o código novo.
+      - ./app:/srv/app
+      - ./tests:/srv/tests
 
 volumes:
   pcmso-jobs:

@@ -28,10 +28,12 @@ Thumbs.db
 .vscode/
 
 # ---- documentos de clientes (dados pessoais/LGPD — nunca versionar) ----
-# Os PDFs de teste ficam fora do git; os testes golden pulam PDFs ausentes.
-# Para rodar a suíte completa, obtenha os PDFs internamente e coloque nos
-# caminhos listados em tests/test_regressao.py.
+# PDFs de teste ficam FORA do git, organizados por layout em
+# tests/pdfs/<layout>/<nome>.pdf. A suíte auto-descobre pelos goldens e pula
+# os PDFs ausentes; para rodar completa, obtenha os documentos internamente e
+# coloque-os nesses caminhos (ver GUIA_MELHORIAS.md).
 *.pdf
+tests/pdfs/
 # prompts internos
 PROMPT_PRODUCAO_PLANILHAS_PCMSO.md
 component.md

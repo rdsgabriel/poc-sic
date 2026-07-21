@@ -25,6 +25,26 @@ docker compose up --build
 # abra http://localhost:8890
 ```
 
+### Acompanhando um processamento
+
+Os logs de negócio mostram cada job por etapa, com duração, layout e
+quantidades extraídas. As leituras parciais do PDF feitas pelo visualizador
+não aparecem, para não esconder o que importa.
+
+```bash
+docker compose logs -f --tail=50 poc-pcmso
+```
+
+Exemplo resumido:
+
+```text
+JOB 5f14f279df53 | recebido | arquivo='documento.pdf' | tamanho=0.36 MB
+JOB 5f14f279df53 | leitura do PDF concluída | paginas=58 | duracao=8.8s
+JOB 5f14f279df53 | extração concluída | layout=sicolos | ghes=34 | funcoes=108
+JOB 5f14f279df53 | validação cruzada concluída | resultado=OK | pendencias=0
+JOB 5f14f279df53 | concluído | validacao=OK | total=28.7s
+```
+
 ## Rodando local (sem Docker)
 
 ```bash
@@ -58,9 +78,30 @@ A suíte pula automaticamente os PDFs ausentes; para rodá-la completa,
 obtenha os PDFs internamente e coloque nos caminhos listados em
 `tests/test_regressao.py`.
 
-Os PDFs conhecidos têm golden files (`tests/golden/`) com a extração
-validada. **Qualquer mudança no parser deve manter esses testes verdes.**
-Antes de alterar qualquer coisa, leia `GUIA_MELHORIAS.md`.
+Os PDFs conhecidos têm golden files (`tests/golden/`) como referência de
+regressão; pendências de validação humana ficam registradas em `pendencias.md`.
+**Qualquer mudança no parser deve manter esses testes verdes.** Antes de
+alterar qualquer coisa, leia `GUIA_MELHORIAS.md`.
+
+### Laboratório de documentos novos
+
+PDF novo não vira golden automaticamente. Coloque os documentos ainda não
+validados no inbox da família, por exemplo:
+
+```text
+tests/inbox/solstad/*.pdf
+```
+
+E rode a varredura sem alterar o corpus aprovado:
+
+```bash
+docker compose exec poc-pcmso python -m tests.treinar --inbox solstad
+```
+
+O relatório distingue `REPROVADO` (falhou em algum gate), `CANDIDATO`
+(passou automaticamente, mas falta conferência humana) e `APROVADO`
+(idêntico a um golden existente). Veja `tests/inbox/README.md` para promover
+um caso depois da conferência.
 
 ## Resultados desta POC (Campo Grande)
 

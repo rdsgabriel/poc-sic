@@ -1,84 +1,93 @@
 """
-Testes de regressão da extração.
+Testes de regressão da extração — um golden por layout de PCMSO.
 
-Cada PDF conhecido tem um "golden file" (tests/golden/*.json) com a extração
-validada por humanos. Qualquer mudança no parser DEVE manter estes testes
-verdes — eles são o contrato do que já funciona.
+Estrutura (convenção de nome + pasta, sem lista manual de PDFs):
 
-Para adicionar um PDF novo:
-  1. rode: python -m app.pipeline caminho/do/novo.pdf --out /tmp/novo
-  2. valide o JSON gerado manualmente (spot-check contra o PDF)
-  3. copie para tests/golden/ e registre em PDFS abaixo
+    tests/golden/<layout>/<nome>.json   ← contrato, versionado
+    tests/pdfs/<layout>/<nome>.pdf      ← PDF real, FORA do git (LGPD)
+
+Os casos são auto-descobertos varrendo os goldens; o PDF é procurado pela
+convenção de nome. PDFs ausentes (a suíte roda em máquina sem os documentos
+do cliente) são pulados — os goldens continuam versionados.
+
+Rodar só um layout enquanto trabalha nele:  pytest tests/ -k solstad
+Adicionar/atualizar um caso:                 python -m tests.treinar <layout> <pdf>
+Regra de ouro (ver GUIA_MELHORIAS.md): golden só é regravado após validação
+humana e com os dois leitores concordando.
 """
 
 from __future__ import annotations
 
 import json
 from dataclasses import asdict
+from functools import lru_cache
 from pathlib import Path
 
 import pytest
 
 from app.backends import BACKENDS
 from app.extractors import extrair_auto
-from app.validate import checar_regras
+from app.validate import checar_documento
 
-RAIZ = Path(__file__).resolve().parent.parent
 GOLDEN = Path(__file__).resolve().parent / "golden"
-
-# (pdf, golden json) — caminhos relativos à raiz do projeto
-PDFS = [
-    (
-        "PCMSO_CAMPO_GRANDE_22_09__Brmed by sicolos.pdf",
-        "campo_grande_22_09.json",
-    ),
-    (
-        "AguasDoBrasilPoC/Campo Grande/PCMSO_CAMPO_GRANDE_27_08_.pdf",
-        "campo_grande_27_08.json",
-    ),
-    # layout VIX Logística (seções por Ocupação/FPC, exames por perfil de ASO)
-    (
-        "PCMSO_Cenibra_Belo_Orient.pdf",
-        "cenibra_belo_oriente.json",
-    ),
-    # layout Occupare (SETOR: GSE -> FUNÇÃO, checkboxes por perfil, 1 GHE por função)
-    (
-        "PCMSO-SKINFRAESTRUTURALTDA-ITAJUIENGENHARIADEOBRASLTDA (1).pdf",
-        "sk_itajui.json",
-    ),
-    # layout Mafra Ambiental (CARGO -> riscos com ícone, exames "Fazer no ...")
-    (
-        "PCMSO-SkTecnologia-MineraoTabocaS.A.R0.pdf",
-        "sk_taboca.json",
-    ),
-    # layout International SOS / Solstad (GHE|FUNÇÃO|RISCOS, grade de exames,
-    # tabela de atividades críticas em imagem -> OCR, funções bilíngues)
-    (
-        "PCMSO-SOLSTAD_SHIPPING_N.pdf",
-        "solstad_normand_poseidon.json",
-    ),
-    # mesma família Solstad, outra embarcação: colunas deslocadas, tabela de
-    # atividades críticas fatiada em 4 imagens com grade cinza, bullets
-    # Wingdings, funções com nível por extenso (JUNIOR/PLENO)
-    (
-        "PCMSO-SOLSTAD_SHIPPING_N (8)_EMBARCAÇÃO NORMAND PIONEER.pdf",
-        "solstad_normand_pioneer.json",
-    ),
-]
-
-_EXISTENTES = [(p, g) for p, g in PDFS if (RAIZ / p).is_file()]
+PDFS = Path(__file__).resolve().parent / "pdfs"
 
 
-def _extrair(pdf: str, backend: str) -> dict:
-    caminho = str(RAIZ / pdf)
-    ghes, meta = extrair_auto(BACKENDS[backend](caminho), pdf_path=caminho)
+def _casos() -> list[tuple[str, Path, Path]]:
+    """(layout, pdf, golden) para cada golden/<layout>/<nome>.json."""
+    casos = []
+    for golden in sorted(GOLDEN.glob("*/*.json")):
+        layout = golden.parent.name
+        pdf = PDFS / layout / f"{golden.stem}.pdf"
+        casos.append((layout, pdf, golden))
+    return casos
+
+
+_CASOS = _casos()
+_EXISTENTES = [c for c in _CASOS if c[1].is_file()]
+# id "<layout>-<nome>" para filtrar por layout: pytest tests/ -k solstad
+_IDS = [f"{lay}-{golden.stem}" for lay, _, golden in _EXISTENTES]
+
+_CASOS_PARAM = pytest.mark.parametrize("layout,pdf,golden", _EXISTENTES, ids=_IDS)
+
+_CAMPOS_CONTRATO = (
+    "codigo", "nome", "riscos", "exames", "cargos",
+    "ausencia_riscos", "setor_override", "nrs",
+)
+_PADROES_GHE = {
+    "ausencia_riscos": False, "setor_override": None, "nrs": {},
+}
+
+
+def _contrato(ghe: dict) -> dict:
+    return {
+        campo: ghe.get(campo, _PADROES_GHE.get(campo))
+        for campo in _CAMPOS_CONTRATO
+    }
+
+
+@lru_cache(maxsize=None)
+def _extrair_objetos(pdf: Path, backend: str):
+    ghes, meta = extrair_auto(BACKENDS[backend](str(pdf)), pdf_path=str(pdf))
+    return ghes, meta
+
+
+def _extrair(pdf: Path, backend: str) -> dict:
+    ghes, meta = _extrair_objetos(pdf, backend)
     return {"meta": meta, "ghes": [asdict(g) for g in ghes]}
 
 
-@pytest.mark.parametrize("pdf,golden", _EXISTENTES)
+def test_ha_goldens_registrados() -> None:
+    """Guarda contra suíte vazia (glob que não casa nada = falso verde)."""
+    assert _CASOS, "nenhum golden encontrado em tests/golden/<layout>/"
+
+
+@_CASOS_PARAM
 @pytest.mark.parametrize("backend", ["docling", "pdfplumber"])
-def test_extracao_igual_ao_golden(pdf: str, golden: str, backend: str) -> None:
-    esperado = json.loads((GOLDEN / golden).read_text(encoding="utf-8"))
+def test_extracao_igual_ao_golden(
+    layout: str, pdf: Path, golden: Path, backend: str
+) -> None:
+    esperado = json.loads(golden.read_text(encoding="utf-8"))
     obtido = _extrair(pdf, backend)
     assert obtido["meta"]["total_ghes"] == esperado["meta"]["total_ghes"]
 
@@ -88,22 +97,32 @@ def test_extracao_igual_ao_golden(pdf: str, golden: str, backend: str) -> None:
 
     for cod, exp in esperado_por_codigo.items():
         obt = obtido_por_codigo[cod]
-        assert obt["nome"] == exp["nome"], f"GHE {cod}: nome divergente"
-        assert obt["riscos"] == exp["riscos"], f"GHE {cod}: riscos divergem"
-        assert obt["exames"] == exp["exames"], f"GHE {cod}: exames divergem"
-        assert obt["cargos"] == exp["cargos"], f"GHE {cod}: cargos divergem"
+        assert _contrato(obt) == _contrato(exp), f"GHE {cod}: contrato diverge"
 
 
-@pytest.mark.parametrize("pdf,_", _EXISTENTES)
-def test_regras_de_consistencia(pdf: str, _: str) -> None:
-    caminho = str(RAIZ / pdf)
-    ghes, __ = extrair_auto(BACKENDS["pdfplumber"](caminho), pdf_path=caminho)
-    problemas = checar_regras(ghes)
+@_CASOS_PARAM
+def test_regras_de_consistencia(layout: str, pdf: Path, golden: Path) -> None:
+    ghes, meta = _extrair_objetos(pdf, "pdfplumber")
+    problemas = checar_documento(ghes, meta)
     assert not problemas, "\n".join(problemas)
+    if layout == "solstad":
+        focos = meta.get("focos", {})
+        assert set(focos) == {g.codigo for g in ghes}
+        assert all(
+            f["pagina"] >= 1 and 0 <= f["top"] < f["bottom"]
+            for f in focos.values()
+        )
+        assert all("funcao" in f for f in focos.values())
+        assert all(
+            f["funcao"]["pagina"] == f["pagina"]
+            and 0 <= f["funcao"]["top"] < f["funcao"]["bottom"]
+            and 0 <= f["funcao"]["left"] < f["funcao"]["right"]
+            for f in focos.values()
+        )
 
 
-@pytest.mark.parametrize("pdf,_", _EXISTENTES)
-def test_backends_concordam(pdf: str, _: str) -> None:
+@_CASOS_PARAM
+def test_backends_concordam(layout: str, pdf: Path, golden: Path) -> None:
     a = _extrair(pdf, "docling")
     b = _extrair(pdf, "pdfplumber")
     assert a["ghes"] == b["ghes"]

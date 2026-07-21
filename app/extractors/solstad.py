@@ -146,6 +146,23 @@ def _tier(nome_a: str, nome_b: str) -> int:
     return 0
 
 
+def _normalizar_funcao_ocr(nome: str) -> str:
+    """Corrige distorções recorrentes do OCR antes do casamento de funções.
+
+    A grade pode reunir níveis numa única célula (ex.: III/IV). Mesmo quando
+    o OCR perde o sufixo, o radical normalizado casa com todas as funções de
+    mesmo cargo; `_tier` já trata a ausência de nível como radical comum.
+    """
+    nome = re.sub(r"^DFIC\b", "OFIC", nome, flags=re.IGNORECASE)
+    nome = re.sub(r"\bM\s*&\s*Q\b", "MAQ", nome, flags=re.IGNORECASE)
+    # Na tabela Solstad, "OFIC. MAQ" é a abreviação deformada de
+    # "OFIC. QTO. MAQ" (Oficial de Quarto de Máquinas).
+    nome = re.sub(
+        r"^OFIC\.?\s+MAQ\b", "OFIC. QTO. MAQ", nome, flags=re.IGNORECASE
+    )
+    return re.sub(r"\s+", " ", nome).strip()
+
+
 # ------------------------------------------------- 1. lista de GHEs/funções
 
 def _parse_lista_ghes(lines: list[Line]) -> list[dict]:
@@ -177,7 +194,14 @@ def _parse_lista_ghes(lines: list[Line]) -> list[dict]:
                 labels.append(w.x0)
             break  # só a 1ª palavra da linha pode ser rótulo
     if labels:
-        x_riscos = min(labels) - 2
+        # O rótulo do grupo pode estar deslocado para a direita enquanto suas
+        # continuações recuam (SAGARIS: rótulo em x=219, "MINERAL," em x=209).
+        # O teto acompanha o deslocamento da coluna GHE/FUNÇÃO: no PIONEER
+        # toda a tabela está ~22pt à direita e uma função legítima chega a
+        # x=211; no SAGARIS a coluna começa na posição padrão.
+        deslocamento = x_codigo_max - _X_FUNCAO_PADRAO
+        x_riscos_max = _X_RISCOS_PADRAO + deslocamento
+        x_riscos = min(x_riscos_max, min(labels) - 2)
 
     # âncoras: linhas com o código do GHE na coluna da esquerda
     codigos: list[tuple[int, str]] = []
@@ -217,7 +241,29 @@ def _parse_bloco(codigo: str, linhas: list[Line],
                  x_func_min: float, x_riscos: float) -> dict:
     funcoes: list[str] = []
     pendente = ""  # função com quebra de linha (termina em conector)
+    linhas_pendentes: list[Line] = []
+    focos_funcoes: dict[str, dict] = {}
     grupos: list[tuple[str, str]] = []  # (grupo, texto acumulado)
+
+    def registrar_funcao(nome: str, linhas_funcao: list[Line]) -> None:
+        funcoes.append(nome)
+        if not linhas_funcao:
+            return
+        pagina_funcao = linhas_funcao[0].page
+        mesmas_pagina = [ln for ln in linhas_funcao if ln.page == pagina_funcao]
+        palavras = [
+            w for ln in mesmas_pagina for w in ln.words
+            if x_func_min <= w.x0 < x_riscos
+        ]
+        if not palavras:
+            return
+        focos_funcoes[nome] = {
+            "pagina": pagina_funcao,
+            "top": max(0, min(ln.top for ln in mesmas_pagina) - 1),
+            "bottom": max(ln.top for ln in mesmas_pagina) + 9,
+            "left": max(0, min(w.x0 for w in palavras) - 3),
+            "right": max(w.x1 for w in palavras) + 3,
+        }
 
     for ln in linhas:
         parte_func = " ".join(
@@ -225,14 +271,25 @@ def _parse_bloco(codigo: str, linhas: list[Line],
         ).strip()
         parte_risco = " ".join(w.text for w in ln.words if w.x0 >= x_riscos).strip()
 
+        # Texto repintado pode ser decomposto de formas diferentes pelos
+        # leitores (SAGARIS: pdfplumber -> "E RGONÔMICO:", docling ->
+        # "ERGONÔMICO :"). Recompõe a inicial antes de reconhecer o grupo.
+        parte_risco = re.sub(
+            r"^([A-ZÀ-Ü])\s+([A-ZÀ-Ü]{4,}\s*:)", r"\1\2", parte_risco
+        )
+
         if parte_func:
+            linhas_funcao = [ln]
             if pendente:
                 parte_func = f"{pendente} {parte_func}"
+                linhas_funcao = [*linhas_pendentes, ln]
                 pendente = ""
+                linhas_pendentes = []
             if parte_func.split()[-1].lower() in _CONECTORES:
                 pendente = parte_func
+                linhas_pendentes = linhas_funcao
             else:
-                funcoes.append(parte_func)
+                registrar_funcao(parte_func, linhas_funcao)
 
         if parte_risco:
             m = _RE_GRUPO.match(parte_risco)
@@ -243,18 +300,28 @@ def _parse_bloco(codigo: str, linhas: list[Line],
                 grupos[-1] = (grupos[-1][0], f"{grupos[-1][1]} {parte_risco}".strip())
 
     if pendente:
-        funcoes.append(pendente)
+        registrar_funcao(pendente, linhas_pendentes)
 
     riscos: list[Risco] = []
     for grupo, texto in grupos:
         for nome in _split_virgulas(texto.rstrip(".").strip()):
             if nome:
                 riscos.append(Risco(nome=nome, grupo=grupo))
+    pagina = linhas[0].page if linhas else None
+    linhas_pagina = [ln for ln in linhas if ln.page == pagina]
+    foco_top = min((ln.top for ln in linhas_pagina), default=None)
+    foco_bottom = max((ln.top for ln in linhas_pagina), default=None)
     return {
         "codigo": codigo,
         "funcoes": funcoes,
+        "focos_funcoes": focos_funcoes,
         "riscos": riscos,
-        "pagina": linhas[0].page if linhas else None,
+        "pagina": pagina,
+        # Faixa vertical usada pelo visualizador para destacar o GHE. A linha
+        # usa coordenadas PDF (pontos, origem no topo); a margem inclui a altura
+        # visual da última linha e evita um recorte apertado demais.
+        "foco_top": max(0, foco_top - 7) if foco_top is not None else None,
+        "foco_bottom": foco_bottom + 16 if foco_bottom is not None else None,
     }
 
 
@@ -477,7 +544,7 @@ def _ocr_atividades(pdf_path: str, pagina: int) -> list[tuple[str, set[str]]]:
                 atividade = min(centros, key=lambda k: abs(centros[k] - cx))
                 if abs(centros[atividade] - cx) < 220:
                     marcas.add(atividade)
-        nome = re.sub(r"\s+", " ", nome).strip()
+        nome = _normalizar_funcao_ocr(nome)
         if len(_stem(nome)) >= 4 and marcas:
             resultado.append((nome, marcas))
     return resultado
@@ -603,6 +670,7 @@ def extrair(lines: list[Line], pdf_path: str | None = None) -> tuple[list[GHE], 
     )
 
     ghes: list[GHE] = []
+    focos: dict[str, dict] = {}
     ocr_usadas: set[int] = set()
 
     for bloco in blocos:
@@ -687,6 +755,18 @@ def extrair(lines: list[Line], pdf_path: str | None = None) -> tuple[list[GHE], 
             g.nrs = {cargo: sorted(nrs)}
             g.exames = exames
             ghes.append(g)
+            if bloco["pagina"] and bloco["foco_top"] is not None:
+                focos[g.codigo] = {
+                    "pagina": bloco["pagina"],
+                    "top": round(bloco["foco_top"], 1),
+                    "bottom": round(bloco["foco_bottom"], 1),
+                }
+                foco_funcao = bloco["focos_funcoes"].get(funcao)
+                if foco_funcao:
+                    focos[g.codigo]["funcao"] = {
+                        chave: round(valor, 1) if isinstance(valor, float) else valor
+                        for chave, valor in foco_funcao.items()
+                    }
 
     sobras = [nome for i, (nome, _) in enumerate(atividades_ocr)
               if i not in ocr_usadas]
@@ -701,6 +781,7 @@ def extrair(lines: list[Line], pdf_path: str | None = None) -> tuple[list[GHE], 
         "total_ghes": len(ghes),
         "layout": "solstad",
         "avisos_documento": avisos_doc,
+        "focos": focos,
     }
     return ghes, meta
 

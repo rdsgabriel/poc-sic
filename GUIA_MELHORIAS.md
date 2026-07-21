@@ -8,10 +8,45 @@ PDFs que já funcionavam.
 ## A regra de ouro
 
 > **Nenhuma alteração no parser é aceitável se `pytest tests/` não passar.**
-> Os golden files em `tests/golden/` são o registro do comportamento validado
-> por humanos. Eles NUNCA são editados à mão e NUNCA são regenerados para
-> "fazer o teste passar" — só são atualizados quando um humano re-valida o
-> conteúdo contra o PDF original.
+> Os golden files em `tests/golden/<layout>/` são o registro do comportamento
+> validado por humanos. Eles NUNCA são editados à mão e NUNCA são regenerados
+> para "fazer o teste passar" — só são atualizados quando um humano re-valida
+> o conteúdo contra o PDF original.
+
+## Organização de testes e o processo de "treino"
+
+Cada layout tem sua pasta de goldens e de PDFs, casados por convenção de nome:
+
+    tests/golden/<layout>/<nome>.json   ← contrato de regressão, VERSIONADO
+    tests/pdfs/<layout>/<nome>.pdf      ← PDF real, FORA do git (LGPD)
+
+A suíte (`tests/test_regressao.py`) **auto-descobre** os casos varrendo os
+goldens — não há lista manual de PDFs. PDF ausente é pulado (a máquina de CI
+não tem os documentos do cliente); o golden continua sendo o contrato.
+
+"Treinar" um layout = alimentá-lo com mais PDFs reais até cobrir as variações
+do emissor. O container monta `app/` e `tests/` do host (bind mount no
+docker-compose), então isto roda sem `docker cp` e os goldens gravados
+aparecem direto no host para commitar:
+
+```bash
+# cobertura atual (quantos PDFs por layout)
+docker compose exec poc-pcmso python -m tests.treinar --list
+
+# adicionar/atualizar um caso: extrai, EXIGE que os 2 leitores concordem +
+# regras OK, mostra o diff contra o golden e só grava sob confirmação
+docker compose exec poc-pcmso python -m tests.treinar solstad \
+    "/srv/entrada/NORMAND TURQUESA.pdf" normand_turquesa
+
+# rodar a suíte de UM layout enquanto trabalha nele (~2min vs ~12min do todo)
+docker compose exec poc-pcmso python -m tests.treinar --check solstad
+#   equivale a: pytest tests/ -k solstad -q
+```
+
+O `treinar` recusa gravar golden se docling e pdfplumber divergirem ou se uma
+regra de consistência falhar — a regra de ouro vira código, não disciplina.
+Ainda assim, **confira o resumo/diff contra o PDF antes de confirmar**: os dois
+leitores podem concordar num erro de leitura que só o olho humano pega.
 
 ## Arquitetura (o que cada arquivo faz)
 
@@ -65,17 +100,16 @@ Leia o JSON de auditoria e os avisos. Identifique EXATAMENTE o que está
 errado (qual GHE, qual tabela, qual linha do PDF). Use
 `pdftotext -layout arquivo.pdf -` para inspecionar o texto com layout.
 
-### 2. Rode a suíte ANTES de alterar qualquer coisa
+### 2. Rode a suíte do layout ANTES de alterar qualquer coisa
 ```bash
-pytest tests/ -q
+docker compose exec poc-pcmso python -m tests.treinar --check <layout>
 ```
 Ela deve estar verde. Se não estiver, pare e investigue — você não sabe o
-estado do terreno.
+estado do terreno. (Sem `<layout>` roda a suíte inteira, ~12min.)
 
-### 3. Escreva o teste do caso novo PRIMEIRO
-Adicione o PDF novo ao projeto (ou a `tests/fixtures/`) e crie um teste que
-capture o defeito (ex.: "GHE 07 deve ter 12 riscos"). O teste deve FALHAR
-antes da correção e PASSAR depois.
+### 3. Coloque o PDF novo na pasta do layout
+`tests/pdfs/<layout>/<nome>.pdf`. A suíte auto-descobre; ainda não há golden,
+então ele não entra como caso de regressão até você promovê-lo no passo 6.
 
 ### 4. Altere o parser de forma aditiva
 Preferência de estratégia, na ordem:
@@ -87,34 +121,28 @@ Preferência de estratégia, na ordem:
    tolerância de 12pt para 50pt "para pegar o caso novo" — isso quebra
    outros PDFs de forma silenciosa).
 
-### 5. Valide o conjunto completo
+### 5. Valide os PDFs já cobertos do layout
 ```bash
-pytest tests/ -q                          # golden files intactos?
-python -m app.validate pdf_novo.pdf       # leitores concordam no PDF novo?
+docker compose exec poc-pcmso python -m tests.treinar --check <layout>
 ```
-Os DOIS precisam passar. Divergência entre docling e pdfplumber no PDF novo
-significa que a correção está frágil — não siga em frente.
+Os goldens existentes do layout precisam continuar verdes. Só depois valide
+o PDF novo (próximo passo).
 
 ### 6. Promova o PDF novo a golden
 Depois que um humano conferir a extração (spot-check de 2–3 GHEs contra o
-PDF, como descrito em `PROMPT_PRODUCAO_PLANILHAS_PCMSO.md`):
+PDF), use o script de treino — ele extrai, exige que os dois leitores
+concordem, mostra o diff e grava sob confirmação:
 ```bash
-python - <<'EOF'
-import json
-from dataclasses import asdict
-from app.backends import BACKENDS
-from app.extractor import extrair_ghes
-ghes, meta = extrair_ghes(BACKENDS["docling"]("caminho/do/pdf_novo.pdf"))
-json.dump({"meta": meta, "ghes": [asdict(g) for g in ghes]},
-          open("tests/golden/pdf_novo.json", "w", encoding="utf-8"),
-          ensure_ascii=False, indent=2)
-EOF
+docker compose exec poc-pcmso python -m tests.treinar <layout> \
+    tests/pdfs/<layout>/<nome>.pdf
 ```
-E registre o par (pdf, golden) na lista `PDFS` de `tests/test_regressao.py`.
+O golden aparece em `tests/golden/<layout>/<nome>.json` (via bind mount, já no
+host). Não há lista para editar — a auto-descoberta acha o novo caso.
 
 ### 7. Checklist final antes de entregar
-- [ ] `pytest tests/ -q` verde (todos os PDFs, ambos os leitores)
-- [ ] PDF novo com validação cruzada limpa (`python -m app.validate`)
+- [ ] `--check <layout>` verde para o layout mexido (ambos os leitores)
+- [ ] suíte completa verde se você tocou em `base.py`/`builder.py`/`backends.py`
+      (que afetam todos os layouts)
 - [ ] Zero avisos de extração novos nos PDFs antigos
 - [ ] Golden do PDF novo criado APÓS validação humana, nunca antes
 - [ ] Nenhuma nomenclatura "corrigida" gramaticalmente
@@ -133,9 +161,11 @@ irmão em `app/extractors/`:
    `extractors/base.py` (`GHE`/`Risco`/`Exame`).
 3. Registre o módulo na lista `EXTRATORES` de `app/extractors/__init__.py`.
    A ordem importa: cada detector deve casar só com a própria família.
-4. Golden + entrada na lista `PDFS` de `tests/test_regressao.py` (após
-   validação humana), e rode a suíte COMPLETA — os PDFs antigos continuam
-   sendo o contrato.
+4. Coloque o PDF em `tests/pdfs/<familia>/<nome>.pdf` e promova o golden com
+   `python -m tests.treinar <familia> tests/pdfs/<familia>/<nome>.pdf` (após
+   validação humana). Rode a suíte COMPLETA — os PDFs antigos continuam sendo
+   o contrato. Extractor que precise do arquivo original (OCR, como o Solstad)
+   declara o parâmetro extra `pdf_path` em `extrair`.
 
 Armadilhas já vistas no layout VIX (não regredir):
 - A tabela PROCEDIMENTOS pode cair na PÁGINA SEGUINTE da seção (atividade
@@ -235,6 +265,14 @@ Armadilhas do layout International SOS / Solstad (não regredir):
   fundo cinza junto); bullets dos exames específicos podem ser "•" ou
   glifo Wingdings U+F0B7; níveis por extenso (JUNIOR/PLENO) equivalem a
   JR/PL da planilha bilíngue (_ALIAS_NIVEL).
+- SAGARIS desloca os rótulos de grupo de risco para a direita, mas recua
+  linhas de continuação como `MINERAL,` e `ATIVIDADES CRÍTICAS`; uma fronteira
+  derivada apenas do rótulo transforma esses textos em funções. O teto da
+  fronteira acompanha o deslocamento da coluna GHE/FUNÇÃO para também preservar
+  sufixos reais como o `I` de `OPERADOR DE GUINDASTE FIXO I` no PIONEER.
+- No GHE 9 do SAGARIS, texto repintado chega como `E RGONÔMICO:` no
+  pdfplumber e `ERGONÔMICO :` no docling. Recompor a inicial antes de detectar
+  o grupo; sem isso os leitores divergem em riscos ergonômicos.
 - NRs vêm da tabela de atividades críticas POR FUNÇÃO (GHE.nrs) + NR30 em
   todos (regra do cliente) — o builder ignora NR_TRIGGERS quando GHE.nrs
   está preenchido. Riscos citam "CHOQUE ELÉTRICO" em GHEs cuja tabela NÃO
