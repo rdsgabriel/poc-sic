@@ -183,7 +183,11 @@ def extrair_ghes(lines: list[Line]) -> tuple[list[GHE], dict]:
 
     focos: dict[str, dict] = {}
     for g, secao in secoes_foco:
-        foco = montar_foco(secao, g.pagina)
+        # 1 GHE = 1 função: destaca em amarelo a linha do cabeçalho
+        # ("GHE: - NN - NOME"), o nome extraído do GHE. Com vários cargos
+        # (tabela), a banda basta — não há um único nome a apontar.
+        linha_nome = [secao[0]] if len(g.cargos) == 1 and secao else None
+        foco = montar_foco(secao, g.pagina, linha_nome)
         if foco:
             focos[g.codigo] = foco
 

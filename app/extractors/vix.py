@@ -32,7 +32,7 @@ from __future__ import annotations
 import re
 from collections import defaultdict
 
-from .base import GHE, Exame, Line, Risco, Word, montar_foco, norm as _norm
+from .base import GHE, Exame, Line, Risco, Word, caixa_pdf, montar_foco, norm as _norm
 
 _RE_CODIGO = re.compile(r"^[A-Z0-9]+(?:_[A-Z0-9]+){2,}$")
 _RE_QUANT = re.compile(r"^\d{1,3}$")
@@ -400,6 +400,7 @@ def extrair_ghes_vix(lines: list[Line]) -> tuple[list[GHE], dict]:
     por_codigo: dict[str, GHE] = {}
     assinaturas: dict[str, tuple] = {}
     focos: dict[str, dict] = {}
+    linha_cargo_foco: dict[str, Line | None] = {}
     for n, sec in enumerate(secoes):
         fim = secoes[n + 1]["idx"] if n + 1 < len(secoes) else len(lines)
         secao_lines = lines[sec["idx"]:fim]
@@ -422,6 +423,13 @@ def extrair_ghes_vix(lines: list[Line]) -> tuple[list[GHE], dict]:
             foco = montar_foco(secao_lines, sec["page"])
             if foco:
                 focos[sec["codigo"]] = foco
+            # linha do cargo desta 1ª seção, para o destaque amarelo quando o
+            # GHE acabar tendo um único cargo (1 GHE = 1 função)
+            linha_cargo_foco[sec["codigo"]] = next(
+                (ln for ln in lines[max(0, sec["idx"] - 3):sec["idx"]]
+                 if _norm(ln.text.strip()) == _norm(sec["cargo"]) and sec["cargo"]),
+                None,
+            )
             assinaturas[sec["codigo"]] = (
                 {(r.nome, r.grupo) for r in riscos},
                 {(e.nome, e.admissao, e.periodico_meses, e.demissao) for e in exames},
@@ -449,6 +457,17 @@ def extrair_ghes_vix(lines: list[Line]) -> tuple[list[GHE], dict]:
     #   - não casou com nada: alerta forte — a função pode estar sem seção
     #     (e portanto fora da planilha).
     ghes = list(por_codigo.values())
+
+    # 1 GHE = 1 função: destaca em amarelo a linha do cargo. Com vários cargos
+    # no mesmo código (FPC), a banda basta — não há um único nome a apontar.
+    for codigo, ghe in por_codigo.items():
+        foco = focos.get(codigo)
+        linha = linha_cargo_foco.get(codigo)
+        if foco and linha is not None and len(ghe.cargos) == 1:
+            caixa = caixa_pdf([linha])
+            if caixa and caixa["pagina"] == foco["pagina"]:
+                foco["funcao"] = caixa
+
     avisos_documento: list[str] = []
     cargos_secoes = [c for g in ghes for c in g.cargos]
     chaves_secoes = {_chave_cargo(c) for c in cargos_secoes}
