@@ -18,7 +18,7 @@ from __future__ import annotations
 
 import re
 
-from .base import GHE, Exame, Line, Risco, Word, norm as _norm
+from .base import GHE, Exame, Line, Risco, Word, montar_foco, norm as _norm
 
 
 def detectar(lines: list[Line]) -> bool:
@@ -81,6 +81,10 @@ def extrair_ghes(lines: list[Line]) -> tuple[list[GHE], dict]:
     func_rows: list[list[str]] = []
     cargo_rows: list[list[str]] = []
     ultima_linha_tab: tuple[int, float] | None = None
+    # foco: linhas de cada seção de GHE (banda vertical; cargos vêm em tabela,
+    # então não há uma única caixa de função a destacar)
+    secoes_foco: list[tuple[GHE, list[Line]]] = []
+    foco_linhas: list[Line] = []
 
     def fechar_cargos():
         """Consolida os cargos do GHE.
@@ -120,11 +124,15 @@ def extrair_ghes(lines: list[Line]) -> tuple[list[GHE], dict]:
                 nome = toc_nomes.get(codigo, "")
             ghe = GHE(codigo=codigo, nome=nome, pagina=ln.page)
             ghes.append(ghe)
+            foco_linhas = [ln]
+            secoes_foco.append((ghe, foco_linhas))
             estado = None
             continue
 
         if ghe is None:
             continue
+
+        foco_linhas.append(ln)  # linha de conteúdo da seção do GHE atual
 
         # ------------------------------------------------ cabeçalhos de tabela
         if "Perigo / Fator de Risco" in txt or (
@@ -173,7 +181,13 @@ def extrair_ghes(lines: list[Line]) -> tuple[list[GHE], dict]:
 
     fechar_cargos()
 
-    meta = {"empresa": empresa, "total_ghes": len(ghes)}
+    focos: dict[str, dict] = {}
+    for g, secao in secoes_foco:
+        foco = montar_foco(secao, g.pagina)
+        if foco:
+            focos[g.codigo] = foco
+
+    meta = {"empresa": empresa, "total_ghes": len(ghes), "focos": focos}
     return ghes, meta
 
 

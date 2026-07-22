@@ -28,7 +28,7 @@ from __future__ import annotations
 
 import re
 
-from .base import GHE, Exame, Line, Risco, norm as _norm
+from .base import GHE, Exame, Line, Risco, montar_foco, norm as _norm
 
 _RE_TOC = re.compile(r"\.{4,}")
 _RE_SETOR = re.compile(r"^(?:\d+(?:\.\d+)*\s+)?SETOR:\s*(GSE\s*\S+)\s*-\s*(.+)$")
@@ -77,6 +77,9 @@ def extrair(lines: list[Line]) -> tuple[list[GHE], dict]:
     risco_atual: Risco | None = None
     risco_boundary: float | None = None
     empresa = ""
+    # foco: para cada GHE guardamos as linhas da seção e a linha "FUNÇÃO:"
+    secoes_foco: list[tuple[GHE, list[Line], Line]] = []
+    foco_linhas: list[Line] = []
 
     def fechar_exame_pendente():
         nonlocal exame_pendente, exame_atual
@@ -116,6 +119,8 @@ def extrair(lines: list[Line]) -> tuple[list[GHE], dict]:
                 pagina=ln.page,
             )
             ghes.append(ghe)
+            foco_linhas = [ln]
+            secoes_foco.append((ghe, foco_linhas, ln))
             grupo_atual = None
             em_exames = False
             risco_atual = None
@@ -130,6 +135,8 @@ def extrair(lines: list[Line]) -> tuple[list[GHE], dict]:
             fechar_exame_pendente()
             ghe = None
             continue
+
+        foco_linhas.append(ln)  # linha de conteúdo da função atual
 
         # ---------------- bloco de exames ----------------
         if "Exames Obrigatórios da Função" in txt:
@@ -244,9 +251,16 @@ def extrair(lines: list[Line]) -> tuple[list[GHE], dict]:
                     f"Exame {e.nome!r} marcado como Periódico sem periodicidade informada"
                 )
 
+    focos: dict[str, dict] = {}
+    for g, secao, linha_funcao in secoes_foco:
+        foco = montar_foco(secao, g.pagina, [linha_funcao])
+        if foco:
+            focos[g.codigo] = foco
+
     meta = {
         "empresa": empresa or "EMPRESA",
         "total_ghes": len(ghes),
         "layout": "occupare",
+        "focos": focos,
     }
     return ghes, meta

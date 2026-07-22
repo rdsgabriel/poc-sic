@@ -48,7 +48,7 @@ import re
 from difflib import SequenceMatcher
 from pathlib import Path
 
-from .base import GHE, Exame, Line, Risco, norm as _norm
+from .base import GHE, Exame, Line, Risco, montar_foco, norm as _norm
 
 _DEPARA_EXAMES = Path(__file__).parent / "data" / "mafra_depara_exames_sk.json"
 _RE_ESOCIAL_RISCO = re.compile(r"\s*eSocial\s*[\d.]+\s*$", re.IGNORECASE)
@@ -200,6 +200,10 @@ def extrair(lines: list[Line]) -> tuple[list[GHE], dict]:
     exames_buf: list[Line] = []
     risco_atual: Risco | None = None
     empresa = ""
+    # foco: linhas de cada seção CARGO + a própria linha CARGO (caixa da função).
+    # O código do GHE é reescrito ao achar o Ambiente, então chaveamos no fim.
+    secoes_foco: list[tuple[GHE, list[Line], Line]] = []
+    foco_linhas: list[Line] = []
 
     def flush_exames():
         nonlocal exames_buf
@@ -224,6 +228,8 @@ def extrair(lines: list[Line]) -> tuple[list[GHE], dict]:
             cargo = m.group(1).strip()
             ghe = GHE(codigo=cargo, nome=cargo, cargos=[cargo], pagina=ln.page)
             ghes.append(ghe)
+            foco_linhas = [ln]
+            secoes_foco.append((ghe, foco_linhas, ln))
             estado = None
             grupo_atual = None
             risco_atual = None
@@ -231,6 +237,8 @@ def extrair(lines: list[Line]) -> tuple[list[GHE], dict]:
 
         if ghe is None:
             continue
+
+        foco_linhas.append(ln)  # linha de conteúdo do cargo atual
 
         m = _RE_AMBIENTE.search(txt)
         if m:
@@ -294,10 +302,17 @@ def extrair(lines: list[Line]) -> tuple[list[GHE], dict]:
             if not tem_perfil:
                 g.avisos.append(f"Exame {e.nome!r} sem nenhum perfil marcado")
 
+    focos: dict[str, dict] = {}
+    for g, secao, linha_cargo in secoes_foco:
+        foco = montar_foco(secao, g.pagina, [linha_cargo])
+        if foco:
+            focos[g.codigo] = foco  # g.codigo já é o final (GSE/cargo)
+
     meta = {
         "empresa": empresa or "EMPRESA",
         "total_ghes": len(ghes),
         "layout": "mafra",
+        "focos": focos,
     }
     return ghes, meta
 

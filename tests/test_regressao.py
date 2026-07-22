@@ -105,20 +105,21 @@ def test_regras_de_consistencia(layout: str, pdf: Path, golden: Path) -> None:
     ghes, meta = _extrair_objetos(pdf, "pdfplumber")
     problemas = checar_documento(ghes, meta)
     assert not problemas, "\n".join(problemas)
+
+    # foco (spotlight da tela de conferência): TODO layout emite a banda
+    # vertical de cada GHE; quando há caixa de função, ela é validada; o
+    # Solstad garante a caixa em todos os GHEs.
+    focos = meta.get("focos", {})
+    assert set(focos) == {g.codigo for g in ghes}, "todo GHE precisa de foco"
+    for f in focos.values():
+        assert f["pagina"] >= 1 and 0 <= f["top"] < f["bottom"]
+        cx = f.get("funcao")
+        if cx is not None:
+            assert cx["pagina"] == f["pagina"]
+            assert 0 <= cx["top"] < cx["bottom"]
+            assert 0 <= cx["left"] < cx["right"]
     if layout == "solstad":
-        focos = meta.get("focos", {})
-        assert set(focos) == {g.codigo for g in ghes}
-        assert all(
-            f["pagina"] >= 1 and 0 <= f["top"] < f["bottom"]
-            for f in focos.values()
-        )
         assert all("funcao" in f for f in focos.values())
-        assert all(
-            f["funcao"]["pagina"] == f["pagina"]
-            and 0 <= f["funcao"]["top"] < f["funcao"]["bottom"]
-            and 0 <= f["funcao"]["left"] < f["funcao"]["right"]
-            for f in focos.values()
-        )
 
 
 @_CASOS_PARAM

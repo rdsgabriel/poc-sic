@@ -80,3 +80,70 @@ def norm(s: str) -> str:
     s = unicodedata.normalize("NFKD", s)
     s = "".join(c for c in s if not unicodedata.combining(c))
     return re.sub(r"\s+", " ", s).strip().lower()
+
+
+# --------------------------------------------------------------- foco (spotlight)
+# Coordenadas para a tela de conferência destacar, na página do PDF, ONDE cada
+# GHE está. O contrato consumido pelo front (PdfSpotlight) é, por código de GHE:
+#     {pagina, top, bottom, funcao?: {pagina, top, bottom, left, right}}
+# `top`/`bottom` são a banda vertical da seção (o visualizador escurece o resto
+# e rola até ela); `funcao` é a caixa opcional destacada em âmbar. Todas as
+# coordenadas em pontos PDF (origem no topo), como em Line.top / Word.x0.
+
+
+def faixa_pdf(
+    linhas: list[Line], pagina: int, *,
+    margem_topo: float = 7.0, margem_base: float = 16.0,
+) -> dict | None:
+    """Banda vertical {pagina, top, bottom} das linhas na página dada."""
+    da_pagina = [ln for ln in linhas if ln.page == pagina]
+    if not da_pagina:
+        return None
+    return {
+        "pagina": pagina,
+        "top": round(max(0.0, min(ln.top for ln in da_pagina) - margem_topo), 1),
+        "bottom": round(max(ln.top for ln in da_pagina) + margem_base, 1),
+    }
+
+
+def caixa_pdf(linhas: list[Line], *, filtro=None) -> dict | None:
+    """Caixa {pagina, top, bottom, left, right} ao redor das palavras das
+    `linhas` (restritas à primeira página encontrada). `filtro(Word)->bool`
+    limita as palavras consideradas (ex.: só a coluna da função)."""
+    if not linhas:
+        return None
+    pagina = linhas[0].page
+    da_pagina = [
+        ln for ln in linhas
+        if ln.page == pagina and any(filtro is None or filtro(w) for w in ln.words)
+    ]
+    palavras = [
+        w for ln in da_pagina for w in ln.words if filtro is None or filtro(w)
+    ]
+    if not palavras:
+        return None
+    return {
+        "pagina": pagina,
+        "top": round(max(0.0, min(ln.top for ln in da_pagina) - 1), 1),
+        "bottom": round(max(ln.top for ln in da_pagina) + 9, 1),
+        "left": round(max(0.0, min(w.x0 for w in palavras) - 3), 1),
+        "right": round(max(w.x1 for w in palavras) + 3, 1),
+    }
+
+
+def montar_foco(
+    secao: list[Line], pagina: int | None,
+    funcao: list[Line] | None = None, *, filtro_funcao=None,
+) -> dict | None:
+    """Foco de um GHE: banda da seção em `pagina` + caixa opcional da função
+    (só anexada se cair na mesma página da banda)."""
+    if pagina is None:
+        return None
+    faixa = faixa_pdf(secao, pagina)
+    if faixa is None:
+        return None
+    if funcao:
+        caixa = caixa_pdf(funcao, filtro=filtro_funcao)
+        if caixa and caixa["pagina"] == pagina:
+            faixa["funcao"] = caixa
+    return faixa

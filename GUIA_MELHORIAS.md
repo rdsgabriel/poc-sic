@@ -161,6 +161,12 @@ irmão em `app/extractors/`:
    `extractors/base.py` (`GHE`/`Risco`/`Exame`).
 3. Registre o módulo na lista `EXTRATORES` de `app/extractors/__init__.py`.
    A ordem importa: cada detector deve casar só com a própria família.
+3b. Emita `meta["focos"]` — `{codigo_ghe: {pagina, top, bottom, funcao?}}` — com
+   os helpers de `base.py` (`montar_foco`/`faixa_pdf`/`caixa_pdf`). É o que faz
+   o spotlight da tela de conferência funcionar (o front e o `main.py` já são
+   genéricos). A suíte EXIGE uma banda válida para todo GHE; a caixa da função
+   é opcional (útil quando 1 GHE = 1 função). Acumule as linhas da seção
+   durante o parse e chame `montar_foco(secao, ghe.pagina, [linha_funcao])`.
 4. Coloque o PDF em `tests/pdfs/<familia>/<nome>.pdf` e promova o golden com
    `python -m tests.treinar <familia> tests/pdfs/<familia>/<nome>.pdf` (após
    validação humana). Rode a suíte COMPLETA — os PDFs antigos continuam sendo

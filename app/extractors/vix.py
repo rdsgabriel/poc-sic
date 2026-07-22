@@ -32,7 +32,7 @@ from __future__ import annotations
 import re
 from collections import defaultdict
 
-from .base import GHE, Exame, Line, Risco, Word, norm as _norm
+from .base import GHE, Exame, Line, Risco, Word, montar_foco, norm as _norm
 
 _RE_CODIGO = re.compile(r"^[A-Z0-9]+(?:_[A-Z0-9]+){2,}$")
 _RE_QUANT = re.compile(r"^\d{1,3}$")
@@ -399,9 +399,11 @@ def extrair_ghes_vix(lines: list[Line]) -> tuple[list[GHE], dict]:
 
     por_codigo: dict[str, GHE] = {}
     assinaturas: dict[str, tuple] = {}
+    focos: dict[str, dict] = {}
     for n, sec in enumerate(secoes):
         fim = secoes[n + 1]["idx"] if n + 1 < len(secoes) else len(lines)
-        dados = _parse_secao(lines[sec["idx"]:fim], sec)
+        secao_lines = lines[sec["idx"]:fim]
+        dados = _parse_secao(secao_lines, sec)
         riscos, ausencia = _parse_riscos(dados["riscos_txt"])
         exames = _montar_exames(dados["exames_aso"])
 
@@ -414,6 +416,12 @@ def extrair_ghes_vix(lines: list[Line]) -> tuple[list[GHE], dict]:
                 pagina=sec["page"],
             )
             por_codigo[sec["codigo"]] = ghe
+            # foco: banda da 1ª seção do código (a que define ghe.pagina). O
+            # cargo fica em linha própria acima da Ocupação; o layout tem 1
+            # seção por página, então a banda dela é o destaque natural.
+            foco = montar_foco(secao_lines, sec["page"])
+            if foco:
+                focos[sec["codigo"]] = foco
             assinaturas[sec["codigo"]] = (
                 {(r.nome, r.grupo) for r in riscos},
                 {(e.nome, e.admissao, e.periodico_meses, e.demissao) for e in exames},
@@ -465,6 +473,7 @@ def extrair_ghes_vix(lines: list[Line]) -> tuple[list[GHE], dict]:
         "total_ghes": len(ghes),
         "layout": "vix",
         "avisos_documento": avisos_documento,
+        "focos": focos,
     }
     return ghes, meta
 
