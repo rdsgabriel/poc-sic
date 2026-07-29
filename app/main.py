@@ -1,44 +1,85 @@
 """
 API da POC: recebe o PDF do PCMSO e devolve as planilhas PGR e PCMSO.
 
+Rotas sob /api, protegidas por login (app/auth.py). O processamento é
+assíncrono: POST /api/processar devolve o job_id na hora e o front
+acompanha por GET /api/status/{job_id} — necessário porque em produção o
+front (Vercel) fala com a API através de um rewrite que derruba requests
+longos, e um PDF leva de segundos a minutos.
+
 O front (React, em front-end/) é servido como estático a partir de
 front-end/dist quando o build existir:
 
     cd front-end && npm install && npm run build
     uvicorn app.main:app --host 0.0.0.0 --port 8000
 
-Em desenvolvimento do front, use `npm run dev` (Vite proxia a API em :8000).
+Em desenvolvimento do front, use `npm run dev` (Vite proxia /api em :8890).
 """
 
 from __future__ import annotations
 
 import json
 import logging
+import os
 import shutil
 import tempfile
+import time
 import uuid
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from time import perf_counter
 
-from fastapi import FastAPI, File, HTTPException, UploadFile
+from fastapi import Depends, FastAPI, File, HTTPException, UploadFile
 from fastapi.responses import FileResponse, JSONResponse
 
+from .auth import router as auth_router
+from .auth import usuario_logado
 from .pipeline import processar_pdf
 
 LOGGER = logging.getLogger("uvicorn.error")
 
 app = FastAPI(title="POC PCMSO -> Planilhas")
+app.include_router(auth_router)
 
 JOBS_DIR = Path(tempfile.gettempdir()) / "poc_pcmso_jobs"
 JOBS_DIR.mkdir(parents=True, exist_ok=True)
 
 DIST_DIR = Path(__file__).resolve().parent.parent / "front-end" / "dist"
 
+# um job por vez: o pipeline é single-threaded e o pico de RAM (~2,3 GB no
+# maior PDF conhecido) não cabe duas vezes nos 4 GB do plano do Render
+_EXECUTOR = ThreadPoolExecutor(max_workers=1)
 
-@app.post("/processar")
+# jobs guardam PDF do cliente + planilhas: expiram para não acumular dado
+# sensível em produção
+RETENCAO_DIAS = int(os.environ.get("JOBS_RETENCAO_DIAS", "7"))
+
+
+def _escrever_status(job_dir: Path, dados: dict) -> None:
+    tmp = job_dir / "status.json.tmp"
+    tmp.write_text(json.dumps(dados, ensure_ascii=False), encoding="utf-8")
+    tmp.replace(job_dir / "status.json")
+
+
+def _limpar_jobs_antigos() -> None:
+    limite = time.time() - RETENCAO_DIAS * 86400
+    for pasta in JOBS_DIR.iterdir():
+        try:
+            if pasta.is_dir() and pasta.stat().st_mtime < limite:
+                shutil.rmtree(pasta, ignore_errors=True)
+                LOGGER.info(
+                    "JOB %s | expirado (> %d dias), removido", pasta.name, RETENCAO_DIAS
+                )
+        except OSError:
+            continue
+
+
+@app.post("/api/processar", dependencies=[Depends(usuario_logado)])
 async def processar(pdf: UploadFile = File(...)) -> JSONResponse:
     if not (pdf.filename or "").lower().endswith(".pdf"):
         raise HTTPException(400, "Envie um arquivo PDF.")
+
+    _limpar_jobs_antigos()
 
     job_id = uuid.uuid4().hex[:12]
     job_dir = JOBS_DIR / job_id
@@ -47,31 +88,55 @@ async def processar(pdf: UploadFile = File(...)) -> JSONResponse:
     with pdf_path.open("wb") as f:
         shutil.copyfileobj(pdf.file, f)
 
-    inicio = perf_counter()
-    tamanho_mb = pdf_path.stat().st_size / (1024 * 1024)
     LOGGER.info(
         "JOB %s | recebido | arquivo=%r | tamanho=%.2f MB",
         job_id,
         pdf.filename,
-        tamanho_mb,
+        pdf_path.stat().st_size / (1024 * 1024),
     )
+    _escrever_status(job_dir, {"status": "na_fila"})
+    _EXECUTOR.submit(_executar_job, job_id, job_dir, pdf_path)
+    return JSONResponse({"job_id": job_id, "status": "na_fila"})
 
+
+@app.get("/api/status/{job_id}", dependencies=[Depends(usuario_logado)])
+def status_job(job_id: str) -> JSONResponse:
+    caminho = (JOBS_DIR / job_id / "status.json").resolve()
+    if not caminho.is_file() or JOBS_DIR.resolve() not in caminho.parents:
+        raise HTTPException(404, "Job não encontrado.")
+    return JSONResponse(json.loads(caminho.read_text(encoding="utf-8")))
+
+
+def _executar_job(job_id: str, job_dir: Path, pdf_path: Path) -> None:
+    _escrever_status(job_dir, {"status": "processando"})
+    inicio = perf_counter()
     try:
-        ghes_docling: list = []
-        resumo = processar_pdf(
-            pdf_path,
-            job_dir,
-            backend="docling",
-            coletar_ghes=ghes_docling,
-            job_id=job_id,
-        )
-    except Exception as exc:  # noqa: BLE001 — erro vira resposta legível
+        resposta = _processar_pdf_completo(job_id, job_dir, pdf_path, inicio)
+    except Exception as exc:  # noqa: BLE001 — erro vira status legível
         LOGGER.exception(
             "JOB %s | falhou na extração | duracao=%.1fs",
             job_id,
             perf_counter() - inicio,
         )
-        raise HTTPException(422, f"Não foi possível processar o PDF: {exc}") from exc
+        _escrever_status(
+            job_dir,
+            {"status": "erro", "detail": f"Não foi possível processar o PDF: {exc}"},
+        )
+        return
+    _escrever_status(job_dir, {"status": "concluido", "resposta": resposta})
+
+
+def _processar_pdf_completo(
+    job_id: str, job_dir: Path, pdf_path: Path, inicio: float
+) -> dict:
+    ghes_docling: list = []
+    resumo = processar_pdf(
+        pdf_path,
+        job_dir,
+        backend="docling",
+        coletar_ghes=ghes_docling,
+        job_id=job_id,
+    )
 
     dump = json.loads(Path(resumo["arquivos"]["json"]).read_text(encoding="utf-8"))
 
@@ -112,7 +177,7 @@ async def processar(pdf: UploadFile = File(...)) -> JSONResponse:
         ("JSON de debug", resumo["arquivos"]["json"]),
     ]:
         nome = Path(caminho).name
-        downloads[rotulo] = f"/download/{job_id}/{nome}"
+        downloads[rotulo] = f"/api/download/{job_id}/{nome}"
 
     # detalhe por GHE para a tela de conferência (PDF x extraído lado a lado)
     from .auditoria import auditar
@@ -148,19 +213,17 @@ async def processar(pdf: UploadFile = File(...)) -> JSONResponse:
         perf_counter() - inicio,
     )
 
-    return JSONResponse(
-        {
-            "job_id": job_id,
-            "resumo": resumo,
-            "validacao_ok": not divergencias,
-            "divergencias": divergencias,
-            "downloads": downloads,
-            "ghes_detalhe": ghes_detalhe,
-        }
-    )
+    return {
+        "job_id": job_id,
+        "resumo": resumo,
+        "validacao_ok": not divergencias,
+        "divergencias": divergencias,
+        "downloads": downloads,
+        "ghes_detalhe": ghes_detalhe,
+    }
 
 
-@app.get("/pdf/{job_id}")
+@app.get("/api/pdf/{job_id}", dependencies=[Depends(usuario_logado)])
 def ver_pdf(job_id: str) -> FileResponse:
     """PDF original inline, para o iframe da tela de conferência."""
     caminho = (JOBS_DIR / job_id / "entrada.pdf").resolve()
@@ -172,7 +235,7 @@ def ver_pdf(job_id: str) -> FileResponse:
     return response
 
 
-@app.get("/download/{job_id}/{nome}")
+@app.get("/api/download/{job_id}/{nome}", dependencies=[Depends(usuario_logado)])
 def download(job_id: str, nome: str) -> FileResponse:
     caminho = (JOBS_DIR / job_id / nome).resolve()
     if not caminho.is_file() or JOBS_DIR.resolve() not in caminho.parents:
@@ -195,6 +258,6 @@ else:  # build ausente: instrução amigável em vez de 404
         return JSONResponse(
             {
                 "aviso": "Front não buildado. Rode: cd front-end && npm install "
-                "&& npm run build — ou use a API diretamente em /processar."
+                "&& npm run build — ou use a API diretamente em /api/processar."
             }
         )

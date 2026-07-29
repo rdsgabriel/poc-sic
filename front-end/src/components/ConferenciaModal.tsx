@@ -36,7 +36,7 @@ function perfisDoExame(e: Exame): string[] {
 export function ConferenciaModal({ open, jobId, ghes, onClose }: Props) {
   const [selecionado, setSelecionado] = useState(0)
   const [soAtencao, setSoAtencao] = useState(false)
-  const pdfUrl = jobId ? `/pdf/${encodeURIComponent(jobId)}` : null
+  const pdfUrl = jobId ? `/api/pdf/${encodeURIComponent(jobId)}` : null
 
   useEffect(() => {
     if (open) {

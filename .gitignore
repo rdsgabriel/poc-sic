@@ -48,3 +48,6 @@ AguasDoBrasilPoC/
 *.xls
 *.xlsx
 Validação PCMSO*.md
+
+# credenciais do login (hashes bcrypt) — nunca versionar
+users.json

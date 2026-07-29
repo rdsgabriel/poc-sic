@@ -1,0 +1,32 @@
+# Blueprint do Render: https://render.com/docs/blueprint-spec
+# Deploy: repo no GitHub -> dashboard do Render -> New + Blueprint -> apontar para este repo.
+services:
+  - type: web
+    name: poc-pcmso-api
+    runtime: docker
+    # virginia = menor latência para o Brasil entre as regiões do Render
+    region: virginia
+    # Planos: starter | standard | pro | pro plus | pro max
+    # "pro" (2 CPU/4 GB) para começar e medir; "pro max" (8 CPU/16 GB) = paridade com o note.
+    plan: pro
+    dockerfilePath: ./Dockerfile
+    # A raiz "/" só existe quando o front buildado está na imagem; /docs sempre responde.
+    healthCheckPath: /docs
+    autoDeploy: true
+    # Disco persistente para os jobs (PDF enviado + planilhas geradas).
+    # JOBS_DIR usa tempfile.gettempdir()/poc_pcmso_jobs, por isso o mountPath em /tmp.
+    disk:
+      name: pcmso-jobs
+      mountPath: /tmp/poc_pcmso_jobs
+      sizeGB: 10
+    envVars:
+      # Segredo para assinar o cookie de sessão do login (gerado pelo Render).
+      - key: SESSION_SECRET
+        generateValue: true
+      # Usuários do login: JSON {"usuario": "hash bcrypt"} produzido por
+      # `python -m app.criar_usuario <nome>`. Preenchido no dashboard.
+      - key: USERS_JSON
+        sync: false
+      # Cache dos modelos do docling persiste entre restarts dentro da instância.
+      - key: HF_HOME
+        value: /opt/hf-cache

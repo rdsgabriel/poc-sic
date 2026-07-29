@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from "react"
 import { Toaster, toast } from "sonner"
-import { processarPdf, type Resposta } from "./api"
+import { processarPdf, usuarioAtual, SessaoExpirada, type Resposta } from "./api"
 import { AppShell } from "./components/AppShell"
 import { ConferenciaModal } from "./components/ConferenciaModal"
+import { Login } from "./components/Login"
 import { ProcessingStepper, ETAPAS } from "./components/ProcessingStepper"
 import { Resultado } from "./components/Resultado"
 import { UploadZone } from "./components/UploadZone"
@@ -10,6 +11,8 @@ import { UploadZone } from "./components/UploadZone"
 type PageState = "upload" | "processing" | "completed"
 
 export default function App() {
+  // undefined = ainda checando a sessão; null = precisa logar
+  const [usuario, setUsuario] = useState<string | null | undefined>(undefined)
   const [estado, setEstado] = useState<PageState>("upload")
   const [arquivo, setArquivo] = useState<File | null>(null)
   const [etapa, setEtapa] = useState(0)
@@ -18,6 +21,10 @@ export default function App() {
   const timer = useRef<ReturnType<typeof setInterval>>(undefined)
 
   useEffect(() => () => clearInterval(timer.current), [])
+
+  useEffect(() => {
+    usuarioAtual().then(setUsuario)
+  }, [])
 
   async function processar() {
     if (!arquivo) return
@@ -38,6 +45,7 @@ export default function App() {
     } catch (e) {
       toast.error(e instanceof Error ? e.message : String(e))
       setEstado("upload")
+      if (e instanceof SessaoExpirada) setUsuario(null)
     } finally {
       clearInterval(timer.current)
     }
@@ -48,6 +56,18 @@ export default function App() {
     setDados(null)
     setConferindo(false)
     setEstado("upload")
+  }
+
+  if (usuario === undefined) {
+    return <div className="min-h-svh bg-sidebar" />
+  }
+  if (usuario === null) {
+    return (
+      <>
+        <Login onEntrar={setUsuario} />
+        <Toaster position="top-right" richColors />
+      </>
+    )
   }
 
   return (

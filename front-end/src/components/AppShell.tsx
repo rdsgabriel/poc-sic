@@ -18,11 +18,11 @@ export function AppShell({ titulo, children }: { titulo: string; children: React
         </div>
         <nav className="flex flex-col gap-1 px-3">
           <SidebarItem ativo icone={<FileSearchIcon className="size-4" />}>
-            Extração de PCMSO
+            Ingestão de PCMSO
           </SidebarItem>
         </nav>
         <div className="mt-auto px-5 py-4 text-xs opacity-50">
-          POC · extração determinística
+          POC · ingestão determinística
         </div>
       </aside>
 

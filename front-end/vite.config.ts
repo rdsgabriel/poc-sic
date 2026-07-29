@@ -14,9 +14,7 @@ export default defineConfig({
   server: {
     host: true, // expõe na rede local (equivale a --host)
     proxy: {
-      "/processar": alvo,
-      "/pdf": alvo,
-      "/download": alvo,
+      "/api": alvo,
     },
   },
 })
