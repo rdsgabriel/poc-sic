@@ -20,6 +20,10 @@ from .backends import BACKENDS
 from .extractors import GHE, extrair_auto
 
 
+def _sem_espaco(s: str) -> str:
+    return re.sub(r"\s+", "", s)
+
+
 def comparar_backends(pdf_path: str, ghes_docling: list[GHE] | None = None) -> list[str]:
     """Compara a extração dos dois leitores.
 
@@ -42,7 +46,12 @@ def comparar_backends(pdf_path: str, ghes_docling: list[GHE] | None = None) -> l
 
     for cod in sorted(set(a) & set(b)):
         ga, gb = a[cod], b[cod]
-        if ga.nome != gb.nome:
+        # Diferença de SÓ espaço no nome não é divergência de conteúdo: em
+        # cabeçalhos em negrito, um leitor pode colar as palavras
+        # ("SEGURANÇA DO TRABALHO" vs "SEGURANÇADOTRABALHO") — artefato de
+        # re-pintura, não erro de extração. A planilha usa o docling, que lê
+        # o nome espaçado. Só sinaliza se as LETRAS divergirem.
+        if _sem_espaco(ga.nome) != _sem_espaco(gb.nome):
             problemas.append(f"[{cod}] nome: {ga.nome!r} != {gb.nome!r}")
         ra = {(r.nome, r.grupo) for r in ga.riscos}
         rb = {(r.nome, r.grupo) for r in gb.riscos}
