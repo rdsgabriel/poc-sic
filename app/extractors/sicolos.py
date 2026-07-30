@@ -35,7 +35,10 @@ GRUPOS_VALIDOS = {
 _RE_PAGE_HEADER = re.compile(
     r"^(PCMSO|Programa de Controle Médico de Saúde Ocupacional.*|RIO \+ SANEAMENTO.*|\d{2}/\d{2}/\d{4})$"
 )
-_RE_SECTION = re.compile(r"^GHE:\s*-\s*(\S+)\s*-?\s*(.*)$")
+# Código = dígitos + letra opcional (01, 01A, 18...); nome vem após o 2º traço.
+# Aceita cabeçalho espaçado ("GHE: - 01 - ADMINISTRATIVO", campo_grande) e
+# colado ("GHE: -01-ADMINISTRATIVO", RIO + SANEAMENTO CARMO — PDF sem espaços).
+_RE_SECTION = re.compile(r"^GHE:\s*-\s*(\d+[A-Za-z]*)\s*-\s*(.*)$")
 _RE_MESES = re.compile(r"^(\d+)\s*meses?$", re.IGNORECASE)
 _RE_END_DOC = re.compile(r"SOCSIG|^_{5,}|Médico respons[aá]vel", re.IGNORECASE)
 
@@ -111,7 +114,12 @@ def extrair_ghes(lines: list[Line]) -> tuple[list[GHE], dict]:
         if _RE_PAGE_HEADER.match(txt):
             continue
         if _RE_END_DOC.search(txt):
-            if estado == "CARGOS":
+            # fim do documento (assinatura do médico / linha de sublinhados):
+            # fecha QUALQUER tabela de cargos aberta — a final Unidade/Setor/
+            # Cargo (CARGOS) ou a de Funcionários (FUNC, quando o GHE não tem a
+            # tabela final). Sem isto, o cronograma que vem depois ("Ago Set
+            # Out ... X X X") era lido como cargo (caso RIO + SANEAMENTO CARMO).
+            if estado in ("FUNC", "CARGOS"):
                 fechar_cargos()
                 estado = None
             continue
